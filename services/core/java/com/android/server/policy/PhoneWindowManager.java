@@ -798,6 +798,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     // Whether system navigation keys are enabled
     boolean mSystemNavigationKeysEnabled;
 
+    // Behavior of HOME button during an incoming call.
+    // (See LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR.)
+    int mRingHomeBehavior;
+
     Display mDisplay;
 
     int mLandscapeRotation = 0;  // default landscape rotation
@@ -1065,6 +1069,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                      UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.INCALL_BACK_BUTTON_BEHAVIOR), false, this,
+                    UserHandle.USER_ALL);
+            resolver.registerContentObserver(LineageSettings.Secure.getUriFor(
+                    LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR), false, this,
                     UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.WAKE_GESTURE_ENABLED), false, this,
@@ -2753,6 +2760,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     Settings.Secure.INCALL_BACK_BUTTON_BEHAVIOR,
                     Settings.Secure.INCALL_BACK_BUTTON_BEHAVIOR_DEFAULT,
                     UserHandle.USER_CURRENT);
+            mRingHomeBehavior = LineageSettings.Secure.getIntForUser(resolver,
+                    LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR,
+                    LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_DEFAULT,
+                    UserHandle.USER_CURRENT);
             mSystemNavigationKeysEnabled = Settings.Secure.getIntForUser(resolver,
                     Settings.Secure.SYSTEM_NAVIGATION_KEYS_ENABLED,
                     0, UserHandle.USER_CURRENT) == 1;
@@ -4048,6 +4059,15 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 if (canceled) {
                     Log.i(TAG, "Ignoring HOME; event canceled.");
                     return -1;
+                }
+
+                if ((mRingHomeBehavior
+                        & LineageSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER) != 0) {
+                    final TelecomManager telecomManager = getTelecommService();
+                    if (telecomManager != null && telecomManager.isRinging()) {
+                        telecomManager.acceptRingingCall();
+                        return -1;
+                    }
                 }
 
                 // Delay handling home if a double-tap is possible.
