@@ -969,6 +969,7 @@ public class NetworkControllerImpl extends BroadcastReceiver
         boolean show4gForLte = false;
         boolean hideLtePlus = false;
         boolean hspaDataDistinguishable;
+        boolean showRat;
 
         static Config readConfig(Context context) {
             Config config = new Config();
@@ -981,6 +982,8 @@ public class NetworkControllerImpl extends BroadcastReceiver
             config.hspaDataDistinguishable =
                     res.getBoolean(R.bool.config_hspa_data_distinguishable);
             config.hideLtePlus = res.getBoolean(R.bool.config_hideLtePlus);
+            config.showRat =
+                    res.getBoolean(com.android.internal.R.bool.config_display_rat);
             return config;
         }
     }
