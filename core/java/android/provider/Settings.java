@@ -4266,6 +4266,11 @@ public final class Settings {
         public static final String QS_STYLE_DARK = "qs_style_dark";
 
         /**
+         * @hide
+         */
+        public static final String LOCKSCREEN_ROTATION = "lockscreen_rotation";
+
+        /**
          * --- XenonHD System settings end
          *  Add new system settings above this comment
          */
@@ -4444,6 +4449,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(QS_QUICKBAR_SCROLL_ENABLED);
             PRIVATE_SETTINGS.add(QS_TILE_TITLE_VISIBILITY);
             PRIVATE_SETTINGS.add(QS_STYLE_DARK);
+            PRIVATE_SETTINGS.add(LOCKSCREEN_ROTATION);
         }
 
         /**
