@@ -44,6 +44,7 @@ import com.android.systemui.qs.tiles.NightDisplayTile;
 import com.android.systemui.qs.tiles.PictureInPictureTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.ScreenshotTile;
+import com.android.systemui.qs.tiles.SoundTile;
 import com.android.systemui.qs.tiles.SyncTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
 import com.android.systemui.qs.tiles.UserTile;
@@ -86,6 +87,7 @@ public class QSFactoryImpl implements QSFactory {
         else if (tileSpec.equals("heads_up")) return new HeadsUpTile(mHost);
         else if (tileSpec.equals("pip")) return new PictureInPictureTile(mHost);
         else if (tileSpec.equals("screenshot")) return new ScreenshotTile(mHost);
+        else if (tileSpec.equals("sound")) return new SoundTile(mHost);
         else if (tileSpec.equals("sync")) return new SyncTile(mHost);
         else if (tileSpec.equals("usb_tether")) return new UsbTetherTile(mHost);
         else if (tileSpec.equals("volume_panel")) return new VolumeTile(mHost);
