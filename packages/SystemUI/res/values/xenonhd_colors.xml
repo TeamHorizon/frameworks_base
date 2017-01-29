@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Floating action button -->
+    <color name="fab_color">@*android:color/accent_device_default_light</color>
+    <color name="floating_action_button_icon_color">@android:color/white</color>
+
     <!-- Navbar icon Colors -->
     <color name="icon_color_back">@android:color/white</color>
     <color name="icon_color_ime_switcher">@android:color/white</color>
@@ -26,9 +30,5 @@
     <color name="icon_color_split_screen_dark">@android:color/black</color>
     <color name="icon_color_home_dark">@android:color/black</color>
     <color name="icon_color_overview_dark">@android:color/black</color>
-
-    <!-- Floating action button -->
-    <color name="fab_color">@*android:color/material_deep_teal_500</color>
-    <color name="floating_action_button_icon_color">#ffffff</color>
 
 </resources>
