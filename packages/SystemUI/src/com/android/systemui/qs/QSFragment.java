@@ -69,6 +69,7 @@ public class QSFragment extends Fragment implements QS {
     private int mGutterHeight;
 
     private HorizontalScrollView mQuickQsPanelScroller;
+    private boolean mSecureExpandDisabled;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -262,7 +263,7 @@ public class QSFragment extends Fragment implements QS {
         final float translationScaleY = expansion - 1;
         if (!mHeaderAnimating) {
             int height = mHeader.getHeight() + mGutterHeight;
-            getView().setTranslationY(mKeyguardShowing ? (translationScaleY * height)
+            getView().setTranslationY((mKeyguardShowing || mSecureExpandDisabled) ? (translationScaleY * height)
                     : headerTranslation);
         }
         mHeader.setExpansion(mKeyguardShowing ? 1 : expansion);
@@ -284,6 +285,9 @@ public class QSFragment extends Fragment implements QS {
     }
 
     public void animateHeaderSlidingIn(long delay) {
+        if (mSecureExpandDisabled) {
+            return;
+        }
         if (DEBUG) Log.d(TAG, "animateHeaderSlidingIn");
         // If the QS is already expanded we don't need to slide in the header as it's already
         // visible.
@@ -357,8 +361,13 @@ public class QSFragment extends Fragment implements QS {
     }
 
     public int getQsMinExpansionHeight() {
-        return mHeader.getHeight();
+        return mSecureExpandDisabled ? 0 : mHeader.getHeight();
     }
+
+    public void setSecureExpandDisabled(boolean value) {
+        if (DEBUG) Log.d(TAG, "setSecureExpandDisabled " + value);
+        mSecureExpandDisabled = value;
+      }
 
     @Override
     public void hideImmediately() {
