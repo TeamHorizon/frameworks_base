@@ -4222,6 +4222,12 @@ public final class Settings {
         public static final String BRIGHTNESS_ICON_POSITION = "brightness_icon_position";
 
         /**
+         * Sensor block per-package
+         * @hide
+         */
+        public static final String SENSOR_BLOCK = "sensor_block";
+
+        /**
          * --- XenonHD System settings end
          *  Add new system settings above this comment
          */
