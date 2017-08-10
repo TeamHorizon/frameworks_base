@@ -52,4 +52,11 @@
     <integer name="nav_gesture_swipe_timout">250</integer>
     <!-- signification move threshold - if stays below will trigger action -->
     <integer name="nav_gesture_move_threshold">4</integer>
+
+    <!-- One-handed mode feature is supported or not. -->
+    <bool name="config_onehanded_mode">true</bool>
+    <!-- Protect zone padding to ignore touch for onehand panel. -->
+    <dimen name="config_onehandProtectZonePadding">30dp</dimen>
+    <!-- Minimum swipe distance to catch the swipe gestures for onehand trigger. -->
+    <dimen name="config_onehandTriggerMinSwipeDistance">100dp</dimen>
 </resources>
