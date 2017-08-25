@@ -22,4 +22,7 @@
     <java-symbol type="string" name="reboot_to_bootloader_title" />
     <java-symbol type="string" name="reboot_to_bootloader_message" />
 
+    <!-- PlatLogo -->
+    <java-symbol type="drawable" name="platlogo_xenonhd" />
+  
 </resources>
