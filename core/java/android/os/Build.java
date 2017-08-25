@@ -198,6 +198,16 @@ public class Build {
          * The user-visible version string.  E.g., "1.0" or "3.4b5".
          */
         public static final String RELEASE = getString("ro.build.version.release");
+      
+        /**
+         * The user-visible XenonHD Maintainer from the settings menu.
+         */
+        public static final String XENONHD_MAINTAINER = getString("ro.xenonhd.maintainer");
+
+        /**
+         * The user-visible XenonHD Version from the settings menu.
+         */
+        public static final String XENONHD_VERSION = getString("ro.xenonhd.version");
 
         /**
          * The base OS build the product is based on.
