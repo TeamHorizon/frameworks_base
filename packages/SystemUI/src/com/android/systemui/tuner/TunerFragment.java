@@ -69,16 +69,12 @@ public class TunerFragment extends PreferenceFragment {
             getPreferenceScreen().removePreference(findPreference(KEY_DOZE));
         }
 
-        /**
-         * OHAI
-        if (Settings.Secure.getInt(getContext().getContentResolver(), SETTING_SEEN_TUNER_WARNING,
+        /*if (Settings.Secure.getInt(getContext().getContentResolver(), SETTING_SEEN_TUNER_WARNING,
                 0) == 0) {
             if (getFragmentManager().findFragmentByTag(WARNING_TAG) == null) {
                 new TunerWarningFragment().show(getFragmentManager(), WARNING_TAG);
             }
-        }
-         */
-
+        }*/
     }
 
     private boolean alwaysOnAvailable() {
@@ -125,7 +121,7 @@ public class TunerFragment extends PreferenceFragment {
         return super.onOptionsItemSelected(item);
     }
 
-    public static class TunerWarningFragment extends DialogFragment {
+    /*public static class TunerWarningFragment extends DialogFragment {
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getContext())
@@ -139,5 +135,5 @@ public class TunerFragment extends PreferenceFragment {
                         }
                     }).show();
         }
-    }
+    }*/
 }
