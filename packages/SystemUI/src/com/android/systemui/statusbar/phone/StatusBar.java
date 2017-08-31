@@ -841,6 +841,8 @@ public class StatusBar extends SystemUI implements DemoMode,
         createAndAddWindows();
 
         mSettingsObserver.onChange(false); // set up
+        mXenonSettingsObserver.observe();
+        mXenonSettingsObserver.update();
         mCommandQueue.disable(switches[0], switches[6], false /* animate */);
         setSystemUiVisibility(switches[1], switches[7], switches[8], 0xffffffff,
                 fullscreenStackBounds, dockedStackBounds);
@@ -5326,6 +5328,37 @@ public class StatusBar extends SystemUI implements DemoMode,
             updateNotifications();
         }
     };
+
+    private XenonSettingsObserver mXenonSettingsObserver = new XenonSettingsObserver(mHandler);
+    private class XenonSettingsObserver extends ContentObserver {
+        XenonSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            mContext.getContentResolver().registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.DOUBLE_TAP_SLEEP_NAVBAR),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(
+                    Settings.System.DOUBLE_TAP_SLEEP_NAVBAR))) {
+                setDoubleTapNavbar();
+            }
+        }
+
+        public void update() {
+            setDoubleTapNavbar();
+        }
+    }
+
+    private void setDoubleTapNavbar() {
+        if (mNavigationBar != null) {
+            mNavigationBar.setDoubleTapToSleep();
+        }
+    }
 
     private RemoteViews.OnClickHandler mOnClickHandler = new RemoteViews.OnClickHandler() {
 
