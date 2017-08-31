@@ -130,4 +130,5 @@ oneway interface IStatusBar
      * Custom
      */
     void toggleNavigationBar(boolean enable);
+    void toggleCameraFlash();
 }
