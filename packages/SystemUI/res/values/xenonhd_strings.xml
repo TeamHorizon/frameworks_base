@@ -21,7 +21,9 @@
     <!-- Empty summary -->
     <string name="summary_empty" translatable="false"></string>
 
-    <!-- Screenshot Delete Toast -->
+    <!-- Screenshot -->
     <string name="delete_screenshot_toast">Screenshot deleted</string>
+    <string name="screenshot_abort_title">No screenshot taken</string>
+    <string name="screenshot_abort_text">Operation aborted.</string>
 
 </resources>
