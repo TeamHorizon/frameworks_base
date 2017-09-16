@@ -4228,6 +4228,12 @@ public final class Settings {
         public static final String SENSOR_BLOCK = "sensor_block";
 
         /**
+         * Whether to display VoLTE icon when VoLTE present
+         * @hide
+         */
+        public static final String SHOW_VOLTE_ICON = "show_volte_icon";
+
+        /**
          * --- XenonHD System settings end
          *  Add new system settings above this comment
          */
