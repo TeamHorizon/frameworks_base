@@ -37,4 +37,6 @@
     <string name="global_action_restart_bootloader">Go to bootloader</string>
 
     <string name="summary_empty" translatable="false"></string>
+    <!-- volte icon switch -->
+    <string name="status_bar_volte">VoLTE</string>
 </resources>
