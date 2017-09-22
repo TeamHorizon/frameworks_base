@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Lockscreen -->
+    <string name="lockscreen_default">Default</string>
+    <string name="lockscreen_hidden">None</string>
+
     <!-- Reboot -->
     <string name="global_action_restart_advanced">Advanced reboot</string>
     <string name="global_action_restart_bootloader">Go to bootloader</string>
