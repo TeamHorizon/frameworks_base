@@ -19,6 +19,7 @@
     <string name="lockscreen_default">Default</string>
     <string name="lockscreen_hidden">None</string>
     <string name="lockscreen_tuner_activity">Lockscreen shortcuts</string>
+    <string name="custom_hint">Swipe from icon to launch</string>
 
     <!-- Reboot -->
     <string name="global_action_restart_advanced">Advanced reboot</string>
