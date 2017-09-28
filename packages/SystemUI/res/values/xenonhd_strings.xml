@@ -31,20 +31,25 @@
     <string name="statusbar_items_title">Statusbar icon</string>
 
     <!-- Tiles -->
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
     <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
     <string name="accessibility_quick_settings_compass_changed_off">Compass turned off</string>
     <string name="accessibility_quick_settings_compass_changed_on">Compass turned on</string>
     <string name="accessibility_quick_settings_compass_off">Compass off</string>
     <string name="accessibility_quick_settings_compass_on">Compass on</string>
-    <string name="accessibility_quick_settings_heads_up_changed_off">Heads up turned off.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_on">Heads up turned on.</string>
-    <string name="accessibility_quick_settings_heads_up_off">Heads up off.</string>
-    <string name="accessibility_quick_settings_heads_up_on">Heads up on.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Heads up turned off</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Heads up turned on</string>
+    <string name="accessibility_quick_settings_heads_up_off">Heads up off</string>
+    <string name="accessibility_quick_settings_heads_up_on">Heads up on</string>
     <string name="accessibility_quick_settings_usb_tether_off">USB tethering off</string>
     <string name="accessibility_quick_settings_usb_tether_on">USB tethering on</string>
     <string name="accessibility_quick_settings_usb_tether_changed_off">USB tethering turned off</string>
     <string name="accessibility_quick_settings_usb_tether_changed_on">USB tethering turned on</string>
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
     <string name="quick_settings_caffeine_label">Caffeine</string>
     <string name="quick_settings_compass_E">E</string>
     <string name="quick_settings_compass_N">N</string>
