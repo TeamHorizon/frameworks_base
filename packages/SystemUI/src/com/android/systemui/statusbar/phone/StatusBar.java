@@ -198,6 +198,7 @@ import com.android.systemui.qs.QSPanel;
 import com.android.systemui.qs.QSTileHost;
 import com.android.systemui.qs.QuickStatusBarHeader;
 import com.android.systemui.qs.car.CarQSFragment;
+import com.android.systemui.qs.QuickStatusBarHeader;
 import com.android.systemui.recents.Recents;
 import com.android.systemui.recents.ScreenPinningRequest;
 import com.android.systemui.recents.events.EventBus;
@@ -414,6 +415,8 @@ public class StatusBar extends SystemUI implements DemoMode,
 
     private static final String LOCKSCREEN_MEDIA_METADATA =
             "lineagesecure:" + LineageSettings.Secure.LOCKSCREEN_MEDIA_METADATA;
+    private static final String QS_QUICKBAR_SCROLL_ENABLED =
+            "system:" + Settings.System.QS_QUICKBAR_SCROLL_ENABLED;
 
     static {
         boolean onlyCoreApps;
@@ -1152,6 +1155,7 @@ public class StatusBar extends SystemUI implements DemoMode,
         Dependency.get(TunerService.class).addTunable(this,
                 SCREEN_BRIGHTNESS_MODE,
                 STATUS_BAR_BRIGHTNESS_CONTROL,
+                QS_QUICKBAR_SCROLL_ENABLED,
                 LOCKSCREEN_MEDIA_METADATA);
 
         // Developer options - Force Navigation bar
@@ -1404,6 +1408,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                     mQSPanel = ((QSFragment) qs).getQsPanel();
                     mQSPanel.setBrightnessMirror(mBrightnessMirrorController);
                     mKeyguardStatusBar.setQSPanel(mQSPanel);
+                    mQuickStatusBarHeader = ((QSFragment) qs).getQuickStatusBarHeader();
                 }
             });
         }
@@ -5339,6 +5344,9 @@ public class StatusBar extends SystemUI implements DemoMode,
 
     public void onClosingFinished() {
         runPostCollapseRunnables();
+        if (mQuickStatusBarHeader != null) {
+            mQuickStatusBarHeader.onClosingFinished();
+        }
         if (!isPanelFullyCollapsed()) {
             // if we set it not to be focusable when collapsing, we have to undo it when we aborted
             // the closing
@@ -8157,6 +8165,11 @@ public class StatusBar extends SystemUI implements DemoMode,
                 break;
             case LOCKSCREEN_MEDIA_METADATA:
                 mShowMediaMetadata = newValue == null || Integer.parseInt(newValue) == 1;
+                break;
+            case QS_QUICKBAR_SCROLL_ENABLED:
+                if (mQuickStatusBarHeader != null) {
+                    mQuickStatusBarHeader.updateSettings();
+                }
                 break;
             default:
                 break;
