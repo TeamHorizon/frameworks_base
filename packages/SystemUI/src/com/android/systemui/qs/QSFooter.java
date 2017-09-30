@@ -30,6 +30,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
 import android.os.UserManager;
 import android.provider.AlarmClock;
+import android.provider.CalendarContract.Events;
 import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
 import android.util.AttributeSet;
@@ -144,6 +145,7 @@ public class QSFooter extends FrameLayout implements
         mAlarmStatusCollapsed = findViewById(R.id.alarm_status_collapsed);
         mAlarmStatus = findViewById(R.id.alarm_status);
         mDateTimeGroup.setOnClickListener(this);
+        mDateTimeGroup.setOnLongClickListener(this);
 
         mMultiUserSwitch = findViewById(R.id.multi_user_switch);
         mMultiUserSwitch.setOnLongClickListener(this);
@@ -417,6 +419,8 @@ public class QSFooter extends FrameLayout implements
             startSettingsLongClickActivity();
         } else if (v == mMultiUserSwitch) {
             startUserLongClickActivity();
+        } else if (v == mDateTimeGroup) {
+            startDateTimeLongClickActivity();
         }
         return false;
     }
@@ -430,6 +434,12 @@ public class QSFooter extends FrameLayout implements
         Intent intent = new Intent(Intent.ACTION_MAIN);
 	intent.setClassName("com.android.settings",
             "com.android.settings.Settings$XenonHDSettingsActivity");
+        mActivityStarter.startActivity(intent, true /* dismissShade */);
+    }
+
+    private void startDateTimeLongClickActivity() {
+        Intent intent = new Intent(Intent.ACTION_INSERT);
+            intent.setData(Events.CONTENT_URI);
         mActivityStarter.startActivity(intent, true /* dismissShade */);
     }
 
