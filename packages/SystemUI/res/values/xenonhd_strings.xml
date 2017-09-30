@@ -20,9 +20,6 @@
     <string name="quick_settings_reboot_label">Reboot</string>
     <string name="quick_settings_reboot_recovery_label">Recovery</string>
 
-    <!-- Empty summary -->
-    <string name="summary_empty" translatable="false"></string>
-
     <!-- Screenshot -->
     <string name="delete_screenshot_toast">Screenshot deleted</string>
     <string name="screenshot_abort_title">No screenshot taken</string>
