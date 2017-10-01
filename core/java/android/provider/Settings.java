@@ -4103,6 +4103,18 @@ public final class Settings {
         public static final String POWERMENU_USERS = "powermenu_users";
 
         /**
+         * Transparent power menu and dialogs
+         * @hide
+         */
+        public static final String TRANSPARENT_POWER_MENU = "transparent_power_menu";
+
+        /**
+         * Dim amount around power/reboot menu dialogs
+         * @hide
+         */
+        public static final String TRANSPARENT_POWER_DIALOG_DIM = "transparent_power_dialog_dim";
+
+        /**
          * Whether to show Brightness Icon On Brightness Slider
          * @hide
          */
