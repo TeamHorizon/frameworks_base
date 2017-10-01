@@ -4204,15 +4204,21 @@ public final class Settings {
         public static final String POCKET_JUDGE = "pocket_judge";
 
         /**
-         * --- XenonHD System settings end
-         *  Add new system settings above this comment
-         */
-
-        /**
          * Toast icon
          * @hide
          */
         public static final String TOAST_ICON = "toast_icon";
+
+        /**
+         * Whether to show Brightness Icon On Brightness Slider
+         * @hide
+         */
+        public static final String BRIGHTNESS_ICON = "brightness_icon";
+
+        /**
+         * --- XenonHD System settings end
+         *  Add new system settings above this comment
+         */
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
