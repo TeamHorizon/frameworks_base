@@ -26,7 +26,6 @@
     <string name="screenshot_abort_title">No screenshot taken</string>
 
     <!-- Status bar -->
-    <string name="accessibility_data_connection_HP">HSPA+</string>
     <string name="status_bar_volte">VoLTE</string>
     <string name="statusbar_items_title">Statusbar icon</string>
 
