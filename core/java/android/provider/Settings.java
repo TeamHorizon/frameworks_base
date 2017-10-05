@@ -3973,6 +3973,12 @@ public final class Settings {
         public static final String ENABLE_CONDITIONS = "enable_conditions";
 
         /**
+         * Disable dashboard suggestions in settings
+         * @hide
+         */
+        public static final String ENABLE_SUGGESTIONS = "enable_suggestions";
+
+        /**
          * How many rows to show in the qs panel when in portrait
          * @hide
          */
