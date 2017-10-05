@@ -27,7 +27,7 @@
 
     <!-- Status bar -->
     <string name="status_bar_volte">VoLTE</string>
-    <string name="statusbar_items_title">Statusbar icon</string>
+    <string name="statusbar_items_title">Status bar icons</string>
 
     <!-- Tiles -->
     <string name="accessibility_quick_settings_ambient_display_off">Ambient display off</string>
