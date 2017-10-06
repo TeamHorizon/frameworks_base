@@ -457,7 +457,7 @@ public class QSSecurityFooter implements OnClickListener, DialogInterface.OnClic
 
     public void updateSettings() {
         mShowWarnings = Settings.System.getIntForUser(
-                mContext.getContentResolver(), Settings.System.QS_FOOTER_WARNINGS, 0,
+                mContext.getContentResolver(), Settings.System.QS_FOOTER_WARNINGS, 1,
                 UserHandle.USER_CURRENT) == 1;
     }
 }

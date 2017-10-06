@@ -146,10 +146,10 @@ public class BrightnessMirrorController {
         // enable the brightness icon
         boolean brightnessIconEnabled = Settings.System.getIntForUser(
                 mContext.getContentResolver(), Settings.System.BRIGHTNESS_ICON,
-                1, UserHandle.USER_CURRENT) == 1;
+                0, UserHandle.USER_CURRENT) == 1;
         mBrightnessIconPosition = Settings.System.getIntForUser(
                 mContext.getContentResolver(), Settings.System.BRIGHTNESS_ICON_POSITION,
-                1, UserHandle.USER_CURRENT) == 1;
+                0, UserHandle.USER_CURRENT) == 1;
         mIcon = (ImageView) mBrightnessMirror.findViewById(R.id.brightness_icon);
         mIconLeft = (ImageView) mBrightnessMirror.findViewById(R.id.brightness_icon_left);
         if (mBrightnessIconPosition) {

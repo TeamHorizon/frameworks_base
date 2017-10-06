@@ -5433,7 +5433,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                     Settings.System.BATTERY_SAVER_MODE_COLOR))) {
                     mBatterySaverWarningColor = Settings.System.getIntForUser(
                             mContext.getContentResolver(),
-                            Settings.System.BATTERY_SAVER_MODE_COLOR, 0,
+                            Settings.System.BATTERY_SAVER_MODE_COLOR, 1,
                             UserHandle.USER_CURRENT);
                     if (mBatterySaverWarningColor != 0) {
                         mBatterySaverWarningColor = Utils.getColorAttr(mContext, android.R.attr.colorError);
@@ -7006,7 +7006,7 @@ public class StatusBar extends SystemUI implements DemoMode,
 
         mBatterySaverWarningColor = Settings.System.getIntForUser(
                 mContext.getContentResolver(),
-                Settings.System.BATTERY_SAVER_MODE_COLOR, 0,
+                Settings.System.BATTERY_SAVER_MODE_COLOR, 1,
                 UserHandle.USER_CURRENT);
         if (mBatterySaverWarningColor != 0) {
             mBatterySaverWarningColor = Utils.getColorAttr(mContext, android.R.attr.colorError);

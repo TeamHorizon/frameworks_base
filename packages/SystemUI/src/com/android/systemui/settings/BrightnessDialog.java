@@ -62,7 +62,7 @@ public class BrightnessDialog extends Activity {
         final ToggleSliderView slider = findViewById(R.id.brightness_slider);
         mBrightnessController = new BrightnessController(this, ((Settings.System.getIntForUser(
                 this.getContentResolver(), Settings.System.BRIGHTNESS_ICON_POSITION,
-                1, UserHandle.USER_CURRENT) == 1) ? icon : iconLeft), slider);
+                0, UserHandle.USER_CURRENT) == 1) ? icon : iconLeft), slider);
     }
 
     @Override

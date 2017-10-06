@@ -124,7 +124,7 @@ public class QSPanel extends LinearLayout implements Tunable, Callback {
 
         mBrightnessIconPosition = Settings.System.getIntForUser(
                 mContext.getContentResolver(), Settings.System.BRIGHTNESS_ICON_POSITION,
-                1, UserHandle.USER_CURRENT) == 1;
+                0, UserHandle.USER_CURRENT) == 1;
 
         mBrightnessController = new BrightnessController(getContext(),
                 (mBrightnessIconPosition ? mBrightnessIcon : mBrightnessIconLeft),
@@ -211,7 +211,7 @@ public class QSPanel extends LinearLayout implements Tunable, Callback {
                 0, UserHandle.USER_CURRENT) == 1;
         mBrightnessIconPosition = Settings.System.getIntForUser(
                 mContext.getContentResolver(), Settings.System.BRIGHTNESS_ICON_POSITION,
-                1, UserHandle.USER_CURRENT) == 1;
+                0, UserHandle.USER_CURRENT) == 1;
         if (mBrightnessIconPosition) {
             mBrightnessIcon.setVisibility(brightnessIconEnabled ? View.VISIBLE : View.GONE);
             mBrightnessIconLeft.setVisibility(View.GONE);
