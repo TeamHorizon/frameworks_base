@@ -5487,12 +5487,6 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
     }
 
-    private void setQsPanelOptions() {
-        if (mQSPanel != null) {
-            mQSPanel.updateSettings();
-        }
-    }
-
     private RemoteViews.OnClickHandler mOnClickHandler = new RemoteViews.OnClickHandler() {
 
         @Override
