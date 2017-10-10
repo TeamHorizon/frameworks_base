@@ -86,9 +86,7 @@ public class PlatLogoActivity extends Activity {
 
         im.setBackground(new RippleDrawable(
                 ColorStateList.valueOf(0xFFFFFFFF),
-                getDrawable(getIntent().getBooleanExtra("xenonhd", false)
-                        ? com.android.internal.R.drawable.platlogo_xenonhd
-                        : com.android.internal.R.drawable.platlogo),
+                getDrawable(com.android.internal.R.drawable.platlogo),
                 null));
 //        im.setOutlineProvider(new ViewOutlineProvider() {
 //            @Override
