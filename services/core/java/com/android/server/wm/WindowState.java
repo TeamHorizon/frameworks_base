@@ -4149,10 +4149,6 @@ class WindowState extends WindowContainer<WindowState> implements WindowManagerP
         return didSomething;
     }
 
-    public boolean isRtl() {
-        return getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
-    }
-
     void hideWallpaperWindow(boolean wasDeferred, String reason) {
         for (int j = mChildren.size() - 1; j >= 0; --j) {
             final WindowState c = mChildren.get(j);
