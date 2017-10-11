@@ -89,5 +89,12 @@
     <string name="accessibility_quick_settings_location_battery_saving">Location reporting: battery saving mode</string>
     <string name="accessibility_quick_settings_location_gps_only">Location reporting: sensors only mode</string>
     <string name="accessibility_quick_settings_location_high_accuracy">Location reporting: high accuracy mode</string>
+    <string name="screenrecord_notif_ticker">Screen is being recorded</string>
+    <string name="screenrecord_notif_title">Recording screen</string>
+    <string name="screenrecord_notif_stop">Stop</string>
+    <string name="screenrecord_notif_pointer_on">Show pointer</string>
+    <string name="screenrecord_notif_pointer_off">Hide pointer</string>
+    <string name="screenrecord_notif_error">Unable to record screen</string>
+    <string name="notification_channel_screenrecord">Screenrecords</string>
 
 </resources>
