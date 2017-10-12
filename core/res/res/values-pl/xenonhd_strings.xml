@@ -18,5 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Tryb Recovery</string>
+  <string name="reboot_to_recovery_message">Restartowanie do recovery</string>
+  <string name="reboot_to_bootloader_title">Bootloader</string>
+  <string name="reboot_to_bootloader_message">Restartowanie do bootloadera</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Twój obraz dostawcy nie jest zgodny z systemem. Zainstaluj obraz <xliff:g id="string">%s</xliff:g> który jest zgodny z Twoim urządzeniem</string>
+  <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Przytrzymaj przycisk zasilania w celu interakcji</string>
 </resources>

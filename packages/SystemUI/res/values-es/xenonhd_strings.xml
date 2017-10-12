@@ -19,7 +19,11 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Captura de pantalla eliminada</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">Iconos de la barra de estado</string>
   <!-- Tiles -->
+  <string name="quick_settings_music_label">Música</string>
+  <string name="quick_settings_music_play">Reproducir</string>
+  <string name="quick_settings_music_pause">Pausar</string>
   <string name="quick_settings_reboot_label">Reiniciar</string>
   <string name="quick_settings_reboot_recovery_label">Reiniciar en modo recuperación</string>
   <string name="quick_settings_screenshot_label">Captura de pantalla</string>

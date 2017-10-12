@@ -17,6 +17,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
-  <string name="reboot_to_recovery_title">Přejít do Recovery</string>
+  <string name="reboot_to_recovery_title">Recovery</string>
+  <string name="reboot_to_recovery_message">Restartování do recovery</string>
+  <string name="reboot_to_bootloader_title">Bootloader</string>
+  <string name="reboot_to_bootloader_message">Restartování do bootloaderu</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Váš dodavatel obrazu se neshoduje se systémem. Prosím flashněte obraz pro vaše zařízení <xliff:g id="string">%s </xliff:g></string>
+  <!-- Pocket Lock -->
 </resources>

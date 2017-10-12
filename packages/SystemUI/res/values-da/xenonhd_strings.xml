@@ -19,6 +19,7 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Screenshot slettet</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">Statuslinje ikoner</string>
   <!-- Tiles -->
   <string name="quick_settings_reboot_label">Genstart</string>
 </resources>

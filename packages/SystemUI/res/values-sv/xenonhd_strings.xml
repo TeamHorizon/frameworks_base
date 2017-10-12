@@ -19,7 +19,11 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Skärmdump borttagen</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">Statusfältsikoner</string>
   <!-- Tiles -->
+  <string name="quick_settings_music_label">Musik</string>
+  <string name="quick_settings_music_play">Spela</string>
+  <string name="quick_settings_music_pause">Pausa</string>
   <string name="quick_settings_reboot_label">Starta om</string>
   <string name="quick_settings_reboot_recovery_label">Återställning</string>
   <string name="quick_settings_screenshot_label">Skärmdump</string>

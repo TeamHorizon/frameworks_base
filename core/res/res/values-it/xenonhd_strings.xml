@@ -19,4 +19,5 @@
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Riavvia in recovery</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <!-- Pocket Lock -->
 </resources>

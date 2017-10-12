@@ -20,6 +20,9 @@
   <string name="delete_screenshot_toast">屏幕截图已删除</string>
   <!-- Status bar -->
   <!-- Tiles -->
+  <string name="quick_settings_music_label">音乐</string>
+  <string name="quick_settings_music_play">播放</string>
+  <string name="quick_settings_music_pause">暂停</string>
   <string name="quick_settings_reboot_label">重新启动</string>
   <string name="quick_settings_reboot_recovery_label">恢复模式</string>
   <string name="quick_settings_screenshot_label">屏幕截图</string>

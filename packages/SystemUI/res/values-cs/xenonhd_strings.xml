@@ -16,11 +16,62 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Reboot -->
+  <string name="global_action_restart_advanced">Rozšířené restartování</string>
+  <string name="global_action_restart_bootloader">Restartovat do bootloaderu</string>
+  <string name="global_action_restart_recovery">Restartovat do recovery</string>
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Snímek obrazovky odstraněn</string>
+  <string name="screenshot_abort_text">Operace přerušena</string>
+  <string name="screenshot_abort_title">Žádný snímek obrazovky</string>
   <!-- Status bar -->
+  <string name="status_bar_volte">VoLTE</string>
+  <string name="statusbar_items_title">Ikony stavového řádku</string>
   <!-- Tiles -->
+  <string name="accessibility_quick_settings_ambient_display_off">Ambientní displej vypnut</string>
+  <string name="accessibility_quick_settings_ambient_display_on">Ambientní displej zapnut</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_off">Ambientní displej je vypnutý</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_on">Ambientní displej je zapnutý</string>
+  <string name="accessibility_quick_settings_caffeine_off">Kofein zapnut</string>
+  <string name="accessibility_quick_settings_caffeine_on">Kofein vypnut</string>
+  <string name="accessibility_quick_settings_compass_changed_off">Kompas je vypnutý</string>
+  <string name="accessibility_quick_settings_compass_changed_on">Kompas je zapnutý</string>
+  <string name="accessibility_quick_settings_compass_off">Kompas vypnut</string>
+  <string name="accessibility_quick_settings_compass_on">Kompas zapnut</string>
+  <string name="accessibility_quick_settings_heads_up_changed_off">Plovoucí upozornění vypnuto</string>
+  <string name="accessibility_quick_settings_heads_up_changed_on">Plovoucí upozornění zapnuto</string>
+  <string name="accessibility_quick_settings_heads_up_off">Plovoucí upozornění vypnuto</string>
+  <string name="accessibility_quick_settings_heads_up_on">Plovoucí upozornění zapnuto</string>
+  <string name="accessibility_quick_settings_usb_tether_off">USB Tethering je vypnutý</string>
+  <string name="accessibility_quick_settings_usb_tether_on">USB Tethering je zapnutý</string>
+  <string name="accessibility_quick_settings_usb_tether_changed_off">USB tethering je vypnutý</string>
+  <string name="accessibility_quick_settings_usb_tether_changed_on">USB tethering je zapnutý</string>
+  <string name="quick_settings_ambient_display_label">Ambientní displej</string>
+  <string name="quick_settings_caffeine_label">Kofein</string>
+  <string name="quick_settings_compass_E">V</string>
+  <string name="quick_settings_compass_N">S</string>
+  <string name="quick_settings_compass_NE">SV</string>
+  <string name="quick_settings_compass_NW">SZ</string>
+  <string name="quick_settings_compass_S">J</string>
+  <string name="quick_settings_compass_SE">JV</string>
+  <string name="quick_settings_compass_SW">JZ</string>
+  <string name="quick_settings_compass_W">Z</string>
+  <string name="quick_settings_compass_init">Spouštění\u2026</string>
+  <string name="quick_settings_compass_label">Kompas</string>
+  <string name="quick_settings_heads_up_label">Plovoucí upozornění</string>
+  <string name="quick_settings_ime_label">Metody vstupu</string>
+  <string name="quick_settings_locale_label">Jazyk</string>
+  <string name="quick_settings_locale_more_locales_toast">Prosím nastavte přepínač umožňující více jazyků</string>
+  <string name="quick_settings_music_label">Hudba</string>
+  <string name="quick_settings_music_play">Přehrát</string>
+  <string name="quick_settings_music_pause">Pozastavit</string>
+  <string name="quick_settings_pip_label">PiP</string>
   <string name="quick_settings_reboot_label">Restartovat</string>
   <string name="quick_settings_reboot_recovery_label">Přejít do Recovery</string>
+  <string name="quick_settings_region_screenshot_label">Částečný snímek obrazovky</string>
   <string name="quick_settings_screenshot_label">Snímek obrazovky</string>
+  <string name="quick_settings_sound_dnd">Nerušit</string>
+  <string name="quick_settings_sound_label">Zvuk</string>
+  <string name="quick_settings_sound_ring">Vyzvánění</string>
+  <string name="quick_settings_sound_vibrate">Vibrace</string>
+  <string name="quick_settings_usb_tether_label">USB tethering</string>
 </resources>

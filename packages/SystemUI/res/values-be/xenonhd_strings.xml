@@ -19,7 +19,11 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Скрыншот выдалены</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">Значкі ў радку стану</string>
   <!-- Tiles -->
+  <string name="quick_settings_music_label">Музыка</string>
+  <string name="quick_settings_music_play">Граць</string>
+  <string name="quick_settings_music_pause">Паўза</string>
   <string name="quick_settings_reboot_label">Перазагрузка</string>
   <string name="quick_settings_reboot_recovery_label">Рэжым аднаўлення</string>
   <string name="quick_settings_screenshot_label">Скрыншот</string>

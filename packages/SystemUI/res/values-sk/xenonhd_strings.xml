@@ -19,7 +19,11 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Snímka obrazovky bola vymazaná</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">Ikony stavového riadku</string>
   <!-- Tiles -->
+  <string name="quick_settings_music_label">Hudba</string>
+  <string name="quick_settings_music_play">Prehrať</string>
+  <string name="quick_settings_music_pause">Pozastaviť</string>
   <string name="quick_settings_reboot_label">Reštartovať</string>
   <string name="quick_settings_reboot_recovery_label">Prejsť do Recovery</string>
   <string name="quick_settings_screenshot_label">Snímka obrazovky</string>

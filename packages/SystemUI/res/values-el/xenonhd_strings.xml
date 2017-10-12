@@ -19,6 +19,9 @@
   <!-- Screenshot -->
   <!-- Status bar -->
   <!-- Tiles -->
+  <string name="quick_settings_music_label">Μουσική</string>
+  <string name="quick_settings_music_play">Αναπαραγωγή</string>
+  <string name="quick_settings_music_pause">Παύση</string>
   <string name="quick_settings_reboot_label">Επανεκκίνηση</string>
   <string name="quick_settings_reboot_recovery_label">Επαναφορά</string>
   <string name="quick_settings_screenshot_label">Στιγμιότυπο οθόνης</string>
