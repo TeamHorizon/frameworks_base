@@ -27,23 +27,21 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
-import android.os.UserHandle;
-import android.service.quicksettings.Tile;
 import android.view.View;
 
+import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.systemui.qs.QSHost;
-import com.android.systemui.plugins.qs.QSTile.BooleanState;
-import com.android.systemui.qs.tileimpl.QSTileImpl;
 import com.android.systemui.R;
+import com.android.systemui.omni.screenrecord.TakeScreenrecordService;
+import com.android.systemui.plugins.qs.QSTile.BooleanState;
+import com.android.systemui.qs.QSHost;
+import com.android.systemui.qs.tileimpl.QSTileImpl;
 
 /** Quick settings tile: Screenrecord **/
 public class ScreenrecordTile extends QSTileImpl<BooleanState> {
 
-    private static final Intent APP_RECORD = new Intent().setComponent(new ComponentName(
-            "com.android.gallery3d", "com.android.gallery3d.app.GalleryActivity"));
-
     private boolean mListening;
+    private boolean mRecording;
     private final Object mScreenrecordLock = new Object();
     private ServiceConnection mScreenrecordConnection = null;
 
@@ -70,12 +68,28 @@ public class ScreenrecordTile extends QSTileImpl<BooleanState> {
         } catch (InterruptedException ie) {
              // Do nothing
         }
-        takeScreenrecord();
+        takeScreenRecord();
+    }
+
+    @Override
+    protected void handleSecondaryClick() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName("com.android.gallery3d",
+            "com.android.gallery3d.app.GalleryActivity");
+        mContext.sendBroadcast(intent);
+    }
+
+    @Override
+    public void handleLongClick() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName("com.android.gallery3d",
+            "com.android.gallery3d.app.GalleryActivity");
+        mContext.sendBroadcast(intent);
     }
 
     @Override
     public Intent getLongClickIntent() {
-        return APP_RECORD;
+        return null;
     }
 
     @Override
@@ -85,9 +99,14 @@ public class ScreenrecordTile extends QSTileImpl<BooleanState> {
 
     @Override
     protected void handleUpdateState(BooleanState state, Object arg) {
-        state.icon = ResourceIcon.get(R.drawable.ic_qs_screenrecord);
-        state.label = mContext.getString(R.string.quick_settings_screenrecord);
-        state.state = Tile.STATE_ACTIVE;
+        state.value = mRecording;
+        if (mRecording) {
+            state.icon = ResourceIcon.get(R.drawable.ic_qs_screenrecord);
+            state.label = mContext.getString(R.string.quick_settings_screenrecord_on);
+        } else {
+            state.icon = ResourceIcon.get(R.drawable.ic_qs_screenrecord);
+            state.label = mContext.getString(R.string.quick_settings_screenrecord);
+        }
     }
 
     final Runnable mScreenrecordTimeout = new Runnable() {
@@ -97,24 +116,26 @@ public class ScreenrecordTile extends QSTileImpl<BooleanState> {
                 if (mScreenrecordConnection != null) {
                     mContext.unbindService(mScreenrecordConnection);
                     mScreenrecordConnection = null;
+                    mRecording = false;
                 }
             }
         }
     };
 
-    private void takeScreenrecord() {
-       synchronized (mScreenrecordLock) {
+    private void takeScreenRecord() {
+        synchronized (mScreenrecordLock) {
             if (mScreenrecordConnection != null) {
                 return;
             }
-            ComponentName cn = new ComponentName("com.android.systemui",
-                    "com.android.systemui.omni.screenrecord.TakeScreenrecordService");
-            Intent intent = new Intent();
-            intent.setComponent(cn);
+            Intent intent = new Intent(mContext, TakeScreenrecordService.class);
             ServiceConnection conn = new ServiceConnection() {
                 @Override
                 public void onServiceConnected(ComponentName name, IBinder service) {
                     synchronized (mScreenrecordLock) {
+                        if (mScreenrecordConnection != this) {
+                            return;
+                        }
+
                         Messenger messenger = new Messenger(service);
                         Message msg = Message.obtain(null, 1);
                         final ServiceConnection myConn = this;
@@ -125,6 +146,7 @@ public class ScreenrecordTile extends QSTileImpl<BooleanState> {
                                     if (mScreenrecordConnection == myConn) {
                                         mContext.unbindService(mScreenrecordConnection);
                                         mScreenrecordConnection = null;
+                                        mRecording = false;
                                         mHandler.removeCallbacks(mScreenrecordTimeout);
                                     }
                                 }
@@ -132,20 +154,26 @@ public class ScreenrecordTile extends QSTileImpl<BooleanState> {
                         };
                         msg.replyTo = new Messenger(h);
                         msg.arg1 = msg.arg2 = 0;
+
+                        // Take the screenrecord
                         try {
                             messenger.send(msg);
                         } catch (RemoteException e) {
+                            // Do nothing here
                         }
                     }
                 }
+
                 @Override
-                public void onServiceDisconnected(ComponentName name) {}
+                public void onServiceDisconnected(ComponentName name) {
+                    // Do nothing here
+                }
             };
 
-            if (mContext.bindServiceAsUser(
-                    intent, conn, Context.BIND_AUTO_CREATE, UserHandle.CURRENT)) {
+            if (mContext.bindService(intent, conn, mContext.BIND_AUTO_CREATE)) {
                 mScreenrecordConnection = conn;
-                mHandler.postDelayed(mScreenrecordTimeout, 31 * 60 * 1000);
+                mRecording = true;
+                mHandler.postDelayed(mScreenrecordTimeout, 100000);
             }
         }
     }
