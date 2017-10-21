@@ -930,7 +930,7 @@ public class RecentsView extends FrameLayout {
          void observe() {
              ContentResolver resolver = mContext.getContentResolver();
              resolver.registerContentObserver(Settings.System.getUriFor(
-                  Settings.System.SHOW_CLEAR_ALL_RECENTS), true, this, UserHandle.USER_ALL);
+                  Settings.System.SHOW_CLEAR_ALL_RECENTS), false, this, UserHandle.USER_ALL);
              update();
          }
 
@@ -947,7 +947,7 @@ public class RecentsView extends FrameLayout {
          public void update() {
               ContentResolver resolver = mContext.getContentResolver();
               mShowClearAllRecents = Settings.System.getIntForUser(resolver,
-                  Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) != 0;
+                  Settings.System.SHOW_CLEAR_ALL_RECENTS, 0, UserHandle.USER_CURRENT) != 0;
          }
     }
 }
