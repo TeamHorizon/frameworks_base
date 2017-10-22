@@ -17,10 +17,7 @@
 package com.android.systemui.settings;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.provider.Settings;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -58,11 +55,8 @@ public class BrightnessDialog extends Activity {
         setContentView(v);
 
         final ImageView icon = findViewById(R.id.brightness_icon);
-        final ImageView iconLeft = findViewById(R.id.brightness_icon_left);
         final ToggleSliderView slider = findViewById(R.id.brightness_slider);
-        mBrightnessController = new BrightnessController(this, ((Settings.System.getIntForUser(
-                this.getContentResolver(), Settings.System.BRIGHTNESS_ICON_POSITION,
-                0, UserHandle.USER_CURRENT) == 1) ? icon : iconLeft), slider);
+        mBrightnessController = new BrightnessController(this, icon, slider);
     }
 
     @Override

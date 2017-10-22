@@ -4121,18 +4121,6 @@ public final class Settings {
         public static final String TRANSPARENT_POWER_DIALOG_DIM = "transparent_power_dialog_dim";
 
         /**
-         * Whether to show Brightness Icon On Brightness Slider
-         * @hide
-         */
-        public static final String BRIGHTNESS_ICON = "brightness_icon";
-
-        /**
-         * Brightness Icon position on Brightness Slider
-         * @hide
-         */
-        public static final String BRIGHTNESS_ICON_POSITION = "brightness_icon_position";
-
-         /**
          * Whether to display qs tile titles in the qs panel
          * @hide
          */
