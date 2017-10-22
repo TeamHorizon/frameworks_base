@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Prejsť do Recovery</string>
+  <string name="reboot_to_recovery_message">Reštartovať do recovery</string>
+  <string name="reboot_to_bootloader_title">Bootloader</string>
+  <string name="reboot_to_bootloader_message">Reštartovať do bootloadera</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Váš dodávateľ obrazu sa nezhoduje so systémom. Prosím napáľte obraz pre vaše zariadenie <xliff:g id="string">%s</xliff:g></string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Pre interakciu dlho stlačte tlačidlo Napájanie</string>
 </resources>

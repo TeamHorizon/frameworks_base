@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Режим восстановления</string>
+  <string name="reboot_to_recovery_message">Перезагрузка в режим восстановления</string>
+  <string name="reboot_to_bootloader_title">Загрузчик</string>
+  <string name="reboot_to_bootloader_message">Перезагрузка в загрузчик</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Образ не соответствует системе. Пожалуйста прошейте образ <xliff:g id="string">%s</xliff:g> для вашего устройства</string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Долгое нажатие кнопки питания для взаимодействия</string>
 </resources>

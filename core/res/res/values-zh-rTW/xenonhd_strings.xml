@@ -17,7 +17,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
-  <string name="reboot_to_recovery_title">恢復模式</string>
+  <string name="reboot_to_recovery_title">Recovery 模式</string>
+  <string name="reboot_to_recovery_message">重新啟動至 Recovery 模式</string>
+  <string name="reboot_to_bootloader_title">Bootloader 模式</string>
+  <string name="reboot_to_bootloader_message">重新啟動至 Bootloader 模式</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">您的映像檔與系統不相符。 請刷入您的裝置 <xliff:g id="string">%s</xliff:g> 專用的映像檔。</string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">長按電源鍵進行交互</string>
 </resources>

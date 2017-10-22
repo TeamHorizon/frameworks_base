@@ -24,4 +24,5 @@
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">Váš dodavatel obrazu se neshoduje se systémem. Prosím flashněte obraz pro vaše zařízení <xliff:g id="string">%s </xliff:g></string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Pro interakci stiskněte dlouze tlačítko napájení</string>
 </resources>
