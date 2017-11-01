@@ -18,6 +18,16 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Reiniciar en modo recuperación</string>
+  <string name="reboot_to_recovery_message">Reiniciando en modo recuperación</string>
+  <string name="reboot_to_bootloader_title">Gestor de arranque</string>
+  <string name="reboot_to_bootloader_message">Reiniciar al gestor de arranque</string>
+  <string name="reboot_title">Reiniciar</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Su imagen del proveedor no coincide con el sistema. Por favor flashee la imagen <xliff:g id="string">%s</xliff:g> de su dispositivo</string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Mantenga pulsado el botón de encendido para interactuar</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Falsificación de firma</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Permite que la aplicación pretenda ser una aplicación diferente. Las aplicaciones maliciosas pueden usar esto para acceder a datos personales. ¡Conceda este permiso con cuidado!</string>
 </resources>

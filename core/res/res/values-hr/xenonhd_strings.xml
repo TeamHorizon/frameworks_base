@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Oporavak</string>
+  <string name="reboot_title">Ponovno pokreni</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <!-- Pocket Lock -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Spoof package potpis</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Omogući ovoj aplikaciji da se pretvara da je druga aplikacija. Zlonamjerne aplikacije mogu koristiti ovo kako bi pristupili podacima sa privatnih aplikacija. Dodjeljivanje ove dozvole uz krajnji oprez!</string>
 </resources>

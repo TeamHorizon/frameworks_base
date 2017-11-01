@@ -18,6 +18,16 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Επαναφορά</string>
+  <string name="reboot_to_recovery_message">Επανεκκίνηση σε recovery</string>
+  <string name="reboot_to_bootloader_title">Bootloader</string>
+  <string name="reboot_to_bootloader_message">Επανεκκίνηση σε bootloader</string>
+  <string name="reboot_title">Επανεκκίνηση</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
+  <string name="system_error_vendorprint">Η εικόνα του κατασκευαστή σας δεν ταιριάζει με το σύστημα. Παρακαλώ εγκαταστήστε εικόνα <xliff:g id="string">%s </xliff:g> προμηθευτή για τη συσκευή σας</string>
   <!-- Pocket Lock -->
+  <string name="pocket_lock_message_long_press">Πιέστε παρατεταμένα το κουμπί τροφοδοσίας για επίδραση</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Μίμηση υπογραφής πακέτου</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Επιτρέπει στην εφαρμογή να προσποιείται ότι είναι μια διαφορετική εφαρμογή. Κακόβουλες εφαρμογές μπορεί να είναι σε θέση να χρησιμοποιήσουν αυτή τη λειτουργία για να έχουν πρόσβαση σε προσωπικά σας δεδομένα. Εκχωρήσετε το δικαίωμα αυτό με ιδιαίτερη προσοχή!</string>
 </resources>

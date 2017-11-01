@@ -21,8 +21,13 @@
   <string name="reboot_to_recovery_message">Перезагрузка в режим восстановления</string>
   <string name="reboot_to_bootloader_title">Загрузчик</string>
   <string name="reboot_to_bootloader_message">Перезагрузка в загрузчик</string>
+  <string name="reboot_title">Перезагрузка</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">Образ не соответствует системе. Пожалуйста прошейте образ <xliff:g id="string">%s</xliff:g> для вашего устройства</string>
   <!-- Pocket Lock -->
   <string name="pocket_lock_message_long_press">Долгое нажатие кнопки питания для взаимодействия</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Разрешить подмену подписи</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Разрешать приложениям обходить систему безопасности, выдавая себя за другое приложение. Вредоносные приложения могут использовать это для доступа к частным данным. На свой страх и риск!</string>
 </resources>

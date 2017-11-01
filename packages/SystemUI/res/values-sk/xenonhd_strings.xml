@@ -65,6 +65,7 @@
   <string name="quick_settings_music_play">Prehrať</string>
   <string name="quick_settings_music_pause">Pozastaviť</string>
   <string name="quick_settings_pip_label">PiP</string>
+  <string name="quick_settings_pip_tile_app_na">Aplikácia nepodporuje PiP</string>
   <string name="quick_settings_reboot_label">Reštartovať</string>
   <string name="quick_settings_reboot_recovery_label">Prejsť do Recovery</string>
   <string name="quick_settings_region_screenshot_label">Čiastočná fotografia obrazovky</string>
@@ -81,5 +82,16 @@
   <string name="accessibility_quick_settings_sync_changed_on">Synchronizácia je zapnutá</string>
   <string name="accessibility_quick_settings_volume_panel">Hlasitosť</string>
   <string name="quick_settings_volume_panel_label">Hlasitosť</string>
+  <string name="accessibility_quick_settings_location_battery_saving">Hlásenie polohy: režim šetrenia batérie</string>
+  <string name="accessibility_quick_settings_location_gps_only">Hlásenie polohy: režim iba so snímačmi</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Hlásenie polohy: vysoká presnosť</string>
+  <string name="screenrecord_notif_ticker">Obrazovka sa nahráva</string>
+  <string name="screenrecord_notif_title">Nahrávanie obrazovky</string>
+  <string name="screenrecord_notif_stop">Zastaviť</string>
+  <string name="screenrecord_notif_pointer_on">Zobraziť ukazovateľ</string>
+  <string name="screenrecord_notif_pointer_off">Skryť ukazovateľ</string>
+  <string name="screenrecord_notif_error">Nepodarilo sa nahrať obrazovku</string>
+  <string name="notification_channel_screenrecord">Záznamy obrazovky</string>
   <string name="quick_settings_screenrecord">Záznam obrazovky</string>
+  <string name="quick_settings_screenrecord_on">Nahrávam…</string>
 </resources>

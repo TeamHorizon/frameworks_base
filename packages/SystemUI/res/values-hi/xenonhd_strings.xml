@@ -16,7 +16,42 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Reboot -->
+  <string name="global_action_restart_advanced">उन्नत रिबूट</string>
+  <string name="global_action_restart_bootloader">बूटलोडर में जाए</string>
+  <string name="global_action_restart_recovery">रिकवरी में जाए</string>
   <!-- Screenshot -->
+  <string name="delete_screenshot_toast">स्क्रीनशॉट डिलीट किया</string>
   <!-- Status bar -->
+  <string name="status_bar_volte">VoLTE</string>
+  <string name="statusbar_items_title">स्टेटस बार चिह्न</string>
   <!-- Tiles -->
+  <string name="accessibility_quick_settings_caffeine_off">कैफीन बंद</string>
+  <string name="accessibility_quick_settings_caffeine_on">कैफीन चालू</string>
+  <string name="accessibility_quick_settings_compass_changed_off">कंपास बंद कर दिया</string>
+  <string name="accessibility_quick_settings_compass_changed_on">कम्पास चालू कर दिया</string>
+  <string name="accessibility_quick_settings_compass_off">कम्पास बंद</string>
+  <string name="accessibility_quick_settings_compass_on">कम्पास चालु</string>
+  <string name="quick_settings_compass_E">पू</string>
+  <string name="quick_settings_compass_N">उ</string>
+  <string name="quick_settings_compass_NE">उ-पू</string>
+  <string name="quick_settings_compass_NW">उ-प</string>
+  <string name="quick_settings_compass_S">द</string>
+  <string name="quick_settings_compass_SE">द-पू</string>
+  <string name="quick_settings_compass_SW">द-प</string>
+  <string name="quick_settings_compass_W">प</string>
+  <string name="quick_settings_compass_label">कम्पास</string>
+  <string name="quick_settings_ime_label">IME</string>
+  <string name="quick_settings_locale_label">भाषा </string>
+  <string name="quick_settings_music_label">संगीत</string>
+  <string name="quick_settings_music_play">चलायें</string>
+  <string name="quick_settings_music_pause">पॉज़</string>
+  <string name="quick_settings_reboot_label">रिबूट</string>
+  <string name="quick_settings_reboot_recovery_label">रिकवरी</string>
+  <string name="quick_settings_region_screenshot_label">आंशिक स्क्रीनशॉट</string>
+  <string name="quick_settings_screenshot_label">स्क्रीनशॉट</string>
+  <string name="quick_settings_sound_dnd">परेशान ना करें</string>
+  <string name="quick_settings_sound_label">ध्वनि</string>
+  <string name="quick_settings_sound_ring">रिंग</string>
+  <string name="quick_settings_sound_vibrate">वाइब्रेट</string>
+  <string name="quick_settings_usb_tether_label">यूएसबी टेदरिंग</string>
 </resources>

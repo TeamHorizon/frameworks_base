@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Режим відновлення</string>
+  <string name="reboot_title">Перезавантаження</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <!-- Pocket Lock -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Підробити підпис пакета</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Дозволяє додатку видавати себе за іншу программу. Злонамірені додатки можуть використовувати приватні данні. Будте обережні під час надання цього дозволу!</string>
 </resources>

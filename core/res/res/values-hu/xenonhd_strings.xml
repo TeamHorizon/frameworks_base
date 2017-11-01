@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">Recovery</string>
+  <string name="reboot_title">Újraindítás</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <!-- Pocket Lock -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Hamis csomag aláírás</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Engedélyezi az alkalmazás számára, hogy más alkalmazásnak tettesse magát. A kártékony alkalmazások ezt személyes adatok elérésére használhatják. Kellő elővigyázatossággal adja meg ezt az engedélyt!</string>
 </resources>

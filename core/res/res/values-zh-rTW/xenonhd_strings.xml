@@ -21,8 +21,13 @@
   <string name="reboot_to_recovery_message">重新啟動至 Recovery 模式</string>
   <string name="reboot_to_bootloader_title">Bootloader 模式</string>
   <string name="reboot_to_bootloader_message">重新啟動至 Bootloader 模式</string>
+  <string name="reboot_title">重新啟動</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">您的映像檔與系統不相符。 請刷入您的裝置 <xliff:g id="string">%s</xliff:g> 專用的映像檔。</string>
   <!-- Pocket Lock -->
   <string name="pocket_lock_message_long_press">長按電源鍵進行交互</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">惡搞套件簽名</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">允許應用程式，假裝成為其他應用程式可能能夠用於存取私有應用程式資料。授予此權限請小心！</string>
 </resources>

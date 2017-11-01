@@ -18,6 +18,11 @@
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
   <string name="reboot_to_recovery_title">الريكفري</string>
+  <string name="reboot_title">إعادة التشغيل</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <!-- Pocket Lock -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">توقيع الحزمة ساخرة</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">يسمح التطبيق للتظاهر بأن يكون التطبيق مختلف الخبيثة التطبيقات قد تكون قادرة على استخدام هذا للوصول إلى بيانات التطبيق الخاصة. منح هذا الإذن بحذر فقط!</string>
 </resources>

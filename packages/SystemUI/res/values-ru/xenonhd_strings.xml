@@ -16,21 +16,56 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Reboot -->
+  <string name="global_action_restart_advanced">Варианты перезагрузки</string>
+  <string name="global_action_restart_bootloader">Перезагрузить в загрузчик</string>
+  <string name="global_action_restart_recovery">Перезагрузить в режим восстановления</string>
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Скриншот удален</string>
+  <string name="screenshot_abort_text">Операция прервана</string>
+  <string name="screenshot_abort_title">Скриншот не был создан</string>
   <!-- Status bar -->
   <string name="status_bar_volte">VoLTE</string>
-  <string name="statusbar_items_title">Значки строки состояния</string>
+  <string name="statusbar_items_title">Иконки статус бара</string>
   <!-- Tiles -->
+  <string name="accessibility_quick_settings_ambient_display_off">Активный дисплей выключен</string>
+  <string name="accessibility_quick_settings_ambient_display_on">Активный дисплей включен</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_off">Активный дисплей отключен</string>
+  <string name="accessibility_quick_settings_ambient_display_changed_on">Активный дисплей включен</string>
+  <string name="accessibility_quick_settings_caffeine_off">Запрет сна выкл.</string>
+  <string name="accessibility_quick_settings_caffeine_on">Запрет сна вкл.</string>
+  <string name="accessibility_quick_settings_compass_changed_off">Компас отключён</string>
   <string name="accessibility_quick_settings_compass_changed_on">Компас включен</string>
+  <string name="accessibility_quick_settings_compass_off">Компас выкл.</string>
   <string name="accessibility_quick_settings_compass_on">Компас вкл</string>
+  <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления отключены</string>
+  <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены</string>
+  <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления выключены</string>
+  <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены</string>
+  <string name="accessibility_quick_settings_usb_tether_off">USB-модем выкл.</string>
+  <string name="accessibility_quick_settings_usb_tether_on">USB-модем вкл.</string>
+  <string name="accessibility_quick_settings_usb_tether_changed_off">USB-модем выключен</string>
+  <string name="accessibility_quick_settings_usb_tether_changed_on">USB-модем включен</string>
+  <string name="quick_settings_ambient_display_label">Активный дисплей</string>
   <string name="quick_settings_caffeine_label">Запрет сна</string>
+  <string name="quick_settings_compass_E">В</string>
+  <string name="quick_settings_compass_N">C</string>
+  <string name="quick_settings_compass_NE">СВ</string>
+  <string name="quick_settings_compass_NW">СЗ</string>
+  <string name="quick_settings_compass_S">Ю</string>
+  <string name="quick_settings_compass_SE">ЮВ</string>
+  <string name="quick_settings_compass_SW">ЮЗ</string>
+  <string name="quick_settings_compass_W">З</string>
+  <string name="quick_settings_compass_init">Инициализация</string>
   <string name="quick_settings_compass_label">Компас</string>
   <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+  <string name="quick_settings_ime_label">Способ ввода</string>
   <string name="quick_settings_locale_label">Язык</string>
+  <string name="quick_settings_locale_more_locales_toast">Пожалуйста, настройте несколько языков, чтобы активировать функцию</string>
   <string name="quick_settings_music_label">Музыка</string>
   <string name="quick_settings_music_play">Воспр.</string>
   <string name="quick_settings_music_pause">Пауза</string>
+  <string name="quick_settings_pip_label">Картинка в картинке (PiP)</string>
+  <string name="quick_settings_pip_tile_app_na">Приложение не поддерживает PiP</string>
   <string name="quick_settings_reboot_label">Перезагрузка</string>
   <string name="quick_settings_reboot_recovery_label">Режим восстановления</string>
   <string name="quick_settings_region_screenshot_label">Скриншот выбранной области</string>
@@ -47,5 +82,16 @@
   <string name="accessibility_quick_settings_sync_changed_on">Синхронизация включена</string>
   <string name="accessibility_quick_settings_volume_panel">Громкость</string>
   <string name="quick_settings_volume_panel_label">Громкость</string>
+  <string name="accessibility_quick_settings_location_battery_saving">Определение местоположения: режим экономии батареи</string>
+  <string name="accessibility_quick_settings_location_gps_only">Определение местоположения: по спутникам GPS</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Определение местоположения: по всем источникам</string>
+  <string name="screenrecord_notif_ticker">Экран записывается</string>
+  <string name="screenrecord_notif_title">Запись экрана</string>
+  <string name="screenrecord_notif_stop">Остановить</string>
+  <string name="screenrecord_notif_pointer_on">Показать указатель</string>
+  <string name="screenrecord_notif_pointer_off">Скрыть указатель</string>
+  <string name="screenrecord_notif_error">Невозможно записать экран</string>
+  <string name="notification_channel_screenrecord">Записи экрана</string>
   <string name="quick_settings_screenrecord">Запись экрана</string>
+  <string name="quick_settings_screenrecord_on">Запись…</string>
 </resources>
