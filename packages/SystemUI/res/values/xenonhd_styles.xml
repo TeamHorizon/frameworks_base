@@ -20,9 +20,7 @@
         <item name="preferenceTheme">@style/TunerPreferenceTheme</item>
     </style>
 
-    <!-- Systemui inherit O style -->
-    <dimen name="preference_no_icon_padding_start">24dp</dimen>
-
+    <!-- Custom tuner settings -->
     <style name="CustomTunerSettings" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="android:windowActionBar">false</item>
         <item name="dropdownPreferenceStyle">@style/CustomTunerSettings.DropdownPreferenceStyle</item>
