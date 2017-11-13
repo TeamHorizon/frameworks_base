@@ -18,6 +18,7 @@
     <!-- Lockscreen -->
     <string name="lockscreen_default">Default</string>
     <string name="lockscreen_hidden">None</string>
+    <string name="lockscreen_tuner_activity">Lockscreen shortcuts</string>
 
     <!-- Reboot -->
     <string name="global_action_restart_advanced">Advanced reboot</string>
