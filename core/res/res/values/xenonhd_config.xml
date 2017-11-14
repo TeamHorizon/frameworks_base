@@ -41,6 +41,7 @@
         <item>org.telegram.messenger.plus</item>
         <item>com.snapchat.android</item>
         <item>com.facebook.orca</item>
+        <item>com.facebook.katana</item>
         <item>com.Slack</item>
     </string-array>
 
