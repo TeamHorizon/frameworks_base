@@ -4247,6 +4247,11 @@ public final class Settings {
         public static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
         /**
+         * @hide
+         */
+        public static final String QS_STYLE_DARK = "qs_style_dark";
+
+        /**
          * --- XenonHD System settings end
          *  Add new system settings above this comment
          */
@@ -4424,6 +4429,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
             PRIVATE_SETTINGS.add(QS_QUICKBAR_SCROLL_ENABLED);
             PRIVATE_SETTINGS.add(QS_TILE_TITLE_VISIBILITY);
+            PRIVATE_SETTINGS.add(QS_STYLE_DARK);
         }
 
         /**
