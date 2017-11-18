@@ -22,6 +22,7 @@
   <string name="reboot_to_bootloader_title">Bootloader 模式</string>
   <string name="reboot_to_bootloader_message">重新啟動至 Bootloader 模式</string>
   <string name="reboot_title">重新啟動</string>
+  <string name="reboot_message">重新啟動系統</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">您的映像檔與系統不相符。 請刷入您的裝置 <xliff:g id="string">%s</xliff:g> 專用的映像檔。</string>
   <!-- Pocket Lock -->

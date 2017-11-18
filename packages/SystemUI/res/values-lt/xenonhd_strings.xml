@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Lockscreen -->
+  <string name="lockscreen_default">Numatyta</string>
   <!-- Reboot -->
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Ekrano kopija ištrinta</string>

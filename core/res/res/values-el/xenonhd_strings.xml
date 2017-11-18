@@ -22,6 +22,7 @@
   <string name="reboot_to_bootloader_title">Bootloader</string>
   <string name="reboot_to_bootloader_message">Επανεκκίνηση σε bootloader</string>
   <string name="reboot_title">Επανεκκίνηση</string>
+  <string name="reboot_message">Επανεκκίνηση του συστήματος</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">Η εικόνα του κατασκευαστή σας δεν ταιριάζει με το σύστημα. Παρακαλώ εγκαταστήστε εικόνα <xliff:g id="string">%s </xliff:g> προμηθευτή για τη συσκευή σας</string>
   <!-- Pocket Lock -->

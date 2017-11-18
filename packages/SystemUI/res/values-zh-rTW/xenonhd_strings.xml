@@ -15,6 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Lockscreen -->
+  <string name="lockscreen_default">預設</string>
+  <string name="lockscreen_hidden">無</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">進階重新啟動</string>
   <string name="global_action_restart_bootloader">進入 BootLoader 模式</string>

@@ -22,6 +22,7 @@
   <string name="reboot_to_bootloader_title">Bootloader</string>
   <string name="reboot_to_bootloader_message">Reštartovať do bootloadera</string>
   <string name="reboot_title">Reštartovať</string>
+  <string name="reboot_message">Reštartovanie systému</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">Váš dodávateľ obrazu sa nezhoduje so systémom. Prosím napáľte obraz pre vaše zariadenie <xliff:g id="string">%s</xliff:g></string>
   <!-- Pocket Lock -->

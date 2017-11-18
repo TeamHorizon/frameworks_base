@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Lockscreen -->
+  <string name="lockscreen_default">Па змаўчанні</string>
   <!-- Reboot -->
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Скрыншот выдалены</string>
@@ -27,4 +29,28 @@
   <string name="quick_settings_reboot_label">Перазагрузка</string>
   <string name="quick_settings_reboot_recovery_label">Рэжым аднаўлення</string>
   <string name="quick_settings_screenshot_label">Скрыншот</string>
+  <string name="quick_settings_sound_dnd">Не турбаваць</string>
+  <string name="quick_settings_sound_label">Гук</string>
+  <string name="quick_settings_sound_ring">Званок</string>
+  <string name="quick_settings_sound_vibrate">Вібрацыя</string>
+  <string name="quick_settings_usb_tether_label">USB-мадэм</string>
+  <string name="quick_settings_sync_label">Сінхранізацыя</string>
+  <string name="accessibility_quick_settings_sync_off">Сінхранізацыя адкл.</string>
+  <string name="accessibility_quick_settings_sync_on">Сінхранізацыя ўкл.</string>
+  <string name="accessibility_quick_settings_sync_changed_off">Сінхранізацыя адключана</string>
+  <string name="accessibility_quick_settings_sync_changed_on">Сінхранізацыя ўключана</string>
+  <string name="accessibility_quick_settings_volume_panel">Гучнасць</string>
+  <string name="quick_settings_volume_panel_label">Гучнасць</string>
+  <string name="accessibility_quick_settings_location_battery_saving">Вызначэнне месцазнаходжання: рэжым эканоміі батарэі.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Вызначэнне месцазнаходжання: па спадарожніках GPS</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">Вызначэнне месцазнаходжання: па ўсіх крыніцах</string>
+  <string name="screenrecord_notif_ticker">Ідзе запіс экрана</string>
+  <string name="screenrecord_notif_title">Запіс экрана</string>
+  <string name="screenrecord_notif_stop">Спыніць</string>
+  <string name="screenrecord_notif_pointer_on">Паказаць паказальнік</string>
+  <string name="screenrecord_notif_pointer_off">Схаваць паказальнік</string>
+  <string name="screenrecord_notif_error">Запіс экрана немагчымы</string>
+  <string name="notification_channel_screenrecord">Запіс экрана</string>
+  <string name="quick_settings_screenrecord">Запіс экрана</string>
+  <string name="quick_settings_screenrecord_on">Ідзе запіс…</string>
 </resources>

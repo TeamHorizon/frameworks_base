@@ -15,6 +15,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Lockscreen -->
+  <string name="lockscreen_default">Domyślny</string>
+  <string name="lockscreen_hidden">Brak</string>
+  <string name="lockscreen_tuner_activity">Skróty ekranu blokady</string>
+  <string name="custom_hint">Przesuń palcem od ikony, aby uruchomić</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">Zaawansowany restart</string>
   <string name="global_action_restart_bootloader">Restart do bootloadera</string>

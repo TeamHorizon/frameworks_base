@@ -22,6 +22,7 @@
   <string name="reboot_to_bootloader_title">Bootloader</string>
   <string name="reboot_to_bootloader_message">Riavvia in Bootloader</string>
   <string name="reboot_title">Riavvia</string>
+  <string name="reboot_message">Riavvio del sistema</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">L\'immagine del fornitore non corrisponde a quella del sistema. Riscrivi l\'immagine del fornitore <xliff:g id="string">%s </xliff:g> per il tuo dispositivo</string>
   <!-- Pocket Lock -->

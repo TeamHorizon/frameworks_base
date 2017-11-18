@@ -22,6 +22,7 @@
   <string name="reboot_to_bootloader_title">Загрузчик</string>
   <string name="reboot_to_bootloader_message">Перезагрузка в загрузчик</string>
   <string name="reboot_title">Перезагрузка</string>
+  <string name="reboot_message">Перезагрузить</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <string name="system_error_vendorprint">Образ не соответствует системе. Пожалуйста прошейте образ <xliff:g id="string">%s</xliff:g> для вашего устройства</string>
   <!-- Pocket Lock -->
