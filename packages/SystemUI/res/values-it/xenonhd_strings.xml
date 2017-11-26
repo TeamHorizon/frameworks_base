@@ -18,6 +18,8 @@
   <!-- Lockscreen -->
   <string name="lockscreen_default">Predefinito</string>
   <string name="lockscreen_hidden">Nessuno</string>
+  <string name="lockscreen_tuner_activity">Scorciatoie schermata di sblocco</string>
+  <string name="custom_hint">Scorri dall\'icona per avviare</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">Riavvio avanzato</string>
   <string name="global_action_restart_bootloader">Riavvia in bootloader</string>

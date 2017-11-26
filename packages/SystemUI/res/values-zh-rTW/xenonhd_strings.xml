@@ -18,6 +18,8 @@
   <!-- Lockscreen -->
   <string name="lockscreen_default">預設</string>
   <string name="lockscreen_hidden">無</string>
+  <string name="lockscreen_tuner_activity">鎖定畫面捷徑</string>
+  <string name="custom_hint">滑動圖示以啟動</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">進階重新啟動</string>
   <string name="global_action_restart_bootloader">進入 BootLoader 模式</string>

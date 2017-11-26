@@ -17,6 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Lockscreen -->
   <string name="lockscreen_default">Προεπιλεγμένο</string>
+  <string name="lockscreen_hidden">Κανένα</string>
+  <string name="lockscreen_tuner_activity">Συντομεύσεις οθόνης κλειδώματος</string>
+  <string name="custom_hint">Σαρώστε το εικονίδιο για να ξεκινήσει</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">Επιλογές επανεκκίνησης για προχωρημένους</string>
   <string name="global_action_restart_bootloader">Επανεκκίνηση στον bootloader</string>

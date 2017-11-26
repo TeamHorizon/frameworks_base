@@ -18,6 +18,8 @@
   <!-- Lockscreen -->
   <string name="lockscreen_default">Výchozí</string>
   <string name="lockscreen_hidden">Žádný</string>
+  <string name="lockscreen_tuner_activity">Zkratky na zamykací obrazovce</string>
+  <string name="custom_hint">Spustit přejetím prstem od ikony</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">Rozšířené restartování</string>
   <string name="global_action_restart_bootloader">Restartovat do bootloaderu</string>

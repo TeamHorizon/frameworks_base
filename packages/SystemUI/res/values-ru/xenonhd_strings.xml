@@ -18,6 +18,8 @@
   <!-- Lockscreen -->
   <string name="lockscreen_default">По умолчанию</string>
   <string name="lockscreen_hidden">Нет</string>
+  <string name="lockscreen_tuner_activity">Ярлыки экрана блокировки</string>
+  <string name="custom_hint">Свайп от значка для запуска</string>
   <!-- Reboot -->
   <string name="global_action_restart_advanced">Варианты перезагрузки</string>
   <string name="global_action_restart_bootloader">Перезагрузить в загрузчик</string>
