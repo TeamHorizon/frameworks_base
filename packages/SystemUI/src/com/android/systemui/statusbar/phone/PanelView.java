@@ -136,9 +136,6 @@ public abstract class PanelView extends FrameLayout {
     private boolean mIgnoreXTouchSlop;
     private boolean mExpandLatencyTracking;
 
-    // omni additions start
-    protected boolean mDoubleTapToSleepEnabled;
-
     protected void onExpandingFinished() {
         mBar.onExpandingFinished();
     }
@@ -327,7 +324,7 @@ public abstract class PanelView extends FrameLayout {
                     cancelPeek();
                     onTrackingStarted();
                 }
-                if (isFullyCollapsed() && !mHeadsUpManager.hasPinnedHeadsUp() && !mDoubleTapToSleepEnabled) {
+                if (isFullyCollapsed() && !mHeadsUpManager.hasPinnedHeadsUp()) {
                     startOpening();
                 }
                 break;
@@ -403,7 +400,7 @@ public abstract class PanelView extends FrameLayout {
         return !mGestureWaitForTouchSlop || mTracking;
     }
 
-    private void startOpening() {
+    private void startOpening() {;
         runPeekAnimation(INITIAL_OPENING_PEEK_DURATION, getOpeningHeight(),
                 false /* collapseWhenFinished */);
         notifyBarPanelExpansionChanged();
@@ -478,7 +475,7 @@ public abstract class PanelView extends FrameLayout {
             }
         } else if (mPanelClosedOnDown && !mHeadsUpManager.hasPinnedHeadsUp() && !mTracking) {
             long timePassed = SystemClock.uptimeMillis() - mDownTime;
-            if (timePassed < ViewConfiguration.getLongPressTimeout() && !mDoubleTapToSleepEnabled) {
+            if (timePassed < ViewConfiguration.getLongPressTimeout()) {
                 // Lets show the user that he can actually expand the panel
                 runPeekAnimation(PEEK_ANIMATION_DURATION, getPeekHeight(), true /* collapseWhenFinished */);
             } else {

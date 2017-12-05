@@ -42,7 +42,6 @@ import android.util.AttributeSet;
 import android.util.EventLog;
 import android.util.FloatProperty;
 import android.util.MathUtils;
-import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -55,7 +54,6 @@ import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.xenonhd.XenonUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.keyguard.KeyguardStatusView;
 import com.android.keyguard.KeyguardUpdateMonitor;
@@ -191,7 +189,6 @@ public class NotificationPanelView extends PanelView implements
     private boolean mQsExpandImmediate;
     private boolean mTwoFingerQsExpandPossible;
 
-    private boolean mOneFingerQuickSettingsIntercept;
     private int mQsSmartPullDown;
 
     /**
@@ -253,11 +250,6 @@ public class NotificationPanelView extends PanelView implements
     private Handler mHandler = new Handler();
     private SettingsObserver mSettingsObserver;
 
-    private GestureDetector mDoubleTapToSleepGesture;
-    private boolean mIsLockscreenDoubleTapEnabled;
-
-    private int mStatusBarHeaderHeight;
-
     public NotificationPanelView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setWillNotDraw(!DEBUG);
@@ -266,15 +258,6 @@ public class NotificationPanelView extends PanelView implements
         mSettingsObserver = new SettingsObserver(mHandler);
         mQsOverscrollExpansionEnabled =
                 getResources().getBoolean(R.bool.config_enableQuickSettingsOverscrollExpansion);
-
-        mDoubleTapToSleepGesture = new GestureDetector(context,
-                new GestureDetector.SimpleOnGestureListener() {
-            @Override
-            public boolean onDoubleTap(MotionEvent e) {
-                XenonUtils.switchScreenOff(context);
-                return true;
-            }
-        });
     }
 
     public void setStatusBar(StatusBar bar) {
@@ -339,8 +322,6 @@ public class NotificationPanelView extends PanelView implements
                 R.dimen.max_notification_fadeout_height);
         mIndicationBottomPadding = getResources().getDimensionPixelSize(
                 R.dimen.keyguard_indication_bottom_padding);
-        mStatusBarHeaderHeight = getResources().getDimensionPixelSize(
-                R.dimen.status_bar_height);
     }
 
     public void updateResources() {
@@ -816,15 +797,6 @@ public class NotificationPanelView extends PanelView implements
         if (mBlockTouches || (mQs != null && mQs.isCustomizing())) {
             return false;
         }
-        final int h = getMeasuredHeight();
-        if ((mIsLockscreenDoubleTapEnabled
-                && mStatusBarState == StatusBarState.KEYGUARD
-                && (event.getY() < (h / 3) ||
-                event.getY() > (h - mStatusBarHeaderHeight))) ||
-                (!mQsExpanded && mDoubleTapToSleepEnabled
-                && event.getY() < mStatusBarHeaderHeight)) {
-            mDoubleTapToSleepGesture.onTouchEvent(event);
-        }
         initDownStates(event);
         if (mListenForHeadsUp && !mHeadsUpTouchHelper.isTrackingHeadsUp()
                 && mHeadsUpTouchHelper.onInterceptTouchEvent(event)) {
@@ -854,10 +826,6 @@ public class NotificationPanelView extends PanelView implements
         }
         handled |= super.onTouchEvent(event);
         return mDozing ? handled : true;
-    }
-
-    public void setLockscreenDoubleTapToSleep(boolean isDoubleTapEnabled) {
-        mIsLockscreenDoubleTapEnabled = isDoubleTapEnabled;
     }
 
     private boolean handleQsTouch(MotionEvent event) {
@@ -924,17 +892,6 @@ public class NotificationPanelView extends PanelView implements
         final boolean mouseButtonClickDrag = action == MotionEvent.ACTION_DOWN
                 && (event.isButtonPressed(MotionEvent.BUTTON_SECONDARY)
                         || event.isButtonPressed(MotionEvent.BUTTON_TERTIARY));
-
-
-        final float w = getMeasuredWidth();
-        final float x = event.getX();
-        float region = w * 1.f / 3.f; // TODO overlay region fraction?
-        boolean showQsOverride = false;
-
-        if (mOneFingerQuickSettingsIntercept) {
-                showQsOverride = isLayoutRtl() ? x < region : w - region < x;
-        }
-        showQsOverride &= mStatusBarState == StatusBarState.SHADE;
 
         if (mQsSmartPullDown == 1 && !mStatusBar.hasActiveClearableNotificationsQS()
                 || mQsSmartPullDown == 2 && !mStatusBar.hasActiveOngoingNotifications()
@@ -2669,14 +2626,6 @@ public class NotificationPanelView extends PanelView implements
 
     public void setPulsing(boolean pulsing) {
         mKeyguardStatusView.setPulsing(pulsing);
-    }
-
-    public void setQsQuickPulldown(boolean isQsQuickPulldown) {
-        mOneFingerQuickSettingsIntercept = isQsQuickPulldown;
-    }
-
-    public void updateDoubleTapToSleep(boolean doubleTapToSleepEnabled) {
-        mDoubleTapToSleepEnabled = doubleTapToSleepEnabled;
     }
 
     private boolean isQsSecureExpandDisabled() {
