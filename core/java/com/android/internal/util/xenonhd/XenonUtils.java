@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.hardware.input.InputManager;
 import android.os.Handler;
@@ -36,6 +37,7 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 
 import java.util.List;
+import java.util.Locale;
 
 public class XenonUtils {
 
@@ -129,5 +131,10 @@ public class XenonUtils {
             }
         }
         return null;
+    }
+
+    public static boolean isChineseLanguage() {
+       return Resources.getSystem().getConfiguration().locale.getLanguage().startsWith(
+               Locale.CHINESE.getLanguage());
     }
 }

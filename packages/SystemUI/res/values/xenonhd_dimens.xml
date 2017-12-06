@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Custom Carrier Label -->
+    <dimen name="status_bar_carrier_height">14dp</dimen>
+
     <!-- Clear-All recents FAB -->
     <dimen name="floating_action_button_height">56dp</dimen>
     <dimen name="floating_action_button_width">56dp</dimen>
