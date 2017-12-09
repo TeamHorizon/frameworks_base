@@ -14,7 +14,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Lockscreen -->
     <string name="lockscreen_default">Default</string>
     <string name="lockscreen_hidden">None</string>
@@ -104,5 +103,4 @@
     <string name="notification_channel_screenrecord">Screenrecords</string>
     <string name="quick_settings_screenrecord">Screenrecord</string>
     <string name="quick_settings_screenrecord_on">Recording…</string>
-
 </resources>
