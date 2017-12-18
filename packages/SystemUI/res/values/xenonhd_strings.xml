@@ -30,4 +30,9 @@
 
     <!-- PiP Tile -->
     <string name="quick_settings_pip_label">PiP</string>
+
+    <!-- Advanced power menu -->
+    <string name="global_action_restart_advanced">Advanced reboot</string>
+    <string name="global_action_restart_recovery">Go to recovery</string>
+    <string name="global_action_restart_bootloader">Go to bootloader</string>
 </resources>
