@@ -596,14 +596,10 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener {
         return mUserTrustIsManaged.get(userId) && !isTrustDisabled(userId);
     }
 
-    public boolean isFingerprintUnlockAfterRebootAllowed() {
-        return Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1;
-    }
-
     public boolean isUnlockingWithFingerprintAllowed() {
-        return isFingerprintUnlockAfterRebootAllowed() ||
-                (mStrongAuthTracker.isUnlockingWithFingerprintAllowed()); 
+        return (mStrongAuthTracker.isUnlockingWithFingerprintAllowed()
+                || (Settings.System.getInt(mContext.getContentResolver(),
+                   Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1);
     }
 
     public boolean needsSlowUnlockTransition() {
