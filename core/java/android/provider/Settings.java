@@ -4238,12 +4238,6 @@ public final class Settings {
         public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
 
         /**
-         * Unlock keystore with fingerprint after reboot
-         * @hide
-         */
-        public static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
-
-        /**
          * @hide
          */
         public static final String QS_STYLE_DARK = "qs_style_dark";
