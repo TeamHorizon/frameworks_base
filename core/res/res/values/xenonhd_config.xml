@@ -28,5 +28,12 @@
     <!-- Wheter to enable doze always on -->
     <bool name="config_enableDozeAlwaysOn">false</bool>
 
+    <!-- Power menu -->
+    <string-array translatable="false" name="config_custom_globalActionsList">
+        <item>power</item>
+        <item>restart</item>
+        <item>advanced</item>
+    </string-array>
+
 </resources>
 
