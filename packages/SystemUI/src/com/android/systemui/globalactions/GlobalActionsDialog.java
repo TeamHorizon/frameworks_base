@@ -40,6 +40,7 @@ import android.app.ActivityManagerNative;
 import android.app.Dialog;
 import android.app.IActivityManager;
 import android.app.WallpaperManager;
+import android.app.KeyguardManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -481,9 +482,11 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener, DialogIn
                     mItems.add(new RestartAction());
                 }
             } else if (GLOBAL_ACTION_KEY_ADVANCED.equals(actionKey)) {
+                KeyguardManager km = (KeyguardManager) mContext.getSystemService(Context.KEYGUARD_SERVICE);
+                boolean keyguardLocked = km.inKeyguardRestrictedInputMode() && km.isKeyguardSecure();
                 if (Settings.System.getInt(mContext.getContentResolver(),
                         Settings.System.POWERMENU_REBOOT, 1) == 1 && Settings.System.getInt(mContext.getContentResolver(),
-                        Settings.System.POWERMENU_ADVANCED_REBOOT, 0) != 0) {
+                        Settings.System.POWERMENU_ADVANCED_REBOOT, 0) != 0 && !keyguardLocked) {
                     mItems.add(mShowAdvancedToggles);
                 }
             } else if (GLOBAL_ACTION_KEY_SCREENSHOT.equals(actionKey)) {
