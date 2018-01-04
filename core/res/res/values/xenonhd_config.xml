@@ -28,5 +28,8 @@
     <!-- Wheter to enable doze always on -->
     <bool name="config_enableDozeAlwaysOn">false</bool>
     <bool name="config_canForceDozeNotifications">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">false</bool>
 </resources>
 

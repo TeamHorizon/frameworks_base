@@ -26,4 +26,6 @@
   <!-- Ambient display music -->
   <java-symbol type="bool" name="config_canForceDozeNotifications" />
 
+  <!-- Whether the device supports Smart Pixels -->
+  <java-symbol type="bool" name="config_enableSmartPixels" />
 </resources>
