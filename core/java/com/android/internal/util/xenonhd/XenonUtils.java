@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 XenonHD
+ * Copyright (C) 2018 XenonHD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,18 +19,27 @@ package com.android.internal.util.xenonhd;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.hardware.input.InputManager;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.net.ConnectivityManager;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.PowerManager;
+import android.os.RemoteException;
 import android.os.UserHandle;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.util.Log;
+import android.view.InputDevice;
+import android.view.KeyCharacterMap;
+import android.view.KeyEvent;
 
 import java.util.List;
 
@@ -39,6 +48,8 @@ import java.util.Locale;
 public class XenonUtils {
 
     private static final String TAG = "XenonUtils";
+    public static final String INTENT_SCREENSHOT = "action_take_screenshot";
+    public static final String INTENT_REGION_SCREENSHOT = "action_take_region_screenshot";
 
     public static boolean isChineseLanguage() {
        return Resources.getSystem().getConfiguration().locale.getLanguage().startsWith(
@@ -279,5 +290,45 @@ public class XenonUtils {
         if (pm!= null) {
             pm.goToSleep(SystemClock.uptimeMillis());
         }
+    }
+    public static void sendKeycode(int keycode) {
+        long when = SystemClock.uptimeMillis();
+        final KeyEvent evDown = new KeyEvent(when, when, KeyEvent.ACTION_DOWN, keycode, 0,
+                0, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
+                KeyEvent.FLAG_FROM_SYSTEM | KeyEvent.FLAG_VIRTUAL_HARD_KEY,
+                InputDevice.SOURCE_KEYBOARD);
+        final KeyEvent evUp = KeyEvent.changeAction(evDown, KeyEvent.ACTION_UP);
+
+        final Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                InputManager.getInstance().injectInputEvent(evDown,
+                        InputManager.INJECT_INPUT_EVENT_MODE_ASYNC);
+            }
+        });
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                InputManager.getInstance().injectInputEvent(evUp,
+                        InputManager.INJECT_INPUT_EVENT_MODE_ASYNC);
+            }
+        }, 20);
+    }
+
+    public static ActivityInfo getRunningActivityInfo(Context context) {
+        final ActivityManager am = (ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        final PackageManager pm = context.getPackageManager();
+
+        List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(1);
+        if (tasks != null && !tasks.isEmpty()) {
+            ActivityManager.RunningTaskInfo top = tasks.get(0);
+            try {
+                return pm.getActivityInfo(top.topActivity, 0);
+            } catch (PackageManager.NameNotFoundException e) {
+            }
+        }
+        return null;
     }
 }
