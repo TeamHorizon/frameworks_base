@@ -215,62 +215,83 @@ public class OpaLayout extends FrameLayout implements ButtonInterface{
 
     private void startAll(ArraySet<Animator> animators) {
         showAllOpa();
-        for(int i=0; i < animators.size(); i++) {
-            Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
-            curAnim.start();
+        try {
+            for(int i=0; i < animators.size(); i++) {
+                Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
+                curAnim.start();
+            }
+        }catch(Exception ex){
         }
     }
 
     private void startCollapseAnimation() {
-        mCurrentAnimators.clear();
-        mCurrentAnimators.addAll(getCollapseAnimatorSet());
-        mAnimationState = OpaLayout.ANIMATION_STATE_OTHER;
-        startAll(mCurrentAnimators);
+        try {
+            mCurrentAnimators.clear();
+            mCurrentAnimators.addAll(getCollapseAnimatorSet());
+            mAnimationState = OpaLayout.ANIMATION_STATE_OTHER;
+            startAll(mCurrentAnimators);
+        }catch(Exception ex){
+        }
     }
 
     private void startDiamondAnimation() {
-        mCurrentAnimators.clear();
-        mCurrentAnimators.addAll(getDiamondAnimatorSet());
-        mAnimationState = OpaLayout.ANIMATION_STATE_DIAMOND;
-        startAll(mCurrentAnimators);
+        try {
+            mCurrentAnimators.clear();
+            mCurrentAnimators.addAll(getDiamondAnimatorSet());
+            mAnimationState = OpaLayout.ANIMATION_STATE_DIAMOND;
+            startAll(mCurrentAnimators);
+        }catch(Exception ex){
+        }
     }
 
     private void startLineAnimation() {
-        mCurrentAnimators.clear();
-        mCurrentAnimators.addAll(getLineAnimatorSet());
-        mAnimationState = OpaLayout.ANIMATION_STATE_OTHER;
-        startAll(mCurrentAnimators);
+        try {
+            mCurrentAnimators.clear();
+            mCurrentAnimators.addAll(getLineAnimatorSet());
+            mAnimationState = OpaLayout.ANIMATION_STATE_OTHER;
+            startAll(mCurrentAnimators);
+        }catch(Exception ex){
+        }
     }
 
     private void startRetractAnimation() {
-        mCurrentAnimators.clear();
-        mCurrentAnimators.addAll(getRetractAnimatorSet());
-        mAnimationState = OpaLayout.ANIMATION_STATE_RETRACT;
-        startAll(mCurrentAnimators);
+        try {
+            mCurrentAnimators.clear();
+            mCurrentAnimators.addAll(getRetractAnimatorSet());
+            mAnimationState = OpaLayout.ANIMATION_STATE_RETRACT;
+            startAll(mCurrentAnimators);
+        }catch(Exception ex){
+        }
     }
 
     private void cancelCurrentAnimation() {
-        if(mCurrentAnimators.isEmpty())
-            return;
-        for(int i=0; i < mCurrentAnimators.size(); i++) {
-            Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
-            curAnim.removeAllListeners();
-            curAnim.cancel();
+        try {
+            if(mCurrentAnimators.isEmpty())
+                return;
+            for(int i=0; i < mCurrentAnimators.size(); i++) {
+                Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
+                curAnim.removeAllListeners();
+                curAnim.cancel();
+            }
+            mCurrentAnimators.clear();
+            mAnimationState = OpaLayout.ANIMATION_STATE_NONE;
+        }catch(Exception ex){
         }
-        mCurrentAnimators.clear();
-        mAnimationState = OpaLayout.ANIMATION_STATE_NONE;
     }
 
     private void endCurrentAnimation() {
-        if(mCurrentAnimators.isEmpty())
-            return;
-        for(int i=0; i < mCurrentAnimators.size(); i++) {
-            Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
-            curAnim.removeAllListeners();
-            curAnim.end();
+        try {
+            if(mCurrentAnimators.isEmpty())
+                return;
+            for(int i=0; i < mCurrentAnimators.size(); i++) {
+               Animator curAnim = (Animator) mCurrentAnimators.valueAt(i);
+                curAnim.removeAllListeners();
+                curAnim.end();
+            }
+            mCurrentAnimators.clear();
+            mAnimationState = OpaLayout.ANIMATION_STATE_NONE;
+        }catch(Exception ex){
         }
-        mCurrentAnimators.clear();
-        mAnimationState = OpaLayout.ANIMATION_STATE_NONE;
     }
 
     private ArraySet<Animator> getCollapseAnimatorSet() {
