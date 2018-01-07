@@ -326,7 +326,6 @@ public final class ShutdownThread extends Thread {
                 pd.setMessage(context.getText(com.android.internal.R.string.shutdown_progress));
                 pd.setIndeterminate(true);
             } else {
-                // Use fancy 8.1 Reboot/Shutdown animation
                 if (showSysuiReboot()) {
                     return null;
                 }
@@ -337,7 +336,6 @@ public final class ShutdownThread extends Thread {
                 pd.setIndeterminate(true);
             }
         } else if (mReason != null && mReason.equals(PowerManager.REBOOT_BOOTLOADER)) {
-            // Use fancy 8.1 Reboot/Shutdown animation
             if (showSysuiReboot()) {
                 return null;
             }
