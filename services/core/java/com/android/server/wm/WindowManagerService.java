@@ -7745,4 +7745,9 @@ public class WindowManagerService extends IWindowManager.Stub
             w.setForceHideNonSystemOverlayWindowIfNeeded(hideSystemAlertWindows);
         }, false /* traverseTopToBottom */);
     }
+
+    @Override
+    public void screenRecordAction(int mode) {
+        mPolicy.screenRecordAction(mode);
+    }
 }

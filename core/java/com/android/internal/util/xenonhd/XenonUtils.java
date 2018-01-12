@@ -41,6 +41,8 @@ import android.os.SystemClock;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.InputDevice;
+import android.view.IWindowManager;
+import android.view.WindowManagerGlobal;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.IWindowManager;
@@ -361,6 +363,16 @@ public class XenonUtils {
             pm.goToSleep(SystemClock.uptimeMillis());
         }
     }
+
+    public static void takeScreenrecord(int mode) {
+        IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
+        try {
+            wm.screenRecordAction(mode);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void sendKeycode(int keycode) {
         long when = SystemClock.uptimeMillis();
         final KeyEvent evDown = new KeyEvent(when, when, KeyEvent.ACTION_DOWN, keycode, 0,
