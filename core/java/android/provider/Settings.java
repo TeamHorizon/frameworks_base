@@ -3991,12 +3991,6 @@ public final class Settings {
         public static final String SYSTEM_THEME_STYLE = "system_theme_style";
 
         /**
-         * Change volume up and down handlign based on rotation
-         * @hide
-         */
-        public static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
-
-        /**
          * Whether to launch default music player when headset plugged in
          * 0 = don't do anything (default)
          * 1 = launch only on wired connection
