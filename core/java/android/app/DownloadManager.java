@@ -279,11 +279,11 @@ public class DownloadManager {
      */
     public final static int PAUSED_UNKNOWN = 4;
 
-   /**
-    * Value of {@link #COLUMN_REASON} when the download is paused manually.
-    *
-    * @hide
-    */
+    /**
+     * Value of {@link #COLUMN_REASON} when the download is paused manually.
+     *
+     * @hide
+     */
     public final static int PAUSED_MANUAL = 5;
 
     /**
@@ -1210,10 +1210,10 @@ public class DownloadManager {
      * @hide
      */
     public int resumeDownload(long id) {
-       ContentValues values = new ContentValues();
-       values.put(Downloads.Impl.COLUMN_STATUS, Downloads.Impl.STATUS_RUNNING);
+        ContentValues values = new ContentValues();
+        values.put(Downloads.Impl.COLUMN_STATUS, Downloads.Impl.STATUS_RUNNING);
 
-       return mResolver.update(ContentUris.withAppendedId(mBaseUri, id), values, null, null);
+        return mResolver.update(ContentUris.withAppendedId(mBaseUri, id), values, null, null);
     }
 
     /**
