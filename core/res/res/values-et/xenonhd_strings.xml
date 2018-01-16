@@ -17,10 +17,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Whether to enable doze always on -->
   <!-- Reboot action -->
-  <string name="reboot_to_recovery_title">Recovery režiim</string>
+  <string name="reboot_to_recovery_title">Taastamine</string>
   <string name="reboot_title">Taaskäivita</string>
   <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
   <!-- Pocket Lock -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Pettepaketi allkiri</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Lubab rakendusel teeselda teistsugust rakendust. Pahatahtlikud tarkvarad võivad saada seda kasutada, et tungida rakenduse privaatsetesse andmetesse. Anna seda luba ainult, kui sa oled selles täiesti kindel!</string>
 </resources>

@@ -21,6 +21,7 @@
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">屏幕截图已删除</string>
   <!-- Status bar -->
+  <string name="statusbar_items_title">状态栏图标</string>
   <!-- Tiles -->
   <string name="quick_settings_music_label">音乐</string>
   <string name="quick_settings_music_play">播放</string>

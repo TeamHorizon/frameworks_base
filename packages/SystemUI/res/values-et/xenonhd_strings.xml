@@ -27,6 +27,6 @@
   <string name="quick_settings_music_play">Esita</string>
   <string name="quick_settings_music_pause">Paus</string>
   <string name="quick_settings_reboot_label">Taaskäivita</string>
-  <string name="quick_settings_reboot_recovery_label">Recovery režiim</string>
+  <string name="quick_settings_reboot_recovery_label">Taastamine</string>
   <string name="quick_settings_screenshot_label">Kuvatõmmis</string>
 </resources>

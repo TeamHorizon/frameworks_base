@@ -17,16 +17,37 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Lockscreen -->
   <string name="lockscreen_default">Por defecto</string>
+  <string name="lockscreen_tuner_activity">Atajos en la pantalla de bloqueo</string>
+  <string name="custom_hint">Desliza desde el icono para abrir</string>
   <!-- Reboot -->
+  <string name="global_action_restart_advanced">Reinicio avanzado</string>
+  <string name="global_action_restart_bootloader">Ir al bootloader</string>
+  <string name="global_action_restart_recovery">Ir al recovery</string>
   <!-- Screenshot -->
   <string name="delete_screenshot_toast">Captura de pantalla eliminada</string>
+  <string name="screenshot_abort_text">Operación cancelada</string>
+  <string name="screenshot_abort_title">No se hizo la captura de pantalla</string>
   <!-- Status bar -->
   <string name="statusbar_items_title">Iconos de la barra de estado</string>
   <!-- Tiles -->
+  <string name="accessibility_quick_settings_compass_changed_off">La brújula ha sido deshabilitada</string>
+  <string name="accessibility_quick_settings_compass_changed_on">La brújula ha sido habilitada</string>
+  <string name="accessibility_quick_settings_compass_off">Brújula desactivada</string>
+  <string name="accessibility_quick_settings_compass_on">Brújula activada</string>
+  <string name="accessibility_quick_settings_heads_up_changed_off">Notificaciones emergentes habilitadas</string>
+  <string name="accessibility_quick_settings_heads_up_changed_on">Notificaciones emergentes deshabilitadas</string>
+  <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas</string>
+  <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas</string>
   <string name="quick_settings_music_label">Música</string>
   <string name="quick_settings_music_play">Reproducir</string>
   <string name="quick_settings_music_pause">Pausar</string>
   <string name="quick_settings_reboot_label">Reiniciar</string>
   <string name="quick_settings_reboot_recovery_label">Reiniciar en modo recuperación</string>
   <string name="quick_settings_screenshot_label">Captura de pantalla</string>
+  <string name="quick_settings_sound_vibrate">Vibración</string>
+  <string name="screenrecord_notif_stop">Stop</string>
+  <string name="screenrecord_notif_pointer_on">Mostrar puntero</string>
+  <string name="screenrecord_notif_pointer_off">Ocultar puntero</string>
+  <string name="screenrecord_notif_error">No se pudo grabar la pantalla</string>
+  <string name="quick_settings_screenrecord_on">Grabando...</string>
 </resources>
