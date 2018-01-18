@@ -23,4 +23,7 @@
 
   <!-- Wheter to enable doze always on -->
   <java-symbol type="bool" name="config_enableDozeAlwaysOn"/>
+  <!-- Ambient display music -->
+  <java-symbol type="bool" name="config_canForceDozeNotifications" />
+
 </resources>
