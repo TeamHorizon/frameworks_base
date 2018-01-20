@@ -29,5 +29,9 @@
   <!-- Whether the device supports Smart Pixels -->
   <java-symbol type="bool" name="config_enableSmartPixels" />
 
+  <!-- Power menu -->
+  <java-symbol type="drawable" name="ic_lock_screenrecord" />
+
+  <java-symbol type="string" name="global_action_screenrecord" />
   <java-symbol type="bool" name="config_enableScreenrecordChord" />
 </resources>
