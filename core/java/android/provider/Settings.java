@@ -4274,6 +4274,17 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
+         * If Screenrecord should be displayed at the power menu.
+         *
+         * @hide
+         */
+        public static final String GLOBAL_ACTIONS_SCREENRECORD = "global_actions_screenrecord";
+
+        /** @hide */
+        private static final Validator GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR =
+              BOOLEAN_VALIDATOR;
+
+        /**
          * Enable/Disable screenshot sound
          * @hide
          */
@@ -4350,6 +4361,7 @@ public final class Settings {
             SMART_PIXELS_PATTERN,
             SMART_PIXELS_SHIFT_TIMEOUT,
             SMART_PIXELS_ON_POWER_SAVE,
+            GLOBAL_ACTIONS_SCREENRECORD,
         };
 
         /**
@@ -4479,6 +4491,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(AMBIENT_RECOGNITION);
             PRIVATE_SETTINGS.add(AMBIENT_RECOGNITION_KEYGUARD);
             PRIVATE_SETTINGS.add(AMBIENT_RECOGNITION_NOTIFICATION);
+            PRIVATE_SETTINGS.add(GLOBAL_ACTIONS_SCREENRECORD);
         }
 
         /**
@@ -4584,6 +4597,7 @@ public final class Settings {
             VALIDATORS.put(AMBIENT_RECOGNITION, AMBIENT_RECOGNITION_VALIDATOR);
             VALIDATORS.put(AMBIENT_RECOGNITION_KEYGUARD, AMBIENT_RECOGNITION_KEYGUARD_VALIDATOR);
             VALIDATORS.put(AMBIENT_RECOGNITION_NOTIFICATION, AMBIENT_RECOGNITION_NOTIFICATION_VALIDATOR);
+            VALIDATORS.put(GLOBAL_ACTIONS_SCREENRECORD,GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR);
         }
 
         /**
