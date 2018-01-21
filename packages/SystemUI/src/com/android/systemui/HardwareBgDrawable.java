@@ -76,15 +76,13 @@ public class HardwareBgDrawable extends LayerDrawable {
 
     @Override
     public void draw(Canvas canvas) {
-        Rect bounds = getBounds();
         if (mPoint >= 0 && !mRotatedBackground) {
+            Rect bounds = getBounds();
             int top = bounds.top + mPoint;
             if (top > bounds.bottom) top = bounds.bottom;
             if (mRoundTop) {
                 mLayers[0].setBounds(bounds.left, bounds.top, bounds.right, top);
-                mLayers[1].setBounds(bounds.left, bounds.top, bounds.right, bounds.bottom);
             } else {
-                mLayers[0].setBounds(bounds.left, bounds.top, bounds.right, top);
                 mLayers[1].setBounds(bounds.left, top, bounds.right, bounds.bottom);
             }
             if (mRoundTop) {
@@ -95,7 +93,6 @@ public class HardwareBgDrawable extends LayerDrawable {
                 mLayers[1].draw(canvas);
             }
         } else {
-            mLayers[0].setBounds(bounds.left, bounds.top, bounds.right, bounds.bottom);
             mLayers[0].draw(canvas);
         }
     }

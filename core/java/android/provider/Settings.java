@@ -3945,34 +3945,6 @@ public final class Settings {
          */
         public static final String ENABLE_CONDITIONS = "enable_conditions";
 
-       /**
-         * Whether to display the reboot option in the power menu
-         *
-         * @hide
-         */
-        public static final String POWERMENU_REBOOT = "powermenu_reboot";
-
-        /**
-         * Whether to display the advanced reboot option in the power menu
-         *
-         * @hide
-         */
-        public static final String POWERMENU_ADVANCED_REBOOT = "powermenu_advanced_reboot";
-
-        /**
-         * Whether to display the screenshot option in the power menu
-         *
-         * @hide
-         */
-        public static final String POWERMENU_SCREENSHOT = "powermenu_screenshot";
-
-        /**
-         * Whether to display the airplane option in the power menu
-         *
-         * @hide
-         */
-        public static final String POWERMENU_AIRPLANE = "powermenu_airplane";
-
         /**
          * Disable dashboard suggestions in settings
          * @hide
@@ -7224,13 +7196,6 @@ public final class Settings {
          * @hide
          */
         public static final String QS_AUTO_ADDED_TILES = "qs_auto_tiles";
-
-        /**
-         * Disable power menu on secure lock screens
-         *
-         * @hide
-         */
-        public static final String LOCK_POWER_MENU_DISABLED = "lockscreen_power_menu_disabled";
 
         /**
          * battery saver color
