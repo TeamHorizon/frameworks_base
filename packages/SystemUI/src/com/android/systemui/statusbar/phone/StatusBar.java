@@ -6209,10 +6209,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                     setQsRowsColumns();	
             } else if (uri.equals(Settings.Secure.getUriFor(	
                     Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR))) {	
-                mBatterySaverColor = Settings.Secure.getIntForUser(	
-                        mContext.getContentResolver(),	
-                        Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR,	
-                        0xfff4511e, UserHandle.USER_CURRENT);	
+                updateBatterySaverColor();
             }	
             update();	
         }
