@@ -987,7 +987,7 @@ public class StatusBar extends SystemUI implements DemoMode,
         createAndAddWindows();
 
         mSettingsObserver.onChange(false); // set up
-        mSbSettingsObserver.observe();
+        mSbSettingsObserver.observe();	
         mSbSettingsObserver.update();
         mCommandQueue.disable(switches[0], switches[6], false /* animate */);
         setSystemUiVisibility(switches[1], switches[7], switches[8], 0xffffffff,
@@ -3030,18 +3030,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     public boolean isUsingDarkTheme() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
-                    mCurrentUserId);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
-    }
-
-    public boolean isUsingBlackTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black",
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.systemui.theme.dark",
                     mCurrentUserId);
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -4966,36 +4955,15 @@ public class StatusBar extends SystemUI implements DemoMode,
     protected void updateTheme() {
         final boolean inflated = mStackScroller != null;
 
-        int userThemeSetting = Settings.System.getIntForUser(mContext.getContentResolver(),
-                Settings.System.SYSTEM_THEME_STYLE, 0, mCurrentUserId);
-        boolean useBlackTheme = false;
-        boolean useDarkTheme = false;
-        if (userThemeSetting == 0) {
-            // The system wallpaper defines if QS should be light or dark.
-            WallpaperColors systemColors = mColorExtractor
-                    .getWallpaperColors(WallpaperManager.FLAG_SYSTEM);
-            useDarkTheme = systemColors != null
-                    && (systemColors.getColorHints() & WallpaperColors.HINT_SUPPORTS_DARK_THEME) != 0;
-        } else {
-            useDarkTheme = userThemeSetting == 2;
-            useBlackTheme = userThemeSetting == 3;
-        }
+        // The system wallpaper defines if QS should be light or dark.
+        WallpaperColors systemColors = mColorExtractor
+                .getWallpaperColors(WallpaperManager.FLAG_SYSTEM);
+        final boolean useDarkTheme = systemColors != null
+                && (systemColors.getColorHints() & WallpaperColors.HINT_SUPPORTS_DARK_THEME) != 0;
         if (isUsingDarkTheme() != useDarkTheme) {
             try {
-                mOverlayManager.setEnabled("com.android.system.theme.dark",
+                mOverlayManager.setEnabled("com.android.systemui.theme.dark",
                         useDarkTheme, mCurrentUserId);
-                mOverlayManager.setEnabled("com.android.settings.theme.dark",
-                        useDarkTheme, mCurrentUserId);
-            } catch (RemoteException e) {
-                Log.w(TAG, "Can't change theme", e);
-            }
-        }
-        if (isUsingBlackTheme() != useBlackTheme) {
-            try {
-                mOverlayManager.setEnabled("com.android.system.theme.black",
-                        useBlackTheme, mCurrentUserId);
-                mOverlayManager.setEnabled("com.android.settings.theme.black",
-                        useBlackTheme, mCurrentUserId);
             } catch (RemoteException e) {
                 Log.w(TAG, "Can't change theme", e);
             }
@@ -6166,64 +6134,61 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
     };
 
-    private SbSettingsObserver mSbSettingsObserver = new SbSettingsObserver(mHandler);
-    private class SbSettingsObserver extends ContentObserver {
-        SbSettingsObserver(Handler handler) {
-            super(handler);
+    private SbSettingsObserver mSbSettingsObserver = new SbSettingsObserver(mHandler);	
+    private class SbSettingsObserver extends ContentObserver {	
+        SbSettingsObserver(Handler handler) {	
+            super(handler);	
         }
 
-        void observe() {
-            ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.SYSTEM_THEME_STYLE),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_ROWS_PORTRAIT),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_ROWS_LANDSCAPE),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_COLUMNS_PORTRAIT),
-                    false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.QS_COLUMNS_LANDSCAPE),
-                    false, this, UserHandle.USER_ALL);
+        void observe() {	
+            ContentResolver resolver = mContext.getContentResolver();	
+            resolver.registerContentObserver(Settings.System.getUriFor(	
+                    Settings.System.QS_ROWS_PORTRAIT),	
+                    false, this, UserHandle.USER_ALL);	
+            resolver.registerContentObserver(Settings.System.getUriFor(	
+                    Settings.System.QS_ROWS_LANDSCAPE),	
+                    false, this, UserHandle.USER_ALL);	
+            resolver.registerContentObserver(Settings.System.getUriFor(	
+                    Settings.System.QS_COLUMNS_PORTRAIT),	
+                    false, this, UserHandle.USER_ALL);	
+            resolver.registerContentObserver(Settings.System.getUriFor(	
+                    Settings.System.QS_COLUMNS_LANDSCAPE),	
+                    false, this, UserHandle.USER_ALL);	
         }
 
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_ROWS_PORTRAIT)) ||
-                    uri.equals(Settings.System.getUriFor(Settings.System.QS_ROWS_LANDSCAPE)) ||
-                    uri.equals(Settings.System.getUriFor(Settings.System.QS_COLUMNS_PORTRAIT)) ||
-                    uri.equals(Settings.System.getUriFor(Settings.System.QS_COLUMNS_LANDSCAPE))) {
-                    setQsRowsColumns();
-            } else if (uri.equals(Settings.Secure.getUriFor(
-                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR))) {
-                mBatterySaverColor = Settings.Secure.getIntForUser(
-                        mContext.getContentResolver(),
-                        Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR,
-                        0xfff4511e, UserHandle.USER_CURRENT);
-            }
-            update();
+        @Override	
+        public void onChange(boolean selfChange, Uri uri) {	
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_ROWS_PORTRAIT)) ||	
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_ROWS_LANDSCAPE)) ||	
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_COLUMNS_PORTRAIT)) ||	
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_COLUMNS_LANDSCAPE))) {	
+                    setQsRowsColumns();	
+            } else if (uri.equals(Settings.Secure.getUriFor(	
+                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR))) {	
+                mBatterySaverColor = Settings.Secure.getIntForUser(	
+                        mContext.getContentResolver(),	
+                        Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR,	
+                        0xfff4511e, UserHandle.USER_CURRENT);	
+            }	
+            update();	
         }
 
-        public void update() {
-            setQsRowsColumns();
-            updateBatterySaverColor();
-            updateTheme();
-        }
+        public void update() {	
+            setQsRowsColumns();	
+            updateBatterySaverColor();	
+            updateTheme();	
+        }	
     }
 
-    private void updateBatterySaverColor() {
-        mBatterySaverColor = Settings.Secure.getIntForUser(mContext.getContentResolver(),
-                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e, UserHandle.USER_CURRENT);
-    }
-
-    private void setQsRowsColumns() {
-        if (mQSPanel != null) {
-            mQSPanel.updateResources();
-        }
+    private void updateBatterySaverColor() {	
+        mBatterySaverColor = Settings.Secure.getIntForUser(mContext.getContentResolver(),	
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e, UserHandle.USER_CURRENT);	
+    }	
+	
+    private void setQsRowsColumns() {	
+        if (mQSPanel != null) {	
+            mQSPanel.updateResources();	
+        }	
     }
 
     private RemoteViews.OnClickHandler mOnClickHandler = new RemoteViews.OnClickHandler() {
