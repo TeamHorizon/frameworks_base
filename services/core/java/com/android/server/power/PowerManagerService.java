@@ -983,7 +983,7 @@ public final class PowerManagerService extends SystemService
                 Settings.Global.THEATER_MODE_ON, 0) == 1;
         mAlwaysOnEnabled = mAmbientDisplayConfiguration.alwaysOnEnabled(UserHandle.USER_CURRENT);
         mWakeUpWhenPluggedOrUnpluggedSetting = Settings.System.getIntForUser(resolver,
-                Settings.System.WAKE_WHEN_PLUGGED_OR_UNPLUGGED, 0,
+                Settings.System.WAKE_WHEN_PLUGGED_OR_UNPLUGGED, 1,
                 UserHandle.USER_CURRENT);
 
         if (mSupportsDoubleTapWakeConfig) {
