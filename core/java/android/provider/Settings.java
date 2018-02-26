@@ -3989,13 +3989,6 @@ public final class Settings {
          */
         public static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
 
-       /**
-         * Whether to wake the display when plugging or unplugging the charger
-         *
-         * @hide
-         */
-        public static final String WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
-
         /**
          * How many rows to show in the qs panel when in portrait
          * @hide
