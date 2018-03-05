@@ -18,12 +18,12 @@
   <!-- Screenshot Delete Toast -->
   <!-- Partial Screenshot -->
   <!-- QS Tiles -->
-  <string name="quick_settings_screenshot_label">Snimka zaslona</string>
+  <string name="quick_settings_screenshot_label">Слика од екранот</string>
   <!-- Language toggle tile -->
   <!-- PiP Tile -->
   <!-- Reboot/Recovery QS Tile -->
-  <string name="quick_settings_reboot_label">Ponovno pokreni</string>
-  <string name="quick_settings_reboot_recovery_label">Oporavak</string>
+  <string name="quick_settings_reboot_label">Рестарт</string>
+  <string name="quick_settings_reboot_recovery_label">Режим за обновување</string>
   <!-- Sound QS Tile -->
   <!-- volte icon switch -->
 </resources>
