@@ -40,4 +40,10 @@
     <integer name="nav_gesture_swipe_timout">250</integer>
     <!-- signification move threshold - if stays below will trigger action -->
     <integer name="nav_gesture_move_threshold">4</integer>
+
+    <!-- True if the notification's dynamic app icon and text tint should be optimised for dark
+          backgrounds -->
+    <bool name="config_useDarkBgNotificationIconTextTinting">false</bool>
+    <bool name="config_useDarkBgNotificationTinting_override">false</bool>
+    <bool name="config_notificationTinting_override">false</bool>
 </resources>

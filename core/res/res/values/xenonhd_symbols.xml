@@ -27,4 +27,9 @@
   <java-symbol type="bool" name="config_enableScreenrecordChord" />
   <!-- Power menu -->
   <java-symbol type="drawable" name="ic_lock_screenrecord" />
+  <!-- True if the notification's dynamic app icon and text tint should be optimised for dark
+       backgrounds -->
+  <java-symbol type="bool" name="config_useDarkBgNotificationIconTextTinting" />
+  <java-symbol type="bool" name="config_useDarkBgNotificationTinting_override" />
+  <java-symbol type="bool" name="config_notificationTinting_override" />
 </resources>
