@@ -48,6 +48,7 @@ import com.android.systemui.qs.tiles.ReadingModeTile;
 import com.android.systemui.qs.tiles.RebootTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.ScreenshotTile;
+import com.android.systemui.qs.tiles.SmartPixelsTile;
 import com.android.systemui.qs.tiles.SoundTile;
 import com.android.systemui.qs.tiles.SyncTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
@@ -95,6 +96,7 @@ public class QSFactoryImpl implements QSFactory {
         else if (tileSpec.equals("reading_mode")) return new ReadingModeTile(mHost);
         else if (tileSpec.equals("reboot")) return new RebootTile(mHost);
         else if (tileSpec.equals("screenshot")) return new ScreenshotTile(mHost);
+        else if (tileSpec.equals("smartpixels")) return new SmartPixelsTile(mHost);
         else if (tileSpec.equals("sound")) return new SoundTile(mHost);
         else if (tileSpec.equals("sync")) return new SyncTile(mHost);
         else if (tileSpec.equals("usb_tether")) return new UsbTetherTile(mHost);

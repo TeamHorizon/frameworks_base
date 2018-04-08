@@ -45,6 +45,10 @@
 
     <!-- volte icon switch -->
     <string name="status_bar_volte">VoLTE</string>
+
+    <!-- Smart pixels QS tile -->
+    <string name="quick_settings_smart_pixels">Smart pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Auto-enabled smart pixels</string>
   
     <string name="summary_empty" translatable="false"></string>
 </resources>
