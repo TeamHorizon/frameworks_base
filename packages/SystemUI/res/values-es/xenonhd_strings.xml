@@ -16,16 +16,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">Captura de pantalla eliminada</string>
   <!-- Partial Screenshot -->
-  <string name="screenshot_abort_title">No se hizo la captura de pantalla</string>
+  <string name="screenshot_abort_title">No se tomó la captura de pantalla</string>
+  <string name="screenshot_abort_text">Operación cancelada</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">Captura de pantalla</string>
+  <string name="quick_settings_region_screenshot_label">Captura de pantalla parcial</string>
   <!-- Language toggle tile -->
+  <string name="quick_settings_locale_label">Escoger idioma</string>
+  <string name="quick_settings_locale_more_locales_toast">Por favor configure varios idiomas para habilitar el interruptor</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">PiP</string>
+  <string name="quick_settings_pip_tile_app_na">La aplicación no soporta PiP</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">Reiniciar</string>
   <string name="quick_settings_reboot_recovery_label">Reiniciar en modo recuperación</string>
   <!-- Sound QS Tile -->
+  <string name="quick_settings_sound_label">Sonido</string>
+  <string name="quick_settings_sound_ring">Timbre</string>
   <string name="quick_settings_sound_vibrate">Vibración</string>
+  <string name="quick_settings_sound_dnd">No molestar</string>
   <!-- volte icon switch -->
+  <string name="status_bar_volte">VoLTE</string>
 </resources>

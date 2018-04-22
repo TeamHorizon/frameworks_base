@@ -16,12 +16,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">Képernyőkép törölve</string>
   <!-- Partial Screenshot -->
+  <string name="screenshot_abort_title">Képernyőkép nem történt meg</string>
+  <string name="screenshot_abort_text">Művelet megszakítva</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">Képernyőkép</string>
+  <string name="quick_settings_region_screenshot_label">Részleges képernyőkép</string>
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">Nyelv</string>
+  <string name="quick_settings_locale_more_locales_toast">Kérjük, állítson be több nyelvet a váltás engedélyezéséhez</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">PiP</string>
+  <string name="quick_settings_pip_tile_app_na">Az alkalmazás nem támogatja a kép a képben (PiP) módot</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">Újraindítás</string>
   <string name="quick_settings_reboot_recovery_label">Recovery</string>

@@ -15,15 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Screenshot Delete Toast -->
-  <!-- Partial Screenshot -->
-  <!-- QS Tiles -->
-  <string name="quick_settings_screenshot_label">Слика од екранот</string>
-  <!-- Language toggle tile -->
-  <!-- PiP Tile -->
-  <!-- Reboot/Recovery QS Tile -->
-  <string name="quick_settings_reboot_label">Рестарт</string>
-  <string name="quick_settings_reboot_recovery_label">Recovery</string>
-  <!-- Sound QS Tile -->
-  <!-- volte icon switch -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_fakePackageSignature">Paketsignatur imitieren</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_fakePackageSignature">Erlaubt einer App, eine andere zu imitieren. Böswillige Anwendungen erhalten möglicherweise ihre persönlichen Daten. Verteilen Sie diese Berechtigung vorsichtig!</string>
 </resources>

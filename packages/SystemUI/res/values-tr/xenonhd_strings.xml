@@ -21,7 +21,7 @@
   <string name="screenshot_abort_title">Ekran görüntüsü alınamadı</string>
   <string name="screenshot_abort_text">İşlem iptal edildi</string>
   <!-- QS Tiles -->
-  <string name="quick_settings_screenshot_label">Ekran Görüntüsü</string>
+  <string name="quick_settings_screenshot_label">Ekran görüntüsü</string>
   <string name="quick_settings_region_screenshot_label">Kısmi ekran görüntüsü</string>
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">Dil</string>
@@ -30,7 +30,7 @@
   <string name="quick_settings_pip_label">PiP</string>
   <string name="quick_settings_pip_tile_app_na">Uygulama PiP\'i desteklemiyor</string>
   <!-- Reboot/Recovery QS Tile -->
-  <string name="quick_settings_reboot_label">Yeniden Başlat</string>
+  <string name="quick_settings_reboot_label">Yeniden başlat</string>
   <string name="quick_settings_reboot_recovery_label">Kurtarma modu (Recovery)</string>
   <!-- Sound QS Tile -->
   <string name="quick_settings_sound_label">Ses</string>
