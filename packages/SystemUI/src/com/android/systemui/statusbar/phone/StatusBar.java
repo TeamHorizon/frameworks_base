@@ -410,11 +410,11 @@ public class StatusBar extends SystemUI implements DemoMode,
     };
 
     private static final String[] BLACK_OVERLAYS = {
-            "com.aicp.overlay.defaultblack.android",
-            "com.aicp.overlay.defaultblack.com.android.systemui",
-            "com.aicp.overlay.defaultdark.com.android.settings",
-            "com.aicp.overlay.defaultdark.org.lineageos.lineageparts",
-            "com.aicp.overlay.defaultdark.com.android.calculator2",
+            "com.xenonhd.overlay.defaultblack.android",
+            "com.xenonhd.overlay.defaultblack.com.android.systemui",
+            "com.xenonhd.overlay.defaultdark.com.android.settings",
+            "com.xenonhd.overlay.defaultdark.org.lineageos.lineageparts",
+            "com.xenonhd.overlay.defaultdark.com.android.calculator2",
     };
 
     static {
