@@ -16,11 +16,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">Скрыншот выдалены</string>
   <!-- Partial Screenshot -->
+  <string name="screenshot_abort_title">Скрыншот не быў створаны</string>
+  <string name="screenshot_abort_text">Аперацыя спынена</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">Скрыншот</string>
+  <string name="quick_settings_region_screenshot_label">Скрыншот абранай вобласці экрана</string>
   <!-- Language toggle tile -->
+  <string name="quick_settings_locale_label">Мова</string>
+  <string name="quick_settings_locale_more_locales_toast">Калі ласка, наладзьце некалькі моў, каб актываваць функцыю</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">Відарыс у відарысе</string>
+  <string name="quick_settings_pip_tile_app_na">Праграма не падтрымлівае рэжым \"Відарыс у відарысе\"</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">Перазагрузка</string>
   <string name="quick_settings_reboot_recovery_label">Рэжым аднаўлення</string>
@@ -30,4 +38,5 @@
   <string name="quick_settings_sound_vibrate">Вібрацыя</string>
   <string name="quick_settings_sound_dnd">Не турбаваць</string>
   <!-- volte icon switch -->
+  <string name="status_bar_volte">VoLTE</string>
 </resources>
