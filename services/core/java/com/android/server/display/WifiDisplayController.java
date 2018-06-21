@@ -195,9 +195,9 @@ final class WifiDisplayController implements DumpUtils.Dump {
     }
 
     private Channel getWifiP2pChannel() {
-        if(mWifiP2pChannel == null) {
+        if (mWifiP2pChannel == null) {
             mWifiP2pChannel = mWifiP2pManager.initialize(mContext, mHandler.getLooper(), null);
-            if(DEBUG) {
+            if (DEBUG) {
                 Slog.d(TAG, "Creating WifiP2pChannel");
             }
         }
