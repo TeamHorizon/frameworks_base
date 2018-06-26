@@ -16,14 +16,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">تم حذف لقطة الشاشة</string>
   <!-- Partial Screenshot -->
+  <string name="screenshot_abort_title">لم يتم تصورير الشاشة</string>
+  <string name="screenshot_abort_text">تم قطع العملية</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">لقطة للشاشة</string>
+  <string name="quick_settings_region_screenshot_label">صورة جزئية للشاشة</string>
   <!-- Language toggle tile -->
+  <string name="quick_settings_locale_label">اللّغة</string>
+  <string name="quick_settings_locale_more_locales_toast">الرجاء إعداد تعدد اللغات لتمكين وظيفة مفتاح التبديل</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">صورة في صورة</string>
+  <string name="quick_settings_pip_tile_app_na">التطبيق لا يدعم خاصية صورة في صورة</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">إعادة التشغيل</string>
   <string name="quick_settings_reboot_recovery_label">الريكفري</string>
   <!-- Sound QS Tile -->
+  <string name="quick_settings_sound_label">الصوت</string>
+  <string name="quick_settings_sound_ring">رنين</string>
+  <string name="quick_settings_sound_vibrate">إهتزاز</string>
+  <string name="quick_settings_sound_dnd">عدم الإزعاج</string>
   <!-- volte icon switch -->
+  <string name="status_bar_volte">VoLTE</string>
 </resources>
