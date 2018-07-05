@@ -39,4 +39,5 @@
   <string name="quick_settings_sound_dnd">Não incomodar</string>
   <!-- volte icon switch -->
   <string name="status_bar_volte">VoLTE</string>
+  <!-- Smart pixels QS tile -->
 </resources>

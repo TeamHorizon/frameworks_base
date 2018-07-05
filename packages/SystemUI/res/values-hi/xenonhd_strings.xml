@@ -33,4 +33,5 @@
   <string name="quick_settings_sound_dnd">परेशान ना करें</string>
   <!-- volte icon switch -->
   <string name="status_bar_volte">VoLTE</string>
+  <!-- Smart pixels QS tile -->
 </resources>

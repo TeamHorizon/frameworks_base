@@ -39,4 +39,7 @@
   <string name="quick_settings_sound_dnd">Nie przeszkadzać</string>
   <!-- volte icon switch -->
   <string name="status_bar_volte">VoLTE</string>
+  <!-- Smart pixels QS tile -->
+  <string name="quick_settings_smart_pixels">Inteligentne pixele</string>
+  <string name="quick_settings_smart_pixels_on_power_save">Automatyczne włączanie inteligentnych pixeli</string>
 </resources>
