@@ -414,13 +414,6 @@ public class StatusBar extends SystemUI implements DemoMode,
     private static final String LOCKSCREEN_MEDIA_METADATA =
             "lineagesecure:" + LineageSettings.Secure.LOCKSCREEN_MEDIA_METADATA;
 
-    private static final String[] DARK_OVERLAYS = {
-            "com.aicp.overlay.defaultdark.android",
-            "com.aicp.overlay.defaultdark.com.android.systemui",
-            "com.aicp.overlay.defaultdark.com.android.settings",
-            "com.aicp.overlay.defaultdark.com.android.calculator2",
-    };
-
     static {
         boolean onlyCoreApps;
         boolean freeformWindowManagement;
@@ -3159,7 +3152,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     public boolean isUsingDarkTheme() {
         OverlayInfo systemuiThemeInfo = null;
         try {
-            systemuiThemeInfo = mOverlayManager.getOverlayInfo(DARK_OVERLAYS[0],
+            systemuiThemeInfo = mOverlayManager.getOverlayInfo("org.lineageos.overlay.dark",
                     mCurrentUserId);
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -5120,12 +5113,11 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
 
         if (isUsingDarkTheme() != useDarkTheme) {
-            for (String overlay: DARK_OVERLAYS) {
-                try {
-                    mOverlayManager.setEnabled(overlay, useDarkTheme, mCurrentUserId);
-                } catch (RemoteException e) {
-                    Log.w(TAG, "Can't change theme for " + overlay, e);
-                }
+            try {
+                mOverlayManager.setEnabled("org.lineageos.overlay.dark",
+                        useDarkTheme, mCurrentUserId);
+            } catch (RemoteException e) {
+                Log.w(TAG, "Can't change theme", e);
             }
 
             if (mUiModeManager != null) {
