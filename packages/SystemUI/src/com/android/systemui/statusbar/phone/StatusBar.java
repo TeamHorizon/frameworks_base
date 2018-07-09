@@ -415,10 +415,10 @@ public class StatusBar extends SystemUI implements DemoMode,
             "lineagesecure:" + LineageSettings.Secure.LOCKSCREEN_MEDIA_METADATA;
 
     private static final String[] DARK_OVERLAYS = {
-            "com.xenonhd.overlay.defaultdark.android",
-            "com.xenonhd.overlay.defaultdark.com.android.systemui",
-            "com.xenonhd.overlay.defaultdark.com.android.settings",
-            "com.xenonhd.overlay.defaultdark.com.android.calculator2",
+            "com.aicp.overlay.defaultdark.android",
+            "com.aicp.overlay.defaultdark.com.android.systemui",
+            "com.aicp.overlay.defaultdark.com.android.settings",
+            "com.aicp.overlay.defaultdark.com.android.calculator2",
     };
 
     static {
