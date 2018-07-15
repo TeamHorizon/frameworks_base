@@ -34,12 +34,16 @@ import com.android.systemui.R.id;
 import com.android.systemui.plugins.ActivityStarter;
 import com.android.systemui.qs.QSDetail.Callback;
 import com.android.systemui.statusbar.SignalClusterView;
+import com.android.systemui.statusbar.phone.StatusBarIconController;
+import com.android.systemui.statusbar.policy.Clock;
 import com.android.systemui.statusbar.policy.DarkIconDispatcher.DarkReceiver;
+import com.android.systemui.tuner.TunerService;
 
-
-public class QuickStatusBarHeader extends RelativeLayout {
+public class QuickStatusBarHeader extends RelativeLayout implements TunerService.Tunable {
 
     private ActivityStarter mActivityStarter;
+
+    private Clock mClock;
 
     private QSPanel mQsPanel;
 
@@ -60,6 +64,8 @@ public class QuickStatusBarHeader extends RelativeLayout {
     protected void onFinishInflate() {
         super.onFinishInflate();
         Resources res = getResources();
+
+        mClock = findViewById(R.id.clock);
 
         mHeaderQsPanel = findViewById(R.id.quick_qs_panel);
 
@@ -83,6 +89,9 @@ public class QuickStatusBarHeader extends RelativeLayout {
 
         mQuickQsPanelScroller = (HorizontalScrollView) findViewById(R.id.quick_qs_panel_scroll);
         mQuickQsPanelScroller.setHorizontalScrollBarEnabled(false);
+
+        Dependency.get(TunerService.class).addTunable(this,
+                StatusBarIconController.ICON_BLACKLIST);
     }
 
     public void updateBatterySettings() {
@@ -172,5 +181,11 @@ public class QuickStatusBarHeader extends RelativeLayout {
 
     public void updateSettings() {
         mHeaderQsPanel.updateSettings();
+    }
+
+    @Override
+    public void onTuningChanged(String key, String newValue) {
+        mClock.setClockVisibleByUser(!StatusBarIconController.getIconBlacklist(newValue)
+                .contains("clock"));
     }
 }
