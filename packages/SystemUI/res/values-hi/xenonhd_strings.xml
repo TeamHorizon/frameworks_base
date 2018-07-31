@@ -20,6 +20,11 @@
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">स्क्रीनशॉट</string>
   <string name="quick_settings_region_screenshot_label">आंशिक स्क्रीनशॉट</string>
+  <!-- Always on Display Tile -->
+  <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">भाषा </string>
   <!-- PiP Tile -->
@@ -34,4 +39,10 @@
   <!-- volte icon switch -->
   <string name="status_bar_volte">VoLTE</string>
   <!-- Smart pixels QS tile -->
+  <!-- Screenrecord Notification Ticker -->
+  <!-- Screenrecord notification title -->
+  <!-- Screenrecord notification action: Stop -->
+  <!-- Screenrecord notification action: show/hide pointer -->
+  <!-- Screen record notification error title -->
+  <!-- Screenrecord tile -->
 </resources>

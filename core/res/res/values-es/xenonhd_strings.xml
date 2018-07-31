@@ -19,4 +19,5 @@
   <string name="permlab_fakePackageSignature">Falsificación de firma</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_fakePackageSignature">Permite que la aplicación pretenda ser una aplicación diferente. Las aplicaciones maliciosas pueden usar esto para acceder a datos personales. ¡Conceda este permiso con cuidado!</string>
+  <!-- Label for item that screenrecords in power menu options dialog -->
 </resources>

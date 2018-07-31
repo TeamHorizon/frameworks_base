@@ -23,6 +23,11 @@
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">لقطة للشاشة</string>
   <string name="quick_settings_region_screenshot_label">صورة جزئية للشاشة</string>
+  <!-- Always on Display Tile -->
+  <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">اللّغة</string>
   <string name="quick_settings_locale_more_locales_toast">الرجاء إعداد تعدد اللغات لتمكين وظيفة مفتاح التبديل</string>
@@ -40,4 +45,12 @@
   <!-- volte icon switch -->
   <string name="status_bar_volte">VoLTE</string>
   <!-- Smart pixels QS tile -->
+  <string name="quick_settings_smart_pixels">الدقة الذكية</string>
+  <string name="quick_settings_smart_pixels_on_power_save">تمكين الدقة الذكية تلقائياً</string>
+  <!-- Screenrecord Notification Ticker -->
+  <!-- Screenrecord notification title -->
+  <!-- Screenrecord notification action: Stop -->
+  <!-- Screenrecord notification action: show/hide pointer -->
+  <!-- Screen record notification error title -->
+  <!-- Screenrecord tile -->
 </resources>
