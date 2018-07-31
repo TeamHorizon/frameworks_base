@@ -21,4 +21,5 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_fakePackageSignature">permdesc_fakePackageSignature
 एक आवेदन की अनुमति का विवरण, सूचीबद्ध किया गया है ताकि उपयोगकर्ता यह चुन सकता है कि क्या वह यह करने के लिए आवेदन की अनुमति देना चाहता है।</string>
+  <!-- Label for item that screenrecords in power menu options dialog -->
 </resources>

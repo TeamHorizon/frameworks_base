@@ -16,15 +16,64 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">スクリーンショットを削除しました</string>
   <!-- Partial Screenshot -->
+  <string name="screenshot_abort_title">スクリーンショットは撮影されていません</string>
+  <string name="screenshot_abort_text">操作を中止しました</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">スクリーンショット</string>
+  <string name="quick_settings_region_screenshot_label">範囲を選択してスクリーンショット</string>
+  <!-- Always on Display Tile -->
+  <string name="quick_settings_always_on_display_label">Always On Display</string>
+  <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_off">Always On Display オフ</string>
+  <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_on">Always On Display オン</string>
+  <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_off">Always On Displayをオフにしました</string>
+  <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_on">Always On Displayをオンにしました</string>
   <!-- Language toggle tile -->
+  <string name="quick_settings_locale_label">言語</string>
+  <string name="quick_settings_locale_more_locales_toast">言語の切り替えを有効にするために複数の言語を設定してください</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">ピクチャーインピクチャー</string>
+  <string name="quick_settings_pip_tile_app_na">このアプリはピクチャーインピクチャーに対応していません</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">再起動</string>
   <string name="quick_settings_reboot_recovery_label">リカバリー</string>
   <!-- Sound QS Tile -->
+  <string name="quick_settings_sound_label">音声</string>
+  <string name="quick_settings_sound_ring">着信音</string>
+  <string name="quick_settings_sound_vibrate">振動</string>
+  <string name="quick_settings_sound_dnd">マナーモード</string>
   <!-- volte icon switch -->
+  <string name="status_bar_volte">VoLTE</string>
   <!-- Smart pixels QS tile -->
+  <string name="quick_settings_smart_pixels">スマートピクセル</string>
+  <string name="quick_settings_smart_pixels_on_power_save">スマートピクセルを自動的に有効にする</string>
+  <!-- Screenrecord Notification Ticker -->
+  <string name="screenrecord_notif_ticker">画面は録画されています</string>
+  <string name="screenrecord_notif_final_ticker">画面の録画は成功しました</string>
+  <!-- Screenrecord notification title -->
+  <string name="screenrecord_notif_title">画面を録画中</string>
+  <!-- Screenrecord notification action: Stop -->
+  <string name="screenrecord_notif_stop">停止</string>
+  <string name="screenrecord_notif_completed">画面の録画は成功しました</string>
+  <string name="screenrecord_notif_description">タップすると画面録画が表示されます</string>
+  <!-- Screenrecord notification action: show/hide pointer -->
+  <string name="screenrecord_notif_pointer_on">ポインターを表示</string>
+  <string name="screenrecord_notif_pointer_off">ポインターを隠す</string>
+  <!-- Screen record notification error title -->
+  <string name="screenrecord_notif_error">画面の録画に失敗しました</string>
+  <string name="notification_channel_screenrecord">画面録画</string>
+  <string name="screenrecord_hide_hint">ヒントを非表示</string>
+  <string name="screenrecord_show_hint">ヒントを表示</string>
+  <!-- Screenrecord tile -->
+  <string name="quick_settings_screenrecord">画面の録画</string>
+  <string name="quick_settings_screenrecord_on">録画中...</string>
+  <string name="quick_settings_screenrecord_label">画面の録画</string>
+  <string name="quick_settings_screenrecord_lq_label">画面録画 480p</string>
+  <string name="quick_settings_screenrecord_mq_label">画面録画 720p</string>
+  <string name="quick_settings_screenrecord_hq_label">画面録画 720p+</string>
 </resources>

@@ -19,6 +19,11 @@
   <!-- Partial Screenshot -->
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">Snimka zaslona</string>
+  <!-- Always on Display Tile -->
+  <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
   <!-- Language toggle tile -->
   <!-- PiP Tile -->
   <!-- Reboot/Recovery QS Tile -->
@@ -27,4 +32,10 @@
   <!-- Sound QS Tile -->
   <!-- volte icon switch -->
   <!-- Smart pixels QS tile -->
+  <!-- Screenrecord Notification Ticker -->
+  <!-- Screenrecord notification title -->
+  <!-- Screenrecord notification action: Stop -->
+  <!-- Screenrecord notification action: show/hide pointer -->
+  <!-- Screen record notification error title -->
+  <!-- Screenrecord tile -->
 </resources>
