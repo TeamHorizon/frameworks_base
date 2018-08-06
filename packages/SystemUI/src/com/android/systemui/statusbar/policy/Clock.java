@@ -46,7 +46,6 @@ import com.android.systemui.FontSizeUtils;
 import com.android.systemui.R;
 import com.android.systemui.SysUiServiceProvider;
 import com.android.systemui.statusbar.CommandQueue;
-import com.android.systemui.statusbar.phone.StatusBarIconController;
 import com.android.systemui.statusbar.policy.ConfigurationController.ConfigurationListener;
 import com.android.systemui.statusbar.policy.DarkIconDispatcher.DarkReceiver;
 import com.android.systemui.tuner.TunerService;
@@ -125,8 +124,7 @@ public class Clock extends TextView implements DemoMode, Tunable, CommandQueue.C
 
             getContext().registerReceiverAsUser(mIntentReceiver, UserHandle.ALL, filter,
                     null, Dependency.get(Dependency.TIME_TICK_HANDLER));
-            Dependency.get(TunerService.class).addTunable(this, CLOCK_SECONDS,	
-                    StatusBarIconController.ICON_BLACKLIST);
+            Dependency.get(TunerService.class).addTunable(this, CLOCK_SECONDS);
             SysUiServiceProvider.getComponent(getContext(), CommandQueue.class).addCallbacks(this);
             if (mShowDark) {
                 Dependency.get(DarkIconDispatcher.class).addDarkReceiver(this);
@@ -216,16 +214,12 @@ public class Clock extends TextView implements DemoMode, Tunable, CommandQueue.C
         setContentDescription(mContentDescriptionFormat.format(mCalendar.getTime()));
     }
 
-    @Override	
-    public void onTuningChanged(String key, String newValue) {	
-        if (CLOCK_SECONDS.equals(key)) {	
-            mShowSeconds = newValue != null && Integer.parseInt(newValue) != 0;	
-            updateShowSeconds();	
-        } else {	
-            setClockVisibleByUser(!StatusBarIconController.getIconBlacklist(newValue)	
-                    .contains("clock"));	
-            updateClockVisibility();	
-        }	
+    @Override
+    public void onTuningChanged(String key, String newValue) {
+        if (CLOCK_SECONDS.equals(key)) {
+            mShowSeconds = newValue != null && Integer.parseInt(newValue) != 0;
+            updateShowSeconds();
+        }
     }
 
     @Override
