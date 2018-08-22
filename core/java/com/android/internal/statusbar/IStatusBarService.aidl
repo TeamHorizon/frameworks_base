@@ -105,4 +105,5 @@ interface IStatusBarService
      * XenonHD
      */
     void toggleCameraFlash();
+    void toggleNavigationBar(boolean enable);
 }
