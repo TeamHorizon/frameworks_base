@@ -128,5 +128,6 @@ oneway interface IStatusBar
      * Custom
      */
     void toggleCameraFlash();
+    void toggleNavigationBar(boolean enable);
     void showShutdownUi(boolean isReboot, String reason, boolean rebootCustom);
 }
