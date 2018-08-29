@@ -24,10 +24,15 @@
   <string name="quick_settings_screenshot_label">螢幕截圖</string>
   <string name="quick_settings_region_screenshot_label">部分擷取螢幕畫面</string>
   <!-- Always on Display Tile -->
+  <string name="quick_settings_always_on_display_label">一律顯示</string>
   <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_off">一律顯示關閉。</string>
   <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_on">一律顯示開啟。</string>
   <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_off">一律顯示已關閉。</string>
   <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_on">一律顯示已開啟。</string>
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">語言</string>
   <string name="quick_settings_locale_more_locales_toast">請配置多種語言以啟用切換功能</string>
@@ -48,9 +53,27 @@
   <string name="quick_settings_smart_pixels">智慧 Pixels</string>
   <string name="quick_settings_smart_pixels_on_power_save">自動啟用智慧 Pixels</string>
   <!-- Screenrecord Notification Ticker -->
+  <string name="screenrecord_notif_ticker">正在錄製螢幕</string>
+  <string name="screenrecord_notif_final_ticker">螢幕錄製成功</string>
   <!-- Screenrecord notification title -->
+  <string name="screenrecord_notif_title">正在錄製螢幕</string>
   <!-- Screenrecord notification action: Stop -->
+  <string name="screenrecord_notif_stop">停止</string>
+  <string name="screenrecord_notif_completed">螢幕錄製成功</string>
+  <string name="screenrecord_notif_description">輕觸即可查看螢幕錄製</string>
   <!-- Screenrecord notification action: show/hide pointer -->
+  <string name="screenrecord_notif_pointer_on">顯示觸控指標</string>
+  <string name="screenrecord_notif_pointer_off">隱藏觸控指標</string>
   <!-- Screen record notification error title -->
+  <string name="screenrecord_notif_error">無法錄製螢幕</string>
+  <string name="notification_channel_screenrecord">螢幕錄製</string>
+  <string name="screenrecord_hide_hint">隱藏提示</string>
+  <string name="screenrecord_show_hint">顯示提示</string>
   <!-- Screenrecord tile -->
+  <string name="quick_settings_screenrecord">螢幕錄製</string>
+  <string name="quick_settings_screenrecord_on">錄製中…</string>
+  <string name="quick_settings_screenrecord_label">螢幕錄製</string>
+  <string name="quick_settings_screenrecord_lq_label">螢幕錄製：480P</string>
+  <string name="quick_settings_screenrecord_mq_label">螢幕錄製：720P</string>
+  <string name="quick_settings_screenrecord_hq_label">螢幕錄製：720P+</string>
 </resources>

@@ -16,26 +16,64 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">스크린샷이 삭제되었습니다</string>
   <!-- Partial Screenshot -->
+  <string name="screenshot_abort_title">저장된 스크린샷이 없음</string>
+  <string name="screenshot_abort_text">작업이 중단됨</string>
   <!-- QS Tiles -->
   <string name="quick_settings_screenshot_label">스크린샷</string>
+  <string name="quick_settings_region_screenshot_label">부분 스크린샷</string>
   <!-- Always on Display Tile -->
+  <string name="quick_settings_always_on_display_label">Always on display</string>
   <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_off">Always on display 꺼짐</string>
   <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_on">Always on display 켜짐</string>
   <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_off">Always on display가 꺼졌습니다.</string>
   <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_on">Always on display 켜졌습니다.</string>
   <!-- Language toggle tile -->
+  <string name="quick_settings_locale_label">언어</string>
+  <string name="quick_settings_locale_more_locales_toast">토글 기능을 활성화 하려면 다중 언어를 설정하시기 바랍니다</string>
   <!-- PiP Tile -->
+  <string name="quick_settings_pip_label">PiP</string>
+  <string name="quick_settings_pip_tile_app_na">앱이 PiP를 지원하지 않습니다</string>
   <!-- Reboot/Recovery QS Tile -->
   <string name="quick_settings_reboot_label">재시작</string>
   <string name="quick_settings_reboot_recovery_label">리커버리</string>
   <!-- Sound QS Tile -->
+  <string name="quick_settings_sound_label">사운드</string>
+  <string name="quick_settings_sound_ring">벨소리</string>
+  <string name="quick_settings_sound_vibrate">진동</string>
+  <string name="quick_settings_sound_dnd">방해 금지 모드</string>
   <!-- volte icon switch -->
+  <string name="status_bar_volte">VoLTE</string>
   <!-- Smart pixels QS tile -->
+  <string name="quick_settings_smart_pixels">스마트 픽셀</string>
+  <string name="quick_settings_smart_pixels_on_power_save">스마트 픽셀 자동으로 켜기</string>
   <!-- Screenrecord Notification Ticker -->
+  <string name="screenrecord_notif_ticker">화면이 녹화되고 있습니다.</string>
+  <string name="screenrecord_notif_final_ticker">화면이 성공적으로 녹화되었습니다</string>
   <!-- Screenrecord notification title -->
+  <string name="screenrecord_notif_title">화면 녹화 중...</string>
   <!-- Screenrecord notification action: Stop -->
+  <string name="screenrecord_notif_stop">정지</string>
+  <string name="screenrecord_notif_completed">화면이 성공적으로 녹화되었습니다</string>
+  <string name="screenrecord_notif_description">화면 녹화를 보려면 누르십시오.</string>
   <!-- Screenrecord notification action: show/hide pointer -->
+  <string name="screenrecord_notif_pointer_on">포인터 표시</string>
+  <string name="screenrecord_notif_pointer_off">포인터 숨기기</string>
   <!-- Screen record notification error title -->
+  <string name="screenrecord_notif_error">화면을 녹화할 수 없습니다.</string>
+  <string name="notification_channel_screenrecord">화면 녹화</string>
+  <string name="screenrecord_hide_hint">힌트 숨기기</string>
+  <string name="screenrecord_show_hint">힌트 보기</string>
   <!-- Screenrecord tile -->
+  <string name="quick_settings_screenrecord">화면 녹화</string>
+  <string name="quick_settings_screenrecord_on">녹화 중...</string>
+  <string name="quick_settings_screenrecord_label">화면 녹화</string>
+  <string name="quick_settings_screenrecord_lq_label">화면 녹화 480p</string>
+  <string name="quick_settings_screenrecord_mq_label">화면 녹화 720p</string>
+  <string name="quick_settings_screenrecord_hq_label">화면 녹화 720p+</string>
 </resources>

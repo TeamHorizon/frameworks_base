@@ -24,10 +24,15 @@
   <string name="quick_settings_screenshot_label">Скриншот</string>
   <string name="quick_settings_region_screenshot_label">Скриншот выбранной области</string>
   <!-- Always on Display Tile -->
+  <string name="quick_settings_always_on_display_label">Always on display</string>
   <!-- Content description of the ambient display tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_off">Always on display выкл.</string>
   <!-- Content description of the ambient display tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_on">Always on display вкл.</string>
   <!-- Announcement made when ambient display changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_off">Always on display выключен.</string>
   <!-- Announcement made when ambient display changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_always_on_display_changed_on">Always on display включен.</string>
   <!-- Language toggle tile -->
   <string name="quick_settings_locale_label">Язык</string>
   <string name="quick_settings_locale_more_locales_toast">Пожалуйста, настройте несколько языков, чтобы активировать функцию</string>
@@ -48,9 +53,27 @@
   <string name="quick_settings_smart_pixels">Smart Pixels</string>
   <string name="quick_settings_smart_pixels_on_power_save">Авто-включение Smart pixels</string>
   <!-- Screenrecord Notification Ticker -->
+  <string name="screenrecord_notif_ticker">Экран записывается</string>
+  <string name="screenrecord_notif_final_ticker">Экран успешно записан</string>
   <!-- Screenrecord notification title -->
+  <string name="screenrecord_notif_title">Запись экрана</string>
   <!-- Screenrecord notification action: Stop -->
+  <string name="screenrecord_notif_stop">Остановить</string>
+  <string name="screenrecord_notif_completed">Экран успешно записан</string>
+  <string name="screenrecord_notif_description">Нажмите, чтобы просмотреть запись экрана</string>
   <!-- Screenrecord notification action: show/hide pointer -->
+  <string name="screenrecord_notif_pointer_on">Показать указатель</string>
+  <string name="screenrecord_notif_pointer_off">Скрыть указатель</string>
   <!-- Screen record notification error title -->
+  <string name="screenrecord_notif_error">Невозможно записать экран</string>
+  <string name="notification_channel_screenrecord">Записи экрана</string>
+  <string name="screenrecord_hide_hint">Скрыть подсказку</string>
+  <string name="screenrecord_show_hint">Показать подсказки</string>
   <!-- Screenrecord tile -->
+  <string name="quick_settings_screenrecord">Запись экрана</string>
+  <string name="quick_settings_screenrecord_on">Идет запись ...</string>
+  <string name="quick_settings_screenrecord_label">Запись экрана</string>
+  <string name="quick_settings_screenrecord_lq_label">Запись экрана 480p</string>
+  <string name="quick_settings_screenrecord_mq_label">Запись экрана 720p</string>
+  <string name="quick_settings_screenrecord_hq_label">Запись экрана 720p+</string>
 </resources>

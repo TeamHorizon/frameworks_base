@@ -20,4 +20,5 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_fakePackageSignature">Разрешать приложениям обходить систему безопасности, выдавая себя за другое приложение. Вредоносные приложения могут использовать это для доступа к частным данным. На свой страх и риск!</string>
   <!-- Label for item that screenrecords in power menu options dialog -->
+  <string name="global_action_screenrecord">Запись экрана</string>
 </resources>
