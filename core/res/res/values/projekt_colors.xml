@@ -46,4 +46,7 @@
         See also Theme.DeviceDefault.Resolver.Exposed. -->
     <color name="chooser_service_row_background_color_exposed">@color/chooser_service_row_background_color</color>
 
+    <!-- Fastscroller -->
+    <color name="fastscroller_text_color">#FFFFFFFF</color>
+
 </resources>
