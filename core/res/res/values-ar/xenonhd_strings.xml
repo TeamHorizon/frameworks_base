@@ -20,4 +20,5 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_fakePackageSignature">يسمح التطبيق للتظاهر بأن يكون التطبيق مختلف الخبيثة التطبيقات قد تكون قادرة على استخدام هذا للوصول إلى بيانات التطبيق الخاصة. منح هذا الإذن بحذر فقط!</string>
   <!-- Label for item that screenrecords in power menu options dialog -->
+  <string name="global_action_screenrecord">تسجيل الشاشة</string>
 </resources>
