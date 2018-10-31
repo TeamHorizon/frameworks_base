@@ -262,6 +262,8 @@ import lineageos.hardware.LiveDisplayManager;
 import lineageos.providers.LineageSettings;
 import lineageos.style.StyleInterface;
 
+import com.xenonhd.settings.preferences.ThemeOverlayHelper;
+
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -2294,6 +2296,7 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
     }
 
     public boolean isUsingDarkTheme() {
+        /*
         OverlayInfo themeInfo = null;
         try {
             themeInfo = mOverlayManager.getOverlayInfo(getDarkOverlay(),
@@ -2302,6 +2305,9 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
             e.printStackTrace();
         }
         return themeInfo != null && themeInfo.isEnabled();
+        */
+        return ThemeOverlayHelper.isUsingDarkTheme(mOverlayManager,
+                mLockscreenUserManager.getCurrentUserId());
     }
 
     private boolean isLiveDisplayNightModeOn() {
@@ -4250,6 +4256,7 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
     protected void updateTheme() {
         final boolean inflated = mStackScroller != null && mStatusBarWindowManager != null;
 
+        /*
         // 0 = auto, 1 = time-based, 2 = light, 3 = dark
         final int globalStyleSetting = LineageSettings.System.getInt(mContext.getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE, 0);
@@ -4293,6 +4300,13 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
                 }
             });
         }
+        */
+
+        // XenonHD theming
+        mUiOffloadThread.submit(() -> {
+            ThemeOverlayHelper.updateOverlays(mContext, mOverlayManager,
+                    mLockscreenUserManager.getCurrentUserId());
+        });
 
         // Lock wallpaper defines the color of the majority of the views, hence we'll use it
         // to set our default theme.

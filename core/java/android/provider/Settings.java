@@ -4228,6 +4228,25 @@ public final class Settings {
         /** @hide */
         private static final Validator OMNI_USE_BOTTOM_GESTURE_NAVIGATION_VALIDATOR =
                 BOOLEAN_VALIDATOR;
+
+       /**
+         * Base theme
+         * @hide
+         */
+        public static final String THEMING_BASE = "theming_base";
+
+        /** @hide */
+        public static final Validator THEMING_BASE_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
+         * Base theme
+         * @hide
+         */
+        public static final String THEMING_ACCENT = "theming_accent";
+
+        /** @hide */
+        public static final Validator THEMING_ACCENT_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
         /**
           * Volume keys control cursor in text fields (default is 0)
           * 0 - Disabled
@@ -4367,6 +4386,8 @@ public final class Settings {
             SMART_PIXELS_SHIFT_TIMEOUT,
             SMART_PIXELS_ON_POWER_SAVE,
             GLOBAL_ACTIONS_SCREENRECORD,
+            THEMING_BASE,
+            THEMING_ACCENT,
         };
 
         /**
@@ -4497,6 +4518,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(AMBIENT_RECOGNITION_KEYGUARD);
             PRIVATE_SETTINGS.add(AMBIENT_RECOGNITION_NOTIFICATION);
             PRIVATE_SETTINGS.add(GLOBAL_ACTIONS_SCREENRECORD);
+            PRIVATE_SETTINGS.add(THEMING_BASE);
+            PRIVATE_SETTINGS.add(THEMING_ACCENT);
         }
 
         /**
@@ -4603,6 +4626,8 @@ public final class Settings {
             VALIDATORS.put(AMBIENT_RECOGNITION_KEYGUARD, AMBIENT_RECOGNITION_KEYGUARD_VALIDATOR);
             VALIDATORS.put(AMBIENT_RECOGNITION_NOTIFICATION, AMBIENT_RECOGNITION_NOTIFICATION_VALIDATOR);
             VALIDATORS.put(GLOBAL_ACTIONS_SCREENRECORD,GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR);
+            VALIDATORS.put(THEMING_BASE, THEMING_BASE_VALIDATOR);
+            VALIDATORS.put(THEMING_ACCENT, THEMING_ACCENT_VALIDATOR);
         }
 
         /**
