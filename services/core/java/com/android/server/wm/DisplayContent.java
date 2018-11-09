@@ -785,8 +785,8 @@ class DisplayContent extends WindowContainer<DisplayContent.DisplayChildWindowCo
 
         final SurfaceControl.Builder b = mService.makeSurfaceBuilder(mSession)
                 .setSize(mSurfaceSize, mSurfaceSize)
+                .setOpaque(true)
                 .setContainerLayer(true);
-                .setOpaque(true);
         if (isOneHandedModeSupported()) {
             mOneHandOverlayLayer = b.setName("Display OneHand Overlays").build();
         }
