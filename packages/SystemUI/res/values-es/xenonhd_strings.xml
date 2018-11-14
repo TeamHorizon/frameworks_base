@@ -15,12 +15,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Por defecto</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Columnas</string>
-  <string name="qs_menu_item_reset">Resetear</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Captura de pantalla</string>
-  <string name="quick_settings_region_screenshot_label">Captura de pantalla parcial</string>
-  <!-- Smart Pixels QS Tile -->
+    <string name="statusbar_items_title">Icono de barra de estado</string>
+    <string name="lockscreen_tuner_title">Atajos en la pantalla de bloqueo</string>
+    <string name="lockscreen_default">Por defecto</string>
+    <string name="lockscreen_hidden">Ninguno</string>
+    <string name="custom_hint">Desliza desde el icono para abrir</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Itinerancia de datos</string>
+    <string name="status_bar_data_saver">Ahorro de datos</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Columnas</string>
+    <string name="qs_menu_item_columns_landscape">Vista de columnas</string>
+    <string name="qs_menu_item_reset">Resetear</string>
+    <string name="qs_menu_item_titles">Mostrar etiquetas</string>
+    <string name="qs_menu_item_rows">Filas</string>
+    <string name="qs_menu_item_rows_landscape">Filas (horizontal)</string>
+    <string name="qs_menu_item_columns_auto">Automático</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Captura de pantalla</string>
+    <string name="quick_settings_region_screenshot_label">Captura de pantalla parcial</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
 </resources>

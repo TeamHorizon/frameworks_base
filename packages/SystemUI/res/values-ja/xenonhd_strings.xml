@@ -15,20 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="statusbar_items_title">ステータスバーアイコン</string>
-  <string name="lockscreen_tuner_title">ロック画面のショートカット</string>
-  <string name="lockscreen_default">既定</string>
-  <string name="lockscreen_hidden">なし</string>
-  <string name="custom_hint">アイコンをスワイプして起動</string>
-  <string name="status_bar_vpn">VPN</string>
-  <string name="status_bar_roaming">ローミング中</string>
-  <string name="status_bar_data_saver">データセーバー</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">列数</string>
-  <string name="qs_menu_item_reset">リセット</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">スクリーンショット</string>
-  <string name="quick_settings_region_screenshot_label">範囲を選択してスクリーンショット</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">スマートピクセル</string>
+    <string name="statusbar_items_title">ステータスバーアイコン</string>
+    <string name="lockscreen_tuner_title">ロック画面のショートカット</string>
+    <string name="lockscreen_default">既定</string>
+    <string name="lockscreen_hidden">なし</string>
+    <string name="custom_hint">アイコンをスワイプして起動</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">ローミング中</string>
+    <string name="status_bar_data_saver">データセーバー</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">列数</string>
+    <string name="qs_menu_item_columns_landscape">列数（横向き）</string>
+    <string name="qs_menu_item_reset">リセット</string>
+    <string name="qs_menu_item_titles">ラベルを表示</string>
+    <string name="qs_menu_item_rows">行数</string>
+    <string name="qs_menu_item_rows_landscape">行数（横向き）</string>
+    <string name="qs_menu_item_qs_columns">クイックバーの列数</string>
+    <string name="qs_menu_item_columns_auto">自動</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">スクリーンショット</string>
+    <string name="quick_settings_region_screenshot_label">範囲を選択してスクリーンショット</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">スマートピクセル</string>
+    <string name="quick_settings_smart_pixels_on_power_save">スマートピクセルを自動的に有効にする</string>
 </resources>

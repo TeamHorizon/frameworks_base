@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">الوضع الأصلي</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">الأعمدة</string>
-  <string name="qs_menu_item_reset">إعادة ضبط</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">لقطة للشاشة</string>
-  <string name="quick_settings_region_screenshot_label">صورة جزئية للشاشة</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">الدقة الذكية</string>
+    <string name="statusbar_items_title">ايقونة شريط الحالة</string>
+    <string name="lockscreen_tuner_title">إختصارات شاشة القفل</string>
+    <string name="lockscreen_default">الوضع الأصلي</string>
+    <string name="lockscreen_hidden">لا شيء</string>
+    <string name="custom_hint">تمرير من الأيقونة للتشغيل</string>
+    <string name="status_bar_vpn">الشبكة الظاهرية VPN</string>
+    <string name="status_bar_roaming">التجوال</string>
+    <string name="status_bar_data_saver">موفر البيانات</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">الأعمدة</string>
+    <string name="qs_menu_item_columns_landscape">الأعمدة - أفقي</string>
+    <string name="qs_menu_item_reset">إعادة ضبط</string>
+    <string name="qs_menu_item_titles">عرض التسميات</string>
+    <string name="qs_menu_item_rows">الصفوف</string>
+    <string name="qs_menu_item_rows_landscape">الصفوف - أفقي</string>
+    <string name="qs_menu_item_qs_columns">أعمدة الشريط السريع</string>
+    <string name="qs_menu_item_columns_auto">تلقائي</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">لقطة للشاشة</string>
+    <string name="quick_settings_region_screenshot_label">صورة جزئية للشاشة</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">الدقة الذكية</string>
+    <string name="quick_settings_smart_pixels_on_power_save">تمكين الدقة الذكية تلقائياً</string>
 </resources>

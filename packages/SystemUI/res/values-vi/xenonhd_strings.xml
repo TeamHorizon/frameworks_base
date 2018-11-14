@@ -15,11 +15,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Mặc định</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Cột</string>
-  <string name="qs_menu_item_reset">Reset</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Ảnh chụp màn hình</string>
-  <!-- Smart Pixels QS Tile -->
+    <string name="lockscreen_default">Mặc định</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Cột</string>
+    <string name="qs_menu_item_reset">Reset</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Ảnh chụp màn hình</string>
+    <!-- Smart Pixels QS Tile -->
 </resources>

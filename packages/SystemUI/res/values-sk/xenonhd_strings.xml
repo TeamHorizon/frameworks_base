@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Predvolené</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Stĺpce</string>
-  <string name="qs_menu_item_reset">Resetovať</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Snímka obrazovky</string>
-  <string name="quick_settings_region_screenshot_label">Čiastočná fotografia obrazovky</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <string name="statusbar_items_title">Ikony v stavovom riadku</string>
+    <string name="lockscreen_tuner_title">Odkazy na obrazovke uzamknutia</string>
+    <string name="lockscreen_default">Predvolené</string>
+    <string name="lockscreen_hidden">Žiadne</string>
+    <string name="custom_hint">Spustiť potiahnutím prstom od ikony</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_data_saver">Šetrič dát</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Stĺpce</string>
+    <string name="qs_menu_item_columns_landscape">Stĺpce (na šírku)</string>
+    <string name="qs_menu_item_reset">Resetovať</string>
+    <string name="qs_menu_item_titles">Zobraziť popisky</string>
+    <string name="qs_menu_item_rows">Riadky</string>
+    <string name="qs_menu_item_rows_landscape">Riadky (na šírku)</string>
+    <string name="qs_menu_item_qs_columns">Stĺpce panela Rýchl. nastavení</string>
+    <string name="qs_menu_item_columns_auto">Automaticky</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Snímka obrazovky</string>
+    <string name="quick_settings_region_screenshot_label">Čiastočná fotografia obrazovky</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Povoliť Smart Pixels automaticky</string>
 </resources>

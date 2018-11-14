@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Padrão</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Colunas</string>
-  <string name="qs_menu_item_reset">Redefinir</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Captura de tela</string>
-  <string name="quick_settings_region_screenshot_label">Captura de tela parcial</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">Pixels Inteligentes</string>
+    <string name="statusbar_items_title">Ícone da barra de status</string>
+    <string name="lockscreen_tuner_title">Atalhos da tela de bloqueio</string>
+    <string name="lockscreen_default">Padrão</string>
+    <string name="lockscreen_hidden">Nenhum</string>
+    <string name="custom_hint">Deslize a partir do ícone para iniciar</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_data_saver">Economia de dados</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Colunas</string>
+    <string name="qs_menu_item_columns_landscape">Colunas (paisagem)</string>
+    <string name="qs_menu_item_reset">Redefinir</string>
+    <string name="qs_menu_item_titles">Mostrar rótulos</string>
+    <string name="qs_menu_item_rows">Linhas</string>
+    <string name="qs_menu_item_rows_landscape">Linhas (paisagem)</string>
+    <string name="qs_menu_item_qs_columns">Colunas da barra de acesso rápido</string>
+    <string name="qs_menu_item_columns_auto">Automático</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Captura de tela</string>
+    <string name="quick_settings_region_screenshot_label">Captura de tela parcial</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Pixels Inteligentes</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Auto-ativação dos Pixels Inteligentes</string>
 </resources>

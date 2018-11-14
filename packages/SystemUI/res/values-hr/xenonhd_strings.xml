@@ -15,9 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- QS Config -->
-  <string name="qs_menu_item_reset">Ponovno pokreni</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Snimka zaslona</string>
-  <!-- Smart Pixels QS Tile -->
+    <!-- QS Config -->
+    <string name="qs_menu_item_reset">Ponovno pokreni</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Snimka zaslona</string>
+    <!-- Smart Pixels QS Tile -->
 </resources>

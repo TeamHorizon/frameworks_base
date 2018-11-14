@@ -15,12 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Predefinida</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Colunas</string>
-  <string name="qs_menu_item_reset">Repor</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Captura de ecrã</string>
-  <string name="quick_settings_region_screenshot_label">Captura parcial de ecrã</string>
-  <!-- Smart Pixels QS Tile -->
+    <string name="lockscreen_default">Predefinida</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Colunas</string>
+    <string name="qs_menu_item_reset">Repor</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Captura de ecrã</string>
+    <string name="quick_settings_region_screenshot_label">Captura parcial de ecrã</string>
+    <!-- Smart Pixels QS Tile -->
 </resources>

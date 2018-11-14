@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Varsayılan</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Sütunlar</string>
-  <string name="qs_menu_item_reset">Sıfırla</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Ekran görüntüsü</string>
-  <string name="quick_settings_region_screenshot_label">Kısmi ekran görüntüsü</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">Akıllı pikseller</string>
+    <string name="statusbar_items_title">Durum çubuğu simgeleri</string>
+    <string name="lockscreen_tuner_title">Kilit ekranı kısayolları</string>
+    <string name="lockscreen_default">Varsayılan</string>
+    <string name="lockscreen_hidden">Hiçbiri</string>
+    <string name="custom_hint">Başlatmak için simgeyi kaydırın</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Dolaşım</string>
+    <string name="status_bar_data_saver">Veri tasarrufu</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Sütunlar</string>
+    <string name="qs_menu_item_columns_landscape">Yatay sütunlar</string>
+    <string name="qs_menu_item_reset">Sıfırla</string>
+    <string name="qs_menu_item_titles">Etiketleri göster</string>
+    <string name="qs_menu_item_rows">Satırlar</string>
+    <string name="qs_menu_item_rows_landscape">Yatay satırlar</string>
+    <string name="qs_menu_item_qs_columns">Hızlı ayarlar sütunları</string>
+    <string name="qs_menu_item_columns_auto">Otomatik</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Ekran görüntüsü</string>
+    <string name="quick_settings_region_screenshot_label">Kısmi ekran görüntüsü</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Akıllı pikseller</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Otomatik olarak akıllı pikselleri etkinleştir</string>
 </resources>

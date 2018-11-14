@@ -15,13 +15,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Alapértelmezett</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Oszlopok</string>
-  <string name="qs_menu_item_reset">Visszaállitás</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Képernyőkép</string>
-  <string name="quick_settings_region_screenshot_label">Részleges képernyőkép</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">Intelligens pixelek</string>
+    <string name="statusbar_items_title">Állapotsorikon</string>
+    <string name="lockscreen_tuner_title">Parancsikonok a zárképernyőn</string>
+    <string name="lockscreen_default">Alapértelmezett</string>
+    <string name="lockscreen_hidden">Egyik sem</string>
+    <string name="custom_hint">Megnyitáshoz csúsztasson az ikonról</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Barangolás</string>
+    <string name="status_bar_data_saver">Adatforgalom-csökkentő</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Oszlopok</string>
+    <string name="qs_menu_item_columns_landscape">Oszlopok (fekvő)</string>
+    <string name="qs_menu_item_reset">Visszaállitás</string>
+    <string name="qs_menu_item_titles">Feliratok megjelenítése</string>
+    <string name="qs_menu_item_rows">Sorok</string>
+    <string name="qs_menu_item_rows_landscape">Sorok (fekvő)</string>
+    <string name="qs_menu_item_columns_auto">Automatikus</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Képernyőkép</string>
+    <string name="quick_settings_region_screenshot_label">Részleges képernyőkép</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Intelligens pixelek</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Intelligens pixelek automatikus engedélyezése</string>
 </resources>

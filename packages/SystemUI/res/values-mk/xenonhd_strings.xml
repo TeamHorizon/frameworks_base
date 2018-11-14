@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Стандардно</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_reset">Ресетирај</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Слика од екранот</string>
-  <!-- Smart Pixels QS Tile -->
+    <string name="lockscreen_default">Стандардно</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_reset">Ресетирај</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Слика од екранот</string>
+    <!-- Smart Pixels QS Tile -->
 </resources>

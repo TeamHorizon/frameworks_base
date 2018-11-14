@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">默认</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">列</string>
-  <string name="qs_menu_item_reset">重置</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">屏幕截图</string>
-  <string name="quick_settings_region_screenshot_label">局部截图</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">智能像素</string>
+    <string name="statusbar_items_title">状态栏图标</string>
+    <string name="lockscreen_tuner_title">锁屏界面快捷方式</string>
+    <string name="lockscreen_default">默认</string>
+    <string name="lockscreen_hidden">无</string>
+    <string name="custom_hint">滑动图标以启动</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">漫游中</string>
+    <string name="status_bar_data_saver">流量节省程序</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">列</string>
+    <string name="qs_menu_item_columns_landscape">横屏列数</string>
+    <string name="qs_menu_item_reset">重置</string>
+    <string name="qs_menu_item_titles">显示名称</string>
+    <string name="qs_menu_item_rows">行</string>
+    <string name="qs_menu_item_rows_landscape">横屏行数</string>
+    <string name="qs_menu_item_qs_columns">磁贴列数</string>
+    <string name="qs_menu_item_columns_auto">自动</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">屏幕截图</string>
+    <string name="quick_settings_region_screenshot_label">局部截图</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">智能像素</string>
+    <string name="quick_settings_smart_pixels_on_power_save">自动启用智能像素</string>
 </resources>

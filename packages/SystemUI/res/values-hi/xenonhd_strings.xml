@@ -15,9 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- QS Config -->
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">स्क्रीनशॉट</string>
-  <string name="quick_settings_region_screenshot_label">आंशिक स्क्रीनशॉट</string>
-  <!-- Smart Pixels QS Tile -->
+    <!-- QS Config -->
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">स्क्रीनशॉट</string>
+    <string name="quick_settings_region_screenshot_label">आंशिक स्क्रीनशॉट</string>
+    <!-- Smart Pixels QS Tile -->
 </resources>

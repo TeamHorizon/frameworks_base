@@ -15,13 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Výchozí</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Sloupce</string>
-  <string name="qs_menu_item_reset">Resetovat</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Snímek obrazovky</string>
-  <string name="quick_settings_region_screenshot_label">Částečný snímek obrazovky</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <string name="statusbar_items_title">Ikona ve stavové liště</string>
+    <string name="lockscreen_tuner_title">Zkratky na zamykací obrazovce</string>
+    <string name="lockscreen_default">Výchozí</string>
+    <string name="lockscreen_hidden">Nic</string>
+    <string name="custom_hint">Spustit přejetím prstu od ikony</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_data_saver">Spořič dat</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Sloupce</string>
+    <string name="qs_menu_item_columns_landscape">Sloupce (na šířku)</string>
+    <string name="qs_menu_item_reset">Resetovat</string>
+    <string name="qs_menu_item_titles">Zobrazit popisky</string>
+    <string name="qs_menu_item_rows">Řádky</string>
+    <string name="qs_menu_item_rows_landscape">Řádky (na šířku)</string>
+    <string name="qs_menu_item_qs_columns">Sloupce panelu QS</string>
+    <string name="qs_menu_item_columns_auto">Automaticky</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Snímek obrazovky</string>
+    <string name="quick_settings_region_screenshot_label">Částečný snímek obrazovky</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Automaticky povolit Smart Pixels</string>
 </resources>

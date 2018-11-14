@@ -15,12 +15,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="lockscreen_default">Προεπιλεγμένο</string>
-  <!-- QS Config -->
-  <string name="qs_menu_item_columns">Στήλες</string>
-  <string name="qs_menu_item_reset">Επαναφορά</string>
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">Στιγμιότυπο οθόνης</string>
-  <string name="quick_settings_region_screenshot_label">Μερικό στιγμιότυπο οθόνης</string>
-  <!-- Smart Pixels QS Tile -->
+    <string name="lockscreen_default">Προεπιλεγμένο</string>
+    <!-- QS Config -->
+    <string name="qs_menu_item_columns">Στήλες</string>
+    <string name="qs_menu_item_reset">Επαναφορά</string>
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Στιγμιότυπο οθόνης</string>
+    <string name="quick_settings_region_screenshot_label">Μερικό στιγμιότυπο οθόνης</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Έξυπνα Πίξελ</string>
 </resources>

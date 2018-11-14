@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- QS Config -->
-  <!-- Screenshot QS tile -->
-  <string name="quick_settings_screenshot_label">스크린샷</string>
-  <string name="quick_settings_region_screenshot_label">부분 스크린샷</string>
-  <!-- Smart Pixels QS Tile -->
-  <string name="quick_settings_smart_pixels">스마트 픽셀</string>
+    <!-- QS Config -->
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">스크린샷</string>
+    <string name="quick_settings_region_screenshot_label">부분 스크린샷</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">스마트 픽셀</string>
 </resources>
