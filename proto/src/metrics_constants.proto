@@ -6435,6 +6435,6 @@ message MetricsEvent {
     // END OF AOSP CONSTANTS
 
     // ACTION: Custom XenonHD metrics
-    XENONHD_SETTINGS = 1500;
+    XENONHD_SETTINGS = 2500;
   }
 }
