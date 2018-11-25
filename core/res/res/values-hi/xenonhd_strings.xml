@@ -19,4 +19,5 @@
     <string name="permlab_fakePackageSignature">permlab_fakePackageSignature
 एक आवेदन की अनुमति का शीर्षक, ताकि उपयोगकर्ता यह चुन सकें कि क्या वह यह करने के लिए आवेदन की अनुमति देना चाहता है।</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- AmbientPlay: The contents of the displayed recognition. -->
 </resources>

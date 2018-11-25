@@ -37,4 +37,22 @@
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Intelligens pixelek</string>
     <string name="quick_settings_smart_pixels_on_power_save">Intelligens pixelek automatikus engedélyezése</string>
+    <!-- Screenrecord Notification Ticker -->
+    <string name="screenrecord_notif_ticker">Képernyőfelvétel folyamatban</string>
+    <string name="screenrecord_notif_final_ticker">Képernyőfelvétel elkészítve</string>
+    <!-- Screenrecord notification title -->
+    <string name="screenrecord_notif_title">Képernyő felvétele</string>
+    <!-- Screenrecord notification action: Stop -->
+    <string name="screenrecord_notif_stop">Leállítás</string>
+    <string name="screenrecord_notif_completed">Képernyőfelvétel elkészítve</string>
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <string name="screenrecord_notif_pointer_on">Mutató megjelenítése</string>
+    <string name="screenrecord_notif_pointer_off">Mutató elrejtése</string>
+    <!-- Screen record notification error title -->
+    <string name="screenrecord_notif_error">A képernyőfelvétel nem lehetséges</string>
+    <string name="notification_channel_screenrecord">Képernyőfelvételek</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">Képernyőfelvétel</string>
+    <string name="screenrecord_hide_hint">Tipp elrejtése</string>
+    <string name="screenrecord_show_hint">Tipp megjelenítése</string>
 </resources>

@@ -38,4 +38,23 @@
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Pixels Inteligentes</string>
     <string name="quick_settings_smart_pixels_on_power_save">Auto-ativação dos Pixels Inteligentes</string>
+    <!-- Screenrecord Notification Ticker -->
+    <string name="screenrecord_notif_ticker">A tela está sendo gravada</string>
+    <string name="screenrecord_notif_final_ticker">Tela gravada com sucesso</string>
+    <!-- Screenrecord notification title -->
+    <string name="screenrecord_notif_title">Gravando tela</string>
+    <!-- Screenrecord notification action: Stop -->
+    <string name="screenrecord_notif_stop">Parar</string>
+    <string name="screenrecord_notif_completed">Tela gravada com sucesso</string>
+    <string name="screenrecord_notif_duration">Total:</string>
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <string name="screenrecord_notif_pointer_on">Mostrar ponteiro</string>
+    <string name="screenrecord_notif_pointer_off">Ocultar ponteiro</string>
+    <!-- Screen record notification error title -->
+    <string name="screenrecord_notif_error">Não é possível gravar a tela</string>
+    <string name="notification_channel_screenrecord">Gravações de tela</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">Gravação de tela</string>
+    <string name="screenrecord_hide_hint">Esconder dica</string>
+    <string name="screenrecord_show_hint">Mostrar dica</string>
 </resources>

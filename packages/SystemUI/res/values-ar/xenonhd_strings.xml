@@ -38,4 +38,23 @@
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">الدقة الذكية</string>
     <string name="quick_settings_smart_pixels_on_power_save">تمكين الدقة الذكية تلقائياً</string>
+    <!-- Screenrecord Notification Ticker -->
+    <string name="screenrecord_notif_ticker">يتم تسجيل الشاشة</string>
+    <string name="screenrecord_notif_final_ticker">تم تسجيل الشاشة بنجاح</string>
+    <!-- Screenrecord notification title -->
+    <string name="screenrecord_notif_title">جارٍ تسجيل الشاشة</string>
+    <!-- Screenrecord notification action: Stop -->
+    <string name="screenrecord_notif_stop">إيقاف</string>
+    <string name="screenrecord_notif_completed">تم تسجيل الشاشة بنجاح</string>
+    <string name="screenrecord_notif_duration">الإجمالي:</string>
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <string name="screenrecord_notif_pointer_on">اظهر المؤشر</string>
+    <string name="screenrecord_notif_pointer_off">إخفاء المؤشر</string>
+    <!-- Screen record notification error title -->
+    <string name="screenrecord_notif_error">غير قادر على تسجيل الشاشة</string>
+    <string name="notification_channel_screenrecord">تسجيلات الشاشة</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">تسجيل الشاشة</string>
+    <string name="screenrecord_hide_hint">إخفاء التلميح</string>
+    <string name="screenrecord_show_hint">إظهار التلميح</string>
 </resources>

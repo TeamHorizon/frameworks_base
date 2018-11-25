@@ -38,4 +38,22 @@
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">智慧 Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">自動啟用智慧 Pixels</string>
+    <!-- Screenrecord Notification Ticker -->
+    <string name="screenrecord_notif_ticker">正在錄製螢幕</string>
+    <string name="screenrecord_notif_final_ticker">螢幕錄製成功</string>
+    <!-- Screenrecord notification title -->
+    <string name="screenrecord_notif_title">正在錄製螢幕</string>
+    <!-- Screenrecord notification action: Stop -->
+    <string name="screenrecord_notif_stop">停止</string>
+    <string name="screenrecord_notif_completed">螢幕錄製成功</string>
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <string name="screenrecord_notif_pointer_on">顯示觸控指標</string>
+    <string name="screenrecord_notif_pointer_off">隱藏觸控指標</string>
+    <!-- Screen record notification error title -->
+    <string name="screenrecord_notif_error">無法錄製螢幕</string>
+    <string name="notification_channel_screenrecord">螢幕錄製</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">螢幕錄製</string>
+    <string name="screenrecord_hide_hint">隱藏提示</string>
+    <string name="screenrecord_show_hint">顯示提示</string>
 </resources>

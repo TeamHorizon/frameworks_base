@@ -18,4 +18,5 @@
     <!-- MicroG -->
     <string name="permlab_fakePackageSignature">Imitazione firma del pacchetto</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- AmbientPlay: The contents of the displayed recognition. -->
 </resources>

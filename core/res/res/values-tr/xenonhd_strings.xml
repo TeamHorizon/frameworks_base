@@ -19,4 +19,7 @@
     <string name="permlab_fakePackageSignature">Paket imzasını taklit et</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_fakePackageSignature">Uygulamanın farklı bir uygulama gibi davranmasına izin verir. Zararlı uygulamalar bu özelliği kullanarak özel içerikli bilgilere ulaşabilir. Bu izni verirken dikkatli olun!</string>
+    <!-- AmbientPlay: The contents of the displayed recognition. -->
+    <string name="ambient_recognition_notification">Şimdi çalınıyor</string>
+    <string name="ambient_recognition_information">%2$s tarafından %1$s</string>
 </resources>

@@ -38,4 +38,22 @@
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">Povoliť Smart Pixels automaticky</string>
+    <!-- Screenrecord Notification Ticker -->
+    <string name="screenrecord_notif_ticker">Obrazovka sa nahráva</string>
+    <string name="screenrecord_notif_final_ticker">Obrazovka bola úspešne nahraná</string>
+    <!-- Screenrecord notification title -->
+    <string name="screenrecord_notif_title">Nahrávanie obrazovky</string>
+    <!-- Screenrecord notification action: Stop -->
+    <string name="screenrecord_notif_stop">Zastaviť</string>
+    <string name="screenrecord_notif_completed">Obrazovka bola úspešne nahraná</string>
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <string name="screenrecord_notif_pointer_on">Zobraziť ukazovateľ</string>
+    <string name="screenrecord_notif_pointer_off">Skryť ukazovateľ</string>
+    <!-- Screen record notification error title -->
+    <string name="screenrecord_notif_error">Nepodarilo sa nahrať obrazovku</string>
+    <string name="notification_channel_screenrecord">Záznamy obrazovky</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">Záznam obrazovky</string>
+    <string name="screenrecord_hide_hint">Skryť nápovedu</string>
+    <string name="screenrecord_show_hint">Zobraziť nápovedu</string>
 </resources>

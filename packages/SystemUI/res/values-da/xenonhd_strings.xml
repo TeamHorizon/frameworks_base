@@ -18,4 +18,10 @@
     <!-- QS Config -->
     <!-- Screenshot QS tile -->
     <!-- Smart Pixels QS Tile -->
+    <!-- Screenrecord Notification Ticker -->
+    <!-- Screenrecord notification title -->
+    <!-- Screenrecord notification action: Stop -->
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <!-- Screen record notification error title -->
+    <!-- Label for item that screenrecords in power menu options dialog -->
 </resources>

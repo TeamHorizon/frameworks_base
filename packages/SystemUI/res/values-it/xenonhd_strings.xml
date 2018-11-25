@@ -24,4 +24,10 @@
     <string name="quick_settings_region_screenshot_label">Screenshot parziale</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <!-- Screenrecord Notification Ticker -->
+    <!-- Screenrecord notification title -->
+    <!-- Screenrecord notification action: Stop -->
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <!-- Screen record notification error title -->
+    <!-- Label for item that screenrecords in power menu options dialog -->
 </resources>

@@ -20,4 +20,10 @@
     <string name="quick_settings_screenshot_label">स्क्रीनशॉट</string>
     <string name="quick_settings_region_screenshot_label">आंशिक स्क्रीनशॉट</string>
     <!-- Smart Pixels QS Tile -->
+    <!-- Screenrecord Notification Ticker -->
+    <!-- Screenrecord notification title -->
+    <!-- Screenrecord notification action: Stop -->
+    <!-- Screenrecord notification action: show/hide pointer -->
+    <!-- Screen record notification error title -->
+    <!-- Label for item that screenrecords in power menu options dialog -->
 </resources>
