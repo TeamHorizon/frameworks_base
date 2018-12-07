@@ -4330,6 +4330,24 @@ public final class Settings {
         public static final String SCREENRECORD_QUALITY_MODE = "screenrecord_quality_mode";
 
         /**
+         * @hide
+         */
+        public static final String OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT =
+                 "bottom_gesture_navigation_trigger_timeout";
+
+        private static final Validator OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT_VALIDATOR =
+                 ANY_INTEGER_VALIDATOR;
+
+        /**
+         * @hide
+         */
+        public static final String OMNI_BOTTOM_GESTURE_SWIPE_LIMIT =
+                 "bottom_gesture_navigation_swipe_limit";
+
+        private static final Validator OMNI_BOTTOM_GESTURE_SWIPE_LIMIT_VALIDATOR =
+                 ANY_INTEGER_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -4397,6 +4415,8 @@ public final class Settings {
             OMNI_QS_QUICKBAR_COLUMNS,
             OMNI_QS_PANEL_BG_ALPHA,
             OMNI_USE_BOTTOM_GESTURE_NAVIGATION,
+            OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT,
+            OMNI_BOTTOM_GESTURE_SWIPE_LIMIT,
             SMART_PIXELS_ENABLE,
             SMART_PIXELS_PATTERN,
             SMART_PIXELS_SHIFT_TIMEOUT,
@@ -4525,6 +4545,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(OMNI_QS_QUICKBAR_COLUMNS);
             PRIVATE_SETTINGS.add(OMNI_QS_PANEL_BG_ALPHA);
             PRIVATE_SETTINGS.add(OMNI_USE_BOTTOM_GESTURE_NAVIGATION);
+            PRIVATE_SETTINGS.add(OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT);
+            PRIVATE_SETTINGS.add(OMNI_BOTTOM_GESTURE_SWIPE_LIMIT);
             PRIVATE_SETTINGS.add(SMART_PIXELS_ENABLE);
             PRIVATE_SETTINGS.add(SMART_PIXELS_PATTERN);
             PRIVATE_SETTINGS.add(SMART_PIXELS_SHIFT_TIMEOUT);
@@ -4632,6 +4654,10 @@ public final class Settings {
             VALIDATORS.put(OMNI_QS_PANEL_BG_ALPHA, OMNI_QS_PANEL_BG_ALPHA_VALIDATOR);
             VALIDATORS.put(OMNI_USE_BOTTOM_GESTURE_NAVIGATION,
                     OMNI_USE_BOTTOM_GESTURE_NAVIGATION_VALIDATOR);
+            VALIDATORS.put(OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT,
+                    OMNI_BOTTOM_GESTURE_TRIGGER_TIMEOUT_VALIDATOR);
+            VALIDATORS.put(OMNI_BOTTOM_GESTURE_SWIPE_LIMIT,
+                    OMNI_BOTTOM_GESTURE_SWIPE_LIMIT_VALIDATOR);
             VALIDATORS.put(SMART_PIXELS_ENABLE, SMART_PIXELS_ENABLE_VALIDATOR);
             VALIDATORS.put(SMART_PIXELS_PATTERN, SMART_PIXELS_PATTERN_VALIDATOR);
             VALIDATORS.put(SMART_PIXELS_SHIFT_TIMEOUT, SMART_PIXELS_SHIFT_TIMEOUT_VALIDATOR);
