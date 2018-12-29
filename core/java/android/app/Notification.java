@@ -3215,7 +3215,7 @@ public class Notification implements Parcelable
 
         private boolean mTintActionButtons;
         private boolean mInNightMode;
-        private boolean mAllowIconTextTint;
+        private boolean mAllowIconTint;
 
         /**
          * Constructs a new Builder with the defaults:
@@ -3258,7 +3258,7 @@ public class Notification implements Parcelable
             mThemeContext = themeContext;
             Resources res = mThemeContext.getResources();
             mTintActionButtons = res.getBoolean(R.bool.config_tintNotificationActionButtons);
-            mAllowIconTextTint = res.getBoolean(R.bool.config_allowNotificationIconTextTinting);
+            mAllowIconTint = res.getBoolean(R.bool.config_useDarkBgNotificationIconTinting);
 
             if (res.getBoolean(R.bool.config_enableNightMode)) {
                 Configuration currentConfig = res.getConfiguration();
@@ -5473,8 +5473,8 @@ public class Notification implements Parcelable
         }
 
         int resolveContrastColor() {
-            if (!mAllowIconTextTint) {
-                return mThemeContext.getColor(R.color.notification_text_default_color);
+            if (!mAllowIconTint) {
+                return mThemeContext.getColor(R.color.notification_icon_default_color);
             }
             if (mCachedContrastColorIsFor == mN.color && mCachedContrastColor != COLOR_INVALID) {
                 return mCachedContrastColor;
@@ -5515,7 +5515,7 @@ public class Notification implements Parcelable
         }
 
         int resolveAmbientColor() {
-            if (!mAllowIconTextTint) {
+            if (!mAllowIconTint) {
                 return mThemeContext.getColor(R.color.notification_ambient_icon_default_color);
             }
             if (mCachedAmbientColorIsFor == mN.color && mCachedAmbientColorIsFor != COLOR_INVALID) {
