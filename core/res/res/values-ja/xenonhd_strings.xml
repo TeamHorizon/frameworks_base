@@ -20,4 +20,6 @@
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_fakePackageSignature">アプリが別のアプリのふりをすることを許可します。悪意のあるアプリがこの機能を使ってプライベートなアプリデータにアクセスする可能性があります。正しい使い方は、エミュレーターがエミュレートする目的での使用などです。この権限を許可するときは気をつけてください！</string>
     <!-- AmbientPlay: The contents of the displayed recognition. -->
+    <string name="ambient_recognition_notification">再生中 </string>
+    <string name="ambient_recognition_information">%1$s - %2$s</string>
 </resources>

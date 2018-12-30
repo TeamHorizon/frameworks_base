@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- MicroG -->
-    <string name="permlab_fakePackageSignature">Підробити підпис пакета</string>
+    <string name="permlab_fakePackageSignature">Giả mạo chữ ký gói</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <!-- AmbientPlay: The contents of the displayed recognition. -->
 </resources>

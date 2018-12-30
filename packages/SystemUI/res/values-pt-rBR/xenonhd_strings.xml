@@ -55,6 +55,6 @@
     <string name="notification_channel_screenrecord">Gravações de tela</string>
     <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Gravação de tela</string>
-    <string name="screenrecord_hide_hint">Esconder dica</string>
-    <string name="screenrecord_show_hint">Mostrar dica</string>
+    <string name="screenrecord_hide_hint">Ocultar ícone</string>
+    <string name="screenrecord_show_hint">Mostrar ícone</string>
 </resources>
