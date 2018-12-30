@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">Запись экрана</string>
     <string name="screenrecord_hide_hint">Скрыть подсказку</string>
     <string name="screenrecord_show_hint">Показать подсказки</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Скриншот не был создан</string>
+    <string name="screenshot_abort_text">Операция прервана</string>
 </resources>

@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">屏幕录像</string>
     <string name="screenrecord_hide_hint">隐藏提示</string>
     <string name="screenrecord_show_hint">显示提示</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">无屏幕截图</string>
+    <string name="screenshot_abort_text">操作中止</string>
 </resources>

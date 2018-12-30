@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">Ekran kaydı</string>
     <string name="screenrecord_hide_hint">İpuçlarını gizle</string>
     <string name="screenrecord_show_hint">İpuçlarını göster</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Ekran görüntüsü alınamadı</string>
+    <string name="screenshot_abort_text">İşlem iptal edildi</string>
 </resources>

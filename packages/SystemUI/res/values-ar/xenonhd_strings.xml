@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">تسجيل الشاشة</string>
     <string name="screenrecord_hide_hint">إخفاء التلميح</string>
     <string name="screenrecord_show_hint">إظهار التلميح</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">لم يتم تصورير الشاشة</string>
+    <string name="screenshot_abort_text">تم قطع العملية</string>
 </resources>

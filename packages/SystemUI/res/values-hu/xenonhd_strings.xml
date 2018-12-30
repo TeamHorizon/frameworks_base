@@ -55,4 +55,7 @@
     <string name="global_action_screenrecord">Képernyőfelvétel</string>
     <string name="screenrecord_hide_hint">Tipp elrejtése</string>
     <string name="screenrecord_show_hint">Tipp megjelenítése</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Képernyőkép nem történt meg</string>
+    <string name="screenshot_abort_text">Művelet megszakítva</string>
 </resources>

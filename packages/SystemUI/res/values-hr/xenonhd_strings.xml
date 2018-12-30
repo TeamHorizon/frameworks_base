@@ -57,4 +57,5 @@
     <string name="global_action_screenrecord">Záznam obrazovky</string>
     <string name="screenrecord_hide_hint">Skrýt nápovědu</string>
     <string name="screenrecord_show_hint">Zobrazit nápovědu</string>
+    <!-- Partial screenshot -->
 </resources>
