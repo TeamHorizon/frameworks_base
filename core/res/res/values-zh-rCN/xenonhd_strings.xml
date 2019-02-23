@@ -20,4 +20,7 @@
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_fakePackageSignature">允许应用伪装成为其他应用。恶意应用程序可以借此来访问隐私应用程序数据。请小心授予此权限！</string>
     <!-- AmbientPlay: The contents of the displayed recognition. -->
+    <string name="ambient_recognition_notification">正在播放</string>
+    <string name="ambient_recognition_information">%1$s 由 %2$s</string>
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
 </resources>

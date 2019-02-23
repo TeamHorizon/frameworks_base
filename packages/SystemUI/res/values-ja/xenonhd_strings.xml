@@ -46,6 +46,7 @@
     <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">停止</string>
     <string name="screenrecord_notif_completed">画面の録画は成功しました</string>
+    <string name="screenrecord_notif_duration">合計:</string>
     <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">ポインターを表示</string>
     <string name="screenrecord_notif_pointer_off">ポインターを隠す</string>
@@ -56,4 +57,7 @@
     <string name="global_action_screenrecord">画面の録画</string>
     <string name="screenrecord_hide_hint">ヒントを非表示</string>
     <string name="screenrecord_show_hint">ヒントを表示</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">スクリーンショットは撮影されていません</string>
+    <string name="screenshot_abort_text">操作を中止しました</string>
 </resources>

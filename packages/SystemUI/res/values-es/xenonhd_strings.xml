@@ -54,4 +54,7 @@
     <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="screenrecord_hide_hint">Ocultar notificación</string>
     <string name="screenrecord_show_hint">Mostrar notificación</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">No se tomó la captura de pantalla</string>
+    <string name="screenshot_abort_text">Operación cancelada</string>
 </resources>

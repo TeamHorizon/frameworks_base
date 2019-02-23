@@ -20,4 +20,5 @@
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_fakePackageSignature">Επιτρέπει στην εφαρμογή να προσποιείται ότι είναι μια διαφορετική εφαρμογή. Κακόβουλες εφαρμογές μπορεί να είναι σε θέση να χρησιμοποιήσουν αυτή τη λειτουργία για να έχουν πρόσβαση σε προσωπικά σας δεδομένα. Εκχωρήσετε το δικαίωμα αυτό με ιδιαίτερη προσοχή!</string>
     <!-- AmbientPlay: The contents of the displayed recognition. -->
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
 </resources>

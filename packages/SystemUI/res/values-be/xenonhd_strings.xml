@@ -30,4 +30,7 @@
     <!-- Screenrecord notification action: show/hide pointer -->
     <!-- Screen record notification error title -->
     <!-- Label for item that screenrecords in power menu options dialog -->
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Скрыншот не быў створаны</string>
+    <string name="screenshot_abort_text">Аперацыя спынена</string>
 </resources>

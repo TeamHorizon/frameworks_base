@@ -56,4 +56,7 @@
     <string name="global_action_screenrecord">Záznam obrazovky</string>
     <string name="screenrecord_hide_hint">Skryť nápovedu</string>
     <string name="screenrecord_show_hint">Zobraziť nápovedu</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Žiadna fotka obrazovky</string>
+    <string name="screenshot_abort_text">Operácia bola prerušená</string>
 </resources>
