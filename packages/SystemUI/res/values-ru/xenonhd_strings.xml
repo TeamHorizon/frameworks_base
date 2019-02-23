@@ -25,11 +25,11 @@
     <string name="status_bar_data_saver">Экономия трафика</string>
     <!-- QS Config -->
     <string name="qs_menu_item_columns">Количество столбцов</string>
-    <string name="qs_menu_item_columns_landscape">Колонки (ландшафт)</string>
+    <string name="qs_menu_item_columns_landscape">Колонки (альбомный режим)</string>
     <string name="qs_menu_item_reset">Сброс</string>
-    <string name="qs_menu_item_titles">Показывать метки</string>
+    <string name="qs_menu_item_titles">Показывать подписи</string>
     <string name="qs_menu_item_rows">Строки</string>
-    <string name="qs_menu_item_rows_landscape">Строки (ландшафт)</string>
+    <string name="qs_menu_item_rows_landscape">Строки (ландшафтный режим)</string>
     <string name="qs_menu_item_qs_columns">Колонки быстрых настроек</string>
     <string name="qs_menu_item_columns_auto">Автоматически</string>
     <!-- Screenshot QS tile -->
@@ -37,7 +37,7 @@
     <string name="quick_settings_region_screenshot_label">Скриншот выбранной области</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
-    <string name="quick_settings_smart_pixels_on_power_save">Авто-включение Smart pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Автоматическое включение Умных Пикселей</string>
     <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">Экран записывается</string>
     <string name="screenrecord_notif_final_ticker">Экран успешно записан</string>
@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">Запись экрана</string>
     <string name="screenrecord_hide_hint">Скрыть подсказку</string>
     <string name="screenrecord_show_hint">Показать подсказки</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Скриншот не был создан</string>
+    <string name="screenshot_abort_text">Операция прервана</string>
 </resources>

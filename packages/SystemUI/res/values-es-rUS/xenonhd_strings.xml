@@ -35,7 +35,6 @@
     <string name="quick_settings_screenshot_label">Captura de pantalla</string>
     <string name="quick_settings_region_screenshot_label">Captura de pantalla parcial</string>
     <!-- Smart Pixels QS Tile -->
-    <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
     <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
     <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">La pantalla está siendo grabada</string>

@@ -56,4 +56,7 @@
     <string name="global_action_screenrecord">Βιντεοσκόπηση Οθόνης</string>
     <string name="screenrecord_hide_hint">Απόκρυψη υποδείξεων</string>
     <string name="screenrecord_show_hint">Εμφάνιση υπόδειξης</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Δεν λήφθηκε στιγμιότυπο οθόνης</string>
+    <string name="screenshot_abort_text">Η διαδικασία ματαιώθηκε</string>
 </resources>

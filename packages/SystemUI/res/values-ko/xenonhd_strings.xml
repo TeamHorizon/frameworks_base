@@ -15,7 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockscreen_default">기본값</string>
     <!-- QS Config -->
+    <string name="qs_menu_item_reset">초기화</string>
     <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">스크린샷</string>
     <string name="quick_settings_region_screenshot_label">부분 스크린샷</string>
@@ -39,4 +41,7 @@
     <string name="global_action_screenrecord">화면 녹화</string>
     <string name="screenrecord_hide_hint">힌트 숨기기</string>
     <string name="screenrecord_show_hint">힌트 보기</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">저장된 스크린샷이 없음</string>
+    <string name="screenshot_abort_text">작업이 중단됨</string>
 </resources>

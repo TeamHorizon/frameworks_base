@@ -57,4 +57,7 @@
     <string name="global_action_screenrecord">Záznam obrazovky</string>
     <string name="screenrecord_hide_hint">Skrýt nápovědu</string>
     <string name="screenrecord_show_hint">Zobrazit nápovědu</string>
+    <!-- Partial screenshot -->
+    <string name="screenshot_abort_title">Žádný snímek obrazovky</string>
+    <string name="screenshot_abort_text">Operace přerušena</string>
 </resources>

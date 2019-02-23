@@ -22,4 +22,5 @@
     <!-- AmbientPlay: The contents of the displayed recognition. -->
     <string name="ambient_recognition_notification">Nyní hraje</string>
     <string name="ambient_recognition_information">%1$s od %2$s</string>
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
 </resources>

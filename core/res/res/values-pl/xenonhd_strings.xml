@@ -22,4 +22,6 @@
     <!-- AmbientPlay: The contents of the displayed recognition. -->
     <string name="ambient_recognition_notification">Teraz odtwarzane</string>
     <string name="ambient_recognition_information">%1$s - %2$s</string>
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Stuknij pusty obszar, aby wyjść z Trybu obsługiwanego jedną ręką</string>
 </resources>
