@@ -56,6 +56,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     SystemUI-tags \
     SystemUI-proto \
     org.lineageos.platform.internal \
+    vendor.lineage.biometrics.fingerprint.inscreen-V1.0-java \
     apache-commons-lang-2.6
 
 LOCAL_JAVA_LIBRARIES := telephony-common \
