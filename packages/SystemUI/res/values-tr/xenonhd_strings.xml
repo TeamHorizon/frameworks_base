@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Dolaşım</string>
     <string name="status_bar_data_saver">Veri tasarrufu</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">Sütunlar</string>
     <string name="qs_menu_item_columns_landscape">Yatay sütunlar</string>
     <string name="qs_menu_item_reset">Sıfırla</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">Yatay satırlar</string>
     <string name="qs_menu_item_qs_columns">Hızlı ayarlar sütunları</string>
     <string name="qs_menu_item_columns_auto">Otomatik</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Ekran görüntüsü</string>
     <string name="quick_settings_region_screenshot_label">Kısmi ekran görüntüsü</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Akıllı pikseller</string>
     <string name="quick_settings_smart_pixels_on_power_save">Otomatik olarak akıllı pikselleri etkinleştir</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">Ekran kaydediliyor</string>
     <string name="screenrecord_notif_final_ticker">Ekran başarıyla kaydedildi</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">Ekran kaydediliyor</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">Durdur</string>
     <string name="screenrecord_notif_completed">Ekran başarıyla kaydedildi</string>
     <string name="screenrecord_notif_duration">Toplam:</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">İşaretçiyi göster</string>
     <string name="screenrecord_notif_pointer_off">İşaretçiyi gizle</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">Ekran kaydedilemiyor</string>
     <string name="notification_channel_screenrecord">Ekran kayıtları</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Ekran kaydı</string>
     <string name="screenrecord_hide_hint">İpuçlarını gizle</string>
     <string name="screenrecord_show_hint">İpuçlarını göster</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">Ekran görüntüsü alınamadı</string>
     <string name="screenshot_abort_text">İşlem iptal edildi</string>
+    <string name="quick_settings_reboot_label">Yeniden başlat</string>
+    <string name="quick_settings_reboot_recovery_label">Kurtarma modu (Recovery)</string>
 </resources>

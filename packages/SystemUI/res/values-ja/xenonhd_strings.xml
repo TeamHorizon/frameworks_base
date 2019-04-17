@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">ローミング中</string>
     <string name="status_bar_data_saver">データセーバー</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">列数</string>
     <string name="qs_menu_item_columns_landscape">列数（横向き）</string>
     <string name="qs_menu_item_reset">リセット</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">行数（横向き）</string>
     <string name="qs_menu_item_qs_columns">クイックバーの列数</string>
     <string name="qs_menu_item_columns_auto">自動</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">スクリーンショット</string>
     <string name="quick_settings_region_screenshot_label">範囲を選択してスクリーンショット</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">スマートピクセル</string>
     <string name="quick_settings_smart_pixels_on_power_save">スマートピクセルを自動的に有効にする</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">画面は録画されています</string>
     <string name="screenrecord_notif_final_ticker">画面の録画は成功しました</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">画面を録画中</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">停止</string>
     <string name="screenrecord_notif_completed">画面の録画は成功しました</string>
     <string name="screenrecord_notif_duration">合計:</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">ポインターを表示</string>
     <string name="screenrecord_notif_pointer_off">ポインターを隠す</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">画面の録画に失敗しました</string>
     <string name="notification_channel_screenrecord">画面録画</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">画面の録画</string>
     <string name="screenrecord_hide_hint">ヒントを非表示</string>
     <string name="screenrecord_show_hint">ヒントを表示</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">スクリーンショットは撮影されていません</string>
     <string name="screenshot_abort_text">操作を中止しました</string>
+    <string name="quick_settings_reboot_label">再起動</string>
+    <string name="quick_settings_reboot_recovery_label">リカバリー</string>
 </resources>

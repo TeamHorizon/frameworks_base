@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">漫遊</string>
     <string name="status_bar_data_saver">數據節省模式</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">列</string>
     <string name="qs_menu_item_columns_landscape">列橫向</string>
     <string name="qs_menu_item_reset">重設</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">行橫向</string>
     <string name="qs_menu_item_qs_columns">快速工具列</string>
     <string name="qs_menu_item_columns_auto">自動</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">螢幕截圖</string>
     <string name="quick_settings_region_screenshot_label">部分擷取螢幕畫面</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">智慧 Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">自動啟用智慧 Pixels</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">正在錄製螢幕</string>
     <string name="screenrecord_notif_final_ticker">螢幕錄製成功</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">正在錄製螢幕</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">停止</string>
     <string name="screenrecord_notif_completed">螢幕錄製成功</string>
     <string name="screenrecord_notif_duration">總計：</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">顯示觸控指標</string>
     <string name="screenrecord_notif_pointer_off">隱藏觸控指標</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">無法錄製螢幕</string>
     <string name="notification_channel_screenrecord">螢幕錄製</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">螢幕錄製</string>
     <string name="screenrecord_hide_hint">隱藏提示</string>
     <string name="screenrecord_show_hint">顯示提示</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">未擷取螢幕畫面</string>
     <string name="screenshot_abort_text">操作中止</string>
+    <string name="quick_settings_reboot_label">重新啟動</string>
+    <string name="quick_settings_reboot_recovery_label">恢復模式</string>
 </resources>

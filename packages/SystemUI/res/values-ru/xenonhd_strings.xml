@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Роуминг</string>
     <string name="status_bar_data_saver">Экономия трафика</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">Количество столбцов</string>
     <string name="qs_menu_item_columns_landscape">Колонки (альбомный режим)</string>
     <string name="qs_menu_item_reset">Сброс</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">Строки (ландшафтный режим)</string>
     <string name="qs_menu_item_qs_columns">Колонки быстрых настроек</string>
     <string name="qs_menu_item_columns_auto">Автоматически</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Скриншот</string>
     <string name="quick_settings_region_screenshot_label">Скриншот выбранной области</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">Автоматическое включение Умных Пикселей</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">Экран записывается</string>
     <string name="screenrecord_notif_final_ticker">Экран успешно записан</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">Запись экрана</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">Остановить</string>
     <string name="screenrecord_notif_completed">Экран успешно записан</string>
     <string name="screenrecord_notif_duration">Всего:</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">Показать указатель</string>
     <string name="screenrecord_notif_pointer_off">Скрыть указатель</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">Невозможно записать экран</string>
     <string name="notification_channel_screenrecord">Записи экрана</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Запись экрана</string>
     <string name="screenrecord_hide_hint">Скрыть подсказку</string>
     <string name="screenrecord_show_hint">Показать подсказки</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">Скриншот не был создан</string>
     <string name="screenshot_abort_text">Операция прервана</string>
+    <string name="quick_settings_reboot_label">Перезагрузка</string>
+    <string name="quick_settings_reboot_recovery_label">Режим восстановления</string>
 </resources>

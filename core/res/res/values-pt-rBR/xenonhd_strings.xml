@@ -15,12 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- MicroG -->
     <string name="permlab_fakePackageSignature">Substituir a assinatura do pacote</string>
-    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_fakePackageSignature">Permite que o aplicativo finja ser um aplicativo diferente. Aplicativos maliciosos podem usar isso para acessar dados privados de outros aplicativos. Usos legítimos incluem um emulador fingindo ser o que ele emula. Conceda esta permissão com cuidado!</string>
-    <!-- AmbientPlay: The contents of the displayed recognition. -->
     <string name="ambient_recognition_notification">Tocando agora</string>
     <string name="ambient_recognition_information">%1$s por %2$s</string>
-    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Toque na área em branco para sair do modo One handed</string>
 </resources>

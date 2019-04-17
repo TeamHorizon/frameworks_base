@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Barangolás</string>
     <string name="status_bar_data_saver">Adatforgalom-csökkentő</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">Oszlopok</string>
     <string name="qs_menu_item_columns_landscape">Oszlopok (fekvő)</string>
     <string name="qs_menu_item_reset">Visszaállitás</string>
@@ -31,31 +30,24 @@
     <string name="qs_menu_item_rows">Sorok</string>
     <string name="qs_menu_item_rows_landscape">Sorok (fekvő)</string>
     <string name="qs_menu_item_columns_auto">Automatikus</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Képernyőkép</string>
     <string name="quick_settings_region_screenshot_label">Részleges képernyőkép</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Intelligens pixelek</string>
     <string name="quick_settings_smart_pixels_on_power_save">Intelligens pixelek automatikus engedélyezése</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">Képernyőfelvétel folyamatban</string>
     <string name="screenrecord_notif_final_ticker">Képernyőfelvétel elkészítve</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">Képernyő felvétele</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">Leállítás</string>
     <string name="screenrecord_notif_completed">Képernyőfelvétel elkészítve</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">Mutató megjelenítése</string>
     <string name="screenrecord_notif_pointer_off">Mutató elrejtése</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">A képernyőfelvétel nem lehetséges</string>
     <string name="notification_channel_screenrecord">Képernyőfelvételek</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Képernyőfelvétel</string>
     <string name="screenrecord_hide_hint">Tipp elrejtése</string>
     <string name="screenrecord_show_hint">Tipp megjelenítése</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">Képernyőkép nem történt meg</string>
     <string name="screenshot_abort_text">Művelet megszakítva</string>
+    <string name="quick_settings_reboot_label">Újraindítás</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery</string>
 </resources>

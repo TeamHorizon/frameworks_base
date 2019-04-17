@@ -16,16 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lockscreen_default">Förvalt</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_reset">Återställ</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Skärmdump</string>
-    <!-- Smart Pixels QS Tile -->
-    <!-- Screenrecord Notification Ticker -->
-    <!-- Screenrecord notification title -->
-    <!-- Screenrecord notification action: Stop -->
-    <!-- Screenrecord notification action: show/hide pointer -->
-    <!-- Screen record notification error title -->
-    <!-- Label for item that screenrecords in power menu options dialog -->
-    <!-- Partial screenshot -->
+    <string name="quick_settings_reboot_label">Starta om</string>
+    <string name="quick_settings_reboot_recovery_label">Återställning</string>
 </resources>

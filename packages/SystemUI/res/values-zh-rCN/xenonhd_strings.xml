@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">漫游中</string>
     <string name="status_bar_data_saver">流量节省程序</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">列</string>
     <string name="qs_menu_item_columns_landscape">横屏列数</string>
     <string name="qs_menu_item_reset">重置</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">横屏行数</string>
     <string name="qs_menu_item_qs_columns">磁贴列数</string>
     <string name="qs_menu_item_columns_auto">自动</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">屏幕截图</string>
     <string name="quick_settings_region_screenshot_label">局部截图</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">智能像素</string>
     <string name="quick_settings_smart_pixels_on_power_save">自动启用智能像素</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">正在录制屏幕</string>
     <string name="screenrecord_notif_final_ticker">屏幕录制完成</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">录制屏幕</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">停止</string>
     <string name="screenrecord_notif_completed">屏幕录制完成</string>
     <string name="screenrecord_notif_duration">总计：</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">显示触摸操作</string>
     <string name="screenrecord_notif_pointer_off">隐藏触摸操作</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">无法录制屏幕</string>
     <string name="notification_channel_screenrecord">屏幕录像</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">屏幕录像</string>
     <string name="screenrecord_hide_hint">隐藏提示</string>
     <string name="screenrecord_show_hint">显示提示</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">无屏幕截图</string>
     <string name="screenshot_abort_text">操作中止</string>
+    <string name="quick_settings_reboot_label">重新启动</string>
+    <string name="quick_settings_reboot_recovery_label">恢复模式</string>
 </resources>

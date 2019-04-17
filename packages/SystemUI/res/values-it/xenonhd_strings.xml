@@ -18,21 +18,38 @@
     <string name="statusbar_items_title">Icona barra di stato</string>
     <string name="lockscreen_tuner_title">Scorciatoie schermata di sblocco</string>
     <string name="lockscreen_default">Predefinito</string>
-    <!-- QS Config -->
+    <string name="lockscreen_hidden">Nessuno</string>
+    <string name="custom_hint">Scorri dall\'icona per avviare</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_data_saver">Risparmio dati</string>
     <string name="qs_menu_item_columns">Colonne</string>
+    <string name="qs_menu_item_columns_landscape">Colonne in orizzontale</string>
     <string name="qs_menu_item_reset">Ripristina</string>
-    <!-- Screenshot QS tile -->
+    <string name="qs_menu_item_titles">Mostra etichette</string>
+    <string name="qs_menu_item_rows">Righe</string>
+    <string name="qs_menu_item_rows_landscape">Righe in orizzontale</string>
+    <string name="qs_menu_item_qs_columns">Colonne barra veloce</string>
+    <string name="qs_menu_item_columns_auto">Automatico</string>
     <string name="quick_settings_screenshot_label">Screenshot</string>
     <string name="quick_settings_region_screenshot_label">Screenshot parziale</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
-    <!-- Screenrecord Notification Ticker -->
-    <!-- Screenrecord notification title -->
-    <!-- Screenrecord notification action: Stop -->
-    <!-- Screenrecord notification action: show/hide pointer -->
-    <!-- Screen record notification error title -->
-    <!-- Label for item that screenrecords in power menu options dialog -->
-    <!-- Partial screenshot -->
+    <string name="quick_settings_smart_pixels_on_power_save">Abilita automaticamente i Pixel intelligenti</string>
+    <string name="screenrecord_notif_ticker">Schermo in fase di registrazione</string>
+    <string name="screenrecord_notif_final_ticker">Lo schermo è stato registrato con successo</string>
+    <string name="screenrecord_notif_title">Registrazione schermo</string>
+    <string name="screenrecord_notif_stop">Stop</string>
+    <string name="screenrecord_notif_completed">Lo schermo è stato registrato con successo</string>
+    <string name="screenrecord_notif_duration">Totale:</string>
+    <string name="screenrecord_notif_pointer_on">Mostra puntatore</string>
+    <string name="screenrecord_notif_pointer_off">Nascondi puntatore</string>
+    <string name="screenrecord_notif_error">Impossibile registrare lo schermo</string>
+    <string name="notification_channel_screenrecord">Registrazioni schermo</string>
+    <string name="global_action_screenrecord">Registra schermo</string>
+    <string name="screenrecord_hide_hint">Nascondi suggerimento</string>
+    <string name="screenrecord_show_hint">Mostra suggerimento</string>
     <string name="screenshot_abort_title">Nessuna schermata catturata</string>
     <string name="screenshot_abort_text">Operazione fallita</string>
+    <string name="quick_settings_reboot_label">Riavvia</string>
+    <string name="quick_settings_reboot_recovery_label">Riavvia in recovery</string>
 </resources>

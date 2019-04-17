@@ -16,21 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="lockscreen_default">Па змаўчанні</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">Слупкі</string>
     <string name="qs_menu_item_reset">Скінуць</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Скрыншот</string>
     <string name="quick_settings_region_screenshot_label">Скрыншот абранай вобласці экрана</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Разумныя пікселі</string>
-    <!-- Screenrecord Notification Ticker -->
-    <!-- Screenrecord notification title -->
-    <!-- Screenrecord notification action: Stop -->
-    <!-- Screenrecord notification action: show/hide pointer -->
-    <!-- Screen record notification error title -->
-    <!-- Label for item that screenrecords in power menu options dialog -->
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">Скрыншот не быў створаны</string>
     <string name="screenshot_abort_text">Аперацыя спынена</string>
+    <string name="quick_settings_reboot_label">Перазагрузка</string>
+    <string name="quick_settings_reboot_recovery_label">Рэжым аднаўлення</string>
 </resources>

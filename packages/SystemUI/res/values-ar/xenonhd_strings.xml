@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">الشبكة الظاهرية VPN</string>
     <string name="status_bar_roaming">التجوال</string>
     <string name="status_bar_data_saver">موفر البيانات</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">الأعمدة</string>
     <string name="qs_menu_item_columns_landscape">الأعمدة - أفقي</string>
     <string name="qs_menu_item_reset">إعادة ضبط</string>
@@ -32,32 +31,25 @@
     <string name="qs_menu_item_rows_landscape">الصفوف - أفقي</string>
     <string name="qs_menu_item_qs_columns">أعمدة الشريط السريع</string>
     <string name="qs_menu_item_columns_auto">تلقائي</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">لقطة للشاشة</string>
     <string name="quick_settings_region_screenshot_label">صورة جزئية للشاشة</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">الدقة الذكية</string>
     <string name="quick_settings_smart_pixels_on_power_save">تمكين الدقة الذكية تلقائياً</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">يتم تسجيل الشاشة</string>
     <string name="screenrecord_notif_final_ticker">تم تسجيل الشاشة بنجاح</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">جارٍ تسجيل الشاشة</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">إيقاف</string>
     <string name="screenrecord_notif_completed">تم تسجيل الشاشة بنجاح</string>
     <string name="screenrecord_notif_duration">الإجمالي:</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">اظهر المؤشر</string>
     <string name="screenrecord_notif_pointer_off">إخفاء المؤشر</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">غير قادر على تسجيل الشاشة</string>
     <string name="notification_channel_screenrecord">تسجيلات الشاشة</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">تسجيل الشاشة</string>
     <string name="screenrecord_hide_hint">إخفاء التلميح</string>
     <string name="screenrecord_show_hint">إظهار التلميح</string>
-    <!-- Partial screenshot -->
     <string name="screenshot_abort_title">لم يتم تصورير الشاشة</string>
     <string name="screenshot_abort_text">تم قطع العملية</string>
+    <string name="quick_settings_reboot_label">إعادة التشغيل</string>
+    <string name="quick_settings_reboot_recovery_label">الإسترداد</string>
 </resources>

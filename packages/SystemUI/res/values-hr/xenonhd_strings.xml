@@ -23,7 +23,6 @@
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Roaming</string>
     <string name="status_bar_data_saver">Spořič dat</string>
-    <!-- QS Config -->
     <string name="qs_menu_item_columns">Sloupce</string>
     <string name="qs_menu_item_columns_landscape">Sloupce (na šířku)</string>
     <string name="qs_menu_item_reset">Resetovat</string>
@@ -32,30 +31,23 @@
     <string name="qs_menu_item_rows_landscape">Řádky (na šířku)</string>
     <string name="qs_menu_item_qs_columns">Sloupce panelu QS</string>
     <string name="qs_menu_item_columns_auto">Automaticky</string>
-    <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Snímek obrazovky</string>
     <string name="quick_settings_region_screenshot_label">Částečný snímek obrazovky</string>
-    <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">Automaticky povolit Smart Pixels</string>
-    <!-- Screenrecord Notification Ticker -->
     <string name="screenrecord_notif_ticker">Obrazovka je zaznamenávána</string>
     <string name="screenrecord_notif_final_ticker">Obrazovka byla úspěšně zaznamenána</string>
-    <!-- Screenrecord notification title -->
     <string name="screenrecord_notif_title">Záznam obrazovky</string>
-    <!-- Screenrecord notification action: Stop -->
     <string name="screenrecord_notif_stop">Zastavit</string>
     <string name="screenrecord_notif_completed">Obrazovka byla úspěšně zaznamenána</string>
     <string name="screenrecord_notif_duration">Celkem:</string>
-    <!-- Screenrecord notification action: show/hide pointer -->
     <string name="screenrecord_notif_pointer_on">Zobrazit ukazatel</string>
     <string name="screenrecord_notif_pointer_off">Skrýt ukazatel</string>
-    <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">Záznam obrazovky není možný</string>
     <string name="notification_channel_screenrecord">Záznamy obrazovky</string>
-    <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Záznam obrazovky</string>
     <string name="screenrecord_hide_hint">Skrýt nápovědu</string>
     <string name="screenrecord_show_hint">Zobrazit nápovědu</string>
-    <!-- Partial screenshot -->
+    <string name="quick_settings_reboot_label">Ponovno pokreni</string>
+    <string name="quick_settings_reboot_recovery_label">Oporavak</string>
 </resources>
