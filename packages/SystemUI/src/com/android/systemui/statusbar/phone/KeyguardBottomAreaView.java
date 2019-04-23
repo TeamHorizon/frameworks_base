@@ -27,7 +27,6 @@ import static com.android.systemui.tuner.LockscreenFragment.LOCKSCREEN_RIGHT_UNL
 import android.app.ActivityManager;
 import android.app.ActivityOptions;
 import android.app.admin.DevicePolicyManager;
-import android.app.StatusBarManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -110,12 +109,12 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     private static final String RIGHT_BUTTON_PLUGIN
             = "com.android.systemui.action.PLUGIN_LOCKSCREEN_RIGHT_BUTTON";
 
-    protected static final Intent SECURE_CAMERA_INTENT =
+    private static final Intent SECURE_CAMERA_INTENT =
             new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE)
                     .addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-    protected static final Intent INSECURE_CAMERA_INTENT =
+    public static final Intent INSECURE_CAMERA_INTENT =
             new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
-    protected static final Intent PHONE_INTENT = new Intent(Intent.ACTION_DIAL);
+    private static final Intent PHONE_INTENT = new Intent(Intent.ACTION_DIAL);
     private static final int DOZE_ANIMATION_STAGGER_DELAY = 48;
     private static final int DOZE_ANIMATION_ELEMENT_DURATION = 250;
 
@@ -174,8 +173,6 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     private float mDarkAmount;
     private int mBurnInXOffset;
     private int mBurnInYOffset;
-    private boolean mIsPowerCameraGesture;
-    private String mPreviousSource;
 
     public KeyguardBottomAreaView(Context context) {
         this(context, null);
@@ -386,23 +383,20 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
         updateRightAffordanceIcon();
     }
 
-    protected Intent getRightIntent() {
+    private Intent getCameraIntent() {
         return mRightButton.getIntent();
-    }
-
-    protected Intent getLeftIntent() {
-        return mLeftButton.getIntent();
     }
 
     /**
      * Resolves the intent to launch the camera application.
      */
-    public ResolveInfo resolveCameraIntent(int source) {
-        return mContext.getPackageManager().resolveActivityAsUser(
-                source == StatusBarManager.CAMERA_LAUNCH_SOURCE_POWER_DOUBLE_TAP
-                ? getDefaultCameraIntent() : getRightIntent(),
-                PackageManager.MATCH_DEFAULT_ONLY,
-                KeyguardUpdateMonitor.getCurrentUser());
+    public ResolveInfo resolveCameraIntent() {
+        if (getCameraIntent() != null) {
+            return mContext.getPackageManager().resolveActivityAsUser(getCameraIntent(),
+                    PackageManager.MATCH_DEFAULT_ONLY,
+                    KeyguardUpdateMonitor.getCurrentUser());
+        }
+        return null;
     }
 
     private void updateCameraVisibility() {
@@ -482,7 +476,7 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     }
 
     public void bindCameraPrewarmService() {
-        Intent intent = getDefaultCameraIntent();
+        Intent intent = getCameraIntent();
         if (intent == null) {
             return;
         }
@@ -525,20 +519,9 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     }
 
     public void launchCamera(String source) {
-        final Intent intent;
-        if (source.equals(CAMERA_LAUNCH_SOURCE_POWER_DOUBLE_TAP)) {
-            intent = getDefaultCameraIntent();
-            mIsPowerCameraGesture = true;
-        } else {
-            intent = getRightIntent();
-            mIsPowerCameraGesture = false;
-        }
+        final Intent intent = getCameraIntent();
         if (intent == null) {
             return;
-        }
-        if (source != mPreviousSource) {
-            inflateCameraPreview();
-            mPreviousSource = source;
         }
         intent.putExtra(EXTRA_CAMERA_LAUNCH_SOURCE, source);
         boolean wouldLaunchResolverActivity = PreviewInflater.wouldLaunchResolverActivity(
@@ -611,10 +594,7 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     }
 
     public void launchLeftAffordance() {
-        Intent leftButtonIntent = mLeftButton.getIntent();
-        if (leftButtonIntent != null && leftButtonIntent != PHONE_INTENT) {
-            mActivityStarter.startActivity(mLeftButton.getIntent(), false /* dismissShade */);
-        } else if (mLeftIsVoiceAssist) {
+        if (mLeftIsVoiceAssist) {
             launchVoiceAssist();
         } else {
             launchPhone();
@@ -710,9 +690,8 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
             mPreviewContainer.removeView(previewBefore);
             visibleBefore = previewBefore.getVisibility() == View.VISIBLE;
         }
-        if (getRightIntent() != null) {
-            mCameraPreview = mPreviewInflater.inflatePreview(mIsPowerCameraGesture
-                    ? getDefaultCameraIntent() : getRightIntent());
+        if (getCameraIntent() != null) {
+            mCameraPreview = mPreviewInflater.inflatePreview(getCameraIntent());
         }
         if (mCameraPreview != null) {
             mPreviewContainer.addView(mCameraPreview);
@@ -943,7 +922,7 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
 
         @Override
         public IconState getIcon() {
-            ResolveInfo resolved = resolveCameraIntent(0);
+            ResolveInfo resolved = resolveCameraIntent();
             boolean isCameraDisabled = (mStatusBar != null) && !mStatusBar.isCameraAllowedByAdmin();
             mIconState.isVisible = !isCameraDisabled && resolved != null
                     && getResources().getBoolean(R.bool.config_keyguardShowCameraAffordance)
@@ -956,7 +935,11 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
 
         @Override
         public Intent getIntent() {
-            return getDefaultCameraIntent();
+            KeyguardUpdateMonitor updateMonitor = KeyguardUpdateMonitor.getInstance(mContext);
+            boolean canSkipBouncer = updateMonitor.getUserCanSkipBouncer(
+                    KeyguardUpdateMonitor.getCurrentUser());
+            boolean secure = mLockPatternUtils.isSecure(KeyguardUpdateMonitor.getCurrentUser());
+            return (secure && !canSkipBouncer) ? SECURE_CAMERA_INTENT : INSECURE_CAMERA_INTENT;
         }
     }
 
@@ -970,13 +953,5 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
             setPadding(getPaddingLeft(), getPaddingTop(), getPaddingRight(), bottom);
         }
         return insets;
-    }
-
-    private Intent getDefaultCameraIntent() {
-        KeyguardUpdateMonitor updateMonitor = KeyguardUpdateMonitor.getInstance(mContext);
-        boolean canSkipBouncer = updateMonitor.getUserCanSkipBouncer(
-                KeyguardUpdateMonitor.getCurrentUser());
-        boolean secure = mLockPatternUtils.isSecure(KeyguardUpdateMonitor.getCurrentUser());
-        return (secure && !canSkipBouncer) ? SECURE_CAMERA_INTENT : INSECURE_CAMERA_INTENT;
     }
 }
