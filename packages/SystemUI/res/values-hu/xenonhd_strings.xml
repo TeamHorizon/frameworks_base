@@ -39,6 +39,7 @@
     <string name="screenrecord_notif_title">Képernyő felvétele</string>
     <string name="screenrecord_notif_stop">Leállítás</string>
     <string name="screenrecord_notif_completed">Képernyőfelvétel elkészítve</string>
+    <string name="screenrecord_notif_duration">Teljes:</string>
     <string name="screenrecord_notif_pointer_on">Mutató megjelenítése</string>
     <string name="screenrecord_notif_pointer_off">Mutató elrejtése</string>
     <string name="screenrecord_notif_error">A képernyőfelvétel nem lehetséges</string>

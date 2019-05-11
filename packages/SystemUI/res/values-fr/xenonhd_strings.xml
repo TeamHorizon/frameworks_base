@@ -19,6 +19,10 @@
     <string name="qs_menu_item_columns">Colonnes</string>
     <string name="qs_menu_item_reset">Remise à zéro</string>
     <string name="quick_settings_screenshot_label">Capture d\'écran</string>
+    <string name="quick_settings_region_screenshot_label">Réglage_rapide_région_capture d\'écran_label</string>
+    <string name="screenshot_abort_title">Capture d\'écran_arrêt_titre
+Capture d\'écran partiel</string>
+    <string name="screenshot_abort_text">Capture d\'écran_annuler_texte</string>
     <string name="quick_settings_reboot_label">Redémarrer</string>
     <string name="quick_settings_reboot_recovery_label">Récupération</string>
 </resources>

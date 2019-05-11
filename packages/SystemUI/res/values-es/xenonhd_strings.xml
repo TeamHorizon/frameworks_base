@@ -43,6 +43,7 @@
     <string name="screenrecord_notif_pointer_off">Ocultar puntero</string>
     <string name="screenrecord_notif_error">No se puede grabar la pantalla</string>
     <string name="notification_channel_screenrecord">Grabaciones de pantalla</string>
+    <string name="global_action_screenrecord">Grabar la pantalla</string>
     <string name="screenrecord_hide_hint">Ocultar notificación</string>
     <string name="screenrecord_show_hint">Mostrar notificación</string>
     <string name="screenshot_abort_title">No se tomó la captura de pantalla</string>
