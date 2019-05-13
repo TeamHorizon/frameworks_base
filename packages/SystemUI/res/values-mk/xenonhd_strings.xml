@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lockscreen_default">Стандардно</string>
     <string name="qs_menu_item_reset">Ресетирај</string>
     <string name="quick_settings_screenshot_label">Слика од екранот</string>
     <string name="quick_settings_reboot_label">Рестарт</string>

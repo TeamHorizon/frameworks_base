@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lockscreen_default">Prestabilit</string>
     <string name="quick_settings_screenshot_label">Captură ecran</string>
     <string name="quick_settings_reboot_label">Repornire Telefon</string>
 </resources>

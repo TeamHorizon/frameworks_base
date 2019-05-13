@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Icono de barra de estado</string>
     <string name="lockscreen_tuner_title">Atajos en la pantalla de bloqueo</string>
-    <string name="lockscreen_default">Por defecto</string>
-    <string name="lockscreen_hidden">Ninguno</string>
-    <string name="custom_hint">Desliza desde el icono para abrir</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Itinerancia de datos</string>
     <string name="status_bar_data_saver">Ahorro de datos</string>

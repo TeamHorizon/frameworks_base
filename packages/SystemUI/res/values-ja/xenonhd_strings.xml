@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">ステータスバーアイコン</string>
     <string name="lockscreen_tuner_title">ロック画面のショートカット</string>
-    <string name="lockscreen_default">既定</string>
-    <string name="lockscreen_hidden">なし</string>
-    <string name="custom_hint">アイコンをスワイプして起動</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">ローミング中</string>
     <string name="status_bar_data_saver">データセーバー</string>

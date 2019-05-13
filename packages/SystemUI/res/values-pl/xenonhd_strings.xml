@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Ikona paska stanu</string>
     <string name="lockscreen_tuner_title">Skróty ekranu blokady</string>
-    <string name="lockscreen_default">Domyślny</string>
-    <string name="lockscreen_hidden">Brak</string>
-    <string name="custom_hint">Przesuń palcem od ikony, aby uruchomić</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Roaming</string>
     <string name="status_bar_data_saver">Oszczędzanie danych</string>

@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">ايقونة شريط الحالة</string>
     <string name="lockscreen_tuner_title">إختصارات شاشة القفل</string>
-    <string name="lockscreen_default">الوضع الأصلي</string>
-    <string name="lockscreen_hidden">لا شيء</string>
-    <string name="custom_hint">تمرير من الأيقونة للتشغيل</string>
     <string name="status_bar_vpn">الشبكة الظاهرية VPN</string>
     <string name="status_bar_roaming">التجوال</string>
     <string name="status_bar_data_saver">موفر البيانات</string>

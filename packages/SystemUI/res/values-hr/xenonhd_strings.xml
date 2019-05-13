@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Ikona ve stavové liště</string>
     <string name="lockscreen_tuner_title">Zkratky na zamykací obrazovce</string>
-    <string name="lockscreen_default">Výchozí</string>
-    <string name="lockscreen_hidden">Nic</string>
-    <string name="custom_hint">Spustit přejetím prstu od ikony</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Roaming</string>
     <string name="status_bar_data_saver">Spořič dat</string>

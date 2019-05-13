@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Durum çubuğu simgeleri</string>
     <string name="lockscreen_tuner_title">Kilit ekranı kısayolları</string>
-    <string name="lockscreen_default">Varsayılan</string>
-    <string name="lockscreen_hidden">Hiçbiri</string>
-    <string name="custom_hint">Başlatmak için simgeyi kaydırın</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Dolaşım</string>
     <string name="status_bar_data_saver">Veri tasarrufu</string>

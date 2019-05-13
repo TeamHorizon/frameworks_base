@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Εικονίδιο στο statusbar</string>
     <string name="lockscreen_tuner_title">Συντομεύσεις οθόνης κλειδώματος</string>
-    <string name="lockscreen_default">Προεπιλεγμένο</string>
-    <string name="lockscreen_hidden">Κανένα</string>
-    <string name="custom_hint">Σύρατε απο το εικονίδιο για να ξεκινήσετε</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Περιαγωγή</string>
     <string name="status_bar_data_saver">Εξοικονόμηση δεδομένων</string>

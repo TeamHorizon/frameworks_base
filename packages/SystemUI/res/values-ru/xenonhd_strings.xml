@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Значок в панели уведомления</string>
     <string name="lockscreen_tuner_title">Ярлыки экрана блокировки</string>
-    <string name="lockscreen_default">По умолчанию</string>
-    <string name="lockscreen_hidden">Нет</string>
-    <string name="custom_hint">Свайп от значка для запуска</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Роуминг</string>
     <string name="status_bar_data_saver">Экономия трафика</string>

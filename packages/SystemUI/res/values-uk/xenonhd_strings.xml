@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lockscreen_default">За замовчуванням</string>
     <string name="qs_menu_item_reset">Скидання</string>
     <string name="quick_settings_screenshot_label">Знімок екрану</string>
     <string name="global_action_screenrecord">Запис з екрану</string>

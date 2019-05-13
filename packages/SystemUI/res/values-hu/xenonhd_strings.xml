@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="statusbar_items_title">Állapotsorikon</string>
     <string name="lockscreen_tuner_title">Parancsikonok a zárképernyőn</string>
-    <string name="lockscreen_default">Alapértelmezett</string>
-    <string name="lockscreen_hidden">Egyik sem</string>
-    <string name="custom_hint">Megnyitáshoz csúsztasson az ikonról</string>
     <string name="status_bar_vpn">VPN</string>
     <string name="status_bar_roaming">Barangolás</string>
     <string name="status_bar_data_saver">Adatforgalom-csökkentő</string>
