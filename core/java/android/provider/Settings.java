@@ -4271,6 +4271,12 @@ public final class Settings {
         public static final String ENABLE_SUGGESTIONS = "enable_suggestions";
 
         /**
+         * Whether to show VoLTE icon or not
+         * @hide
+         */
+        public static final String SHOW_VOLTE_ICON = "volte_icon";
+
+        /**
          * @hide
          */
         public static final String OMNI_USE_BOTTOM_GESTURE_NAVIGATION =
