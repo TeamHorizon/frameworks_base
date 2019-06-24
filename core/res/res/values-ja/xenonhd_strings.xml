@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_fakePackageSignature">パッケージ署名を偽装</string>
     <string name="permdesc_fakePackageSignature">アプリが別のアプリのふりをすることを許可します。悪意のあるアプリがこの機能を使ってプライベートなアプリデータにアクセスする可能性があります。正しい使い方は、エミュレーターがエミュレートする目的での使用などです。この権限を許可するときは気をつけてください！</string>
-    <string name="ambient_recognition_notification">再生中 </string>
+    <string name="ambient_recognition_notification">Now Playing</string>
     <string name="ambient_recognition_information">%1$s - %2$s</string>
     <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">空きエリアをタップして片手モードを終了</string>
 </resources>

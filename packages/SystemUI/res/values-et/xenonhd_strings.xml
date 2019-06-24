@@ -15,11 +15,36 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="statusbar_items_title">Olekuriba ikoon</string>
+    <string name="lockscreen_tuner_title">Lukustusekraani otseteed</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Rändlus</string>
+    <string name="status_bar_data_saver">Andmeside mahu säästja</string>
     <string name="qs_menu_item_columns">Veerud</string>
+    <string name="qs_menu_item_columns_landscape">Vertikaal veerud</string>
     <string name="qs_menu_item_reset">Lähtesta</string>
+    <string name="qs_menu_item_titles">Näita silte</string>
+    <string name="qs_menu_item_rows">Read</string>
+    <string name="qs_menu_item_rows_landscape">Horisontaal read</string>
+    <string name="qs_menu_item_qs_columns">Kiirklahvid</string>
+    <string name="qs_menu_item_columns_auto">Automaatne</string>
     <string name="quick_settings_screenshot_label">Kuvatõmmis</string>
     <string name="quick_settings_region_screenshot_label">Osaline kuvatõmmis</string>
     <string name="quick_settings_smart_pixels">Targad pikslid</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Automaatselt lubatud targad pikslid</string>
+    <string name="screenrecord_notif_ticker">Ekraan on salvestatud</string>
+    <string name="screenrecord_notif_final_ticker">Ekraan edukalt salvestatud</string>
+    <string name="screenrecord_notif_title">Ekraani salvestatakse</string>
+    <string name="screenrecord_notif_stop">Peata</string>
+    <string name="screenrecord_notif_completed">Ekraan edukalt salvestatud</string>
+    <string name="screenrecord_notif_duration">Kokku:</string>
+    <string name="screenrecord_notif_pointer_on">Näita kursorit</string>
+    <string name="screenrecord_notif_pointer_off">Peida kursor</string>
+    <string name="screenrecord_notif_error">Ei saa salvestada ekraani</string>
+    <string name="notification_channel_screenrecord">Ekraani salvestused</string>
+    <string name="global_action_screenrecord">Ekraani salvestus</string>
+    <string name="screenrecord_hide_hint">Peida vihje</string>
+    <string name="screenrecord_show_hint">Näita vihjet</string>
     <string name="screenshot_abort_title">Kuvatõmmist ei tehtud</string>
     <string name="screenshot_abort_text">Toiming katkestati</string>
     <string name="quick_settings_reboot_label">Taaskäivita</string>

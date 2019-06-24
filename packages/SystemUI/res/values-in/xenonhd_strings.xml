@@ -15,9 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="permlab_fakePackageSignature">Pettepaketi allkiri</string>
-    <string name="permdesc_fakePackageSignature">Võimaldab rakendusel teistsugust rakendust. Pahatahtlikud rakendused võivad seda kasutada privaatsete rakenduste andmete kasutamiseks. Õigustatud kasutusviiside hulka kuulub emulaator, mis näeb olevat see, mida see emuleerib. Anna see luba ainult ettevaatlikult!</string>
-    <string name="ambient_recognition_notification">Praegu esitamisel</string>
-    <string name="ambient_recognition_information">%1$s: %2$s</string>
-    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Ühe käega režiimist väljumiseks puudutage tühja ala</string>
+    <string name="quick_settings_screenshot_label">Screenshot</string>
+    <string name="quick_settings_reboot_label">Boot ulang</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery</string>
 </resources>
