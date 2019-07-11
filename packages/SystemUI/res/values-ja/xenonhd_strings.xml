@@ -29,7 +29,7 @@
     <string name="qs_menu_item_qs_columns">クイックバーの列数</string>
     <string name="qs_menu_item_columns_auto">自動</string>
     <string name="quick_settings_screenshot_label">スクリーンショット</string>
-    <string name="quick_settings_region_screenshot_label">範囲を選択してスクリーンショット</string>
+    <string name="quick_settings_region_screenshot_label">範囲選択</string>
     <string name="quick_settings_smart_pixels">スマートピクセル</string>
     <string name="quick_settings_smart_pixels_on_power_save">自動有効</string>
     <string name="screenrecord_notif_ticker">画面は録画されています</string>
