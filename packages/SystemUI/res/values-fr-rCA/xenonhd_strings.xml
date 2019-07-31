@@ -18,10 +18,20 @@
     <string name="qs_menu_item_columns">Colonnes</string>
     <string name="qs_menu_item_reset">Remise à zéro</string>
     <string name="quick_settings_screenshot_label">Capture d\'écran</string>
-    <string name="quick_settings_region_screenshot_label">Réglage_rapide_région_capture d\'écran_label</string>
-    <string name="screenshot_abort_title">Capture d\'écran_arrêt_titre
-Capture d\'écran partiel</string>
-    <string name="screenshot_abort_text">Capture d\'écran_annuler_texte</string>
+    <string name="quick_settings_region_screenshot_label">Capture d’écran partielle</string>
+    <string name="screenrecord_notif_ticker">L \'écran est en cours d \'enregistrement</string>
+    <string name="screenrecord_notif_final_ticker">Écran enregistré avec succès</string>
+    <string name="screenrecord_notif_title">Enregistrement de l\'écran</string>
+    <string name="screenrecord_notif_stop">Arrêt</string>
+    <string name="screenrecord_notif_completed">Écran enregistré avec succès</string>
+    <string name="screenrecord_notif_pointer_on">Afficher le pointeur</string>
+    <string name="screenrecord_notif_pointer_off">Masquer le pointeur</string>
+    <string name="screenrecord_notif_error">Impossible d\'enregistrer l\'écran</string>
+    <string name="notification_channel_screenrecord">Enregistrements de l\'écran</string>
+    <string name="screenrecord_hide_hint">Masquer les indications</string>
+    <string name="screenrecord_show_hint">Afficher les indications</string>
+    <string name="screenshot_abort_title">Aucune capture d\'écran prise</string>
+    <string name="screenshot_abort_text">Opération annulée</string>
     <string name="quick_settings_reboot_label">Redémarrer</string>
     <string name="quick_settings_reboot_recovery_label">Récupération</string>
 </resources>

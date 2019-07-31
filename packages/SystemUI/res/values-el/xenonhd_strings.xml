@@ -37,6 +37,7 @@
     <string name="screenrecord_notif_title">Καταγραφή οθόνης</string>
     <string name="screenrecord_notif_stop">Διακοπή</string>
     <string name="screenrecord_notif_completed">Η οθόνη καταγράφηκε με επιτυχία</string>
+    <string name="screenrecord_notif_duration">Σύνολο:</string>
     <string name="screenrecord_notif_pointer_on">Εμφάνιση δείκτη</string>
     <string name="screenrecord_notif_pointer_off">Απόκρυψη δείκτη</string>
     <string name="screenrecord_notif_error">Αδυναμία καταγραφής της οθόνης</string>

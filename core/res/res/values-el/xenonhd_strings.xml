@@ -17,4 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_fakePackageSignature">Μίμηση υπογραφής πακέτου</string>
     <string name="permdesc_fakePackageSignature">Επιτρέπει στην εφαρμογή να προσποιείται ότι είναι μια διαφορετική εφαρμογή. Κακόβουλες εφαρμογές μπορεί να είναι σε θέση να χρησιμοποιήσουν αυτή τη λειτουργία για να έχουν πρόσβαση σε προσωπικά σας δεδομένα. Εκχωρήσετε το δικαίωμα αυτό με ιδιαίτερη προσοχή!</string>
+    <string name="ambient_recognition_notification">Παίζει Τώρα</string>
+    <string name="ambient_recognition_information">%1$s από %2$s</string>
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Πάτησε σε ένα κενό σημείο της οθόνης για να βγεις από τη λειτουργία ενός χεριού</string>
 </resources>
