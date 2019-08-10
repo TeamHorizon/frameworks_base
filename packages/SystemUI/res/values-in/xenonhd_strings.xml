@@ -15,7 +15,38 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="quick_settings_screenshot_label">Screenshot</string>
-    <string name="quick_settings_reboot_label">Boot ulang</string>
-    <string name="quick_settings_reboot_recovery_label">Recovery</string>
+    <string name="statusbar_items_title">Ikon statusbar</string>
+    <string name="lockscreen_tuner_title">Pintasan layar kunci</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Jelajah</string>
+    <string name="status_bar_data_saver">Penghemat data</string>
+    <string name="qs_menu_item_columns">Kolom</string>
+    <string name="qs_menu_item_columns_landscape">Lansekap kolom</string>
+    <string name="qs_menu_item_reset">Setel ulang</string>
+    <string name="qs_menu_item_titles">Tampilkan label</string>
+    <string name="qs_menu_item_rows">Baris</string>
+    <string name="qs_menu_item_rows_landscape">Baris lansekap</string>
+    <string name="qs_menu_item_qs_columns">Kolom Quickbar</string>
+    <string name="qs_menu_item_columns_auto">Otomatis</string>
+    <string name="quick_settings_screenshot_label">Tangkapan layar</string>
+    <string name="quick_settings_region_screenshot_label">Tangkapan layar sebagian</string>
+    <string name="quick_settings_smart_pixels">Piksel Cerdas</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Piksel Cerdas yang diaktifkan secara otomatis</string>
+    <string name="screenrecord_notif_ticker">Layar sedang direkam</string>
+    <string name="screenrecord_notif_final_ticker">Layar berhasil direkam</string>
+    <string name="screenrecord_notif_title">Layar perekaman</string>
+    <string name="screenrecord_notif_stop">Berhenti</string>
+    <string name="screenrecord_notif_completed">Layar berhasil direkam</string>
+    <string name="screenrecord_notif_duration">Total:</string>
+    <string name="screenrecord_notif_pointer_on">Tampilkan penunjuk</string>
+    <string name="screenrecord_notif_pointer_off">Sembunyikan penunjuk</string>
+    <string name="screenrecord_notif_error">Tidak dapat merekam layar</string>
+    <string name="notification_channel_screenrecord">Perekam layar</string>
+    <string name="global_action_screenrecord">Perekam layar</string>
+    <string name="screenrecord_hide_hint">Sembunyikan petunjuk</string>
+    <string name="screenrecord_show_hint">Tampilkan petunjuk</string>
+    <string name="screenshot_abort_title">Tidak ada tangkapan layar yang diambil</string>
+    <string name="screenshot_abort_text">Operasi dibatalkan</string>
+    <string name="quick_settings_reboot_label">Mulai ulang</string>
+    <string name="quick_settings_reboot_recovery_label">Pemulihan</string>
 </resources>

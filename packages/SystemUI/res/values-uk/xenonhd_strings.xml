@@ -15,9 +15,38 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="statusbar_items_title">Елементи рядку стану</string>
+    <string name="lockscreen_tuner_title">Ярлики екрану блокування</string>
+    <string name="status_bar_vpn">VPN</string>
+    <string name="status_bar_roaming">Роумінг</string>
+    <string name="status_bar_data_saver">Економія трафіку</string>
+    <string name="qs_menu_item_columns">Стовпці</string>
+    <string name="qs_menu_item_columns_landscape">Стовпці (альбомна орієнтація)</string>
     <string name="qs_menu_item_reset">Скидання</string>
+    <string name="qs_menu_item_titles">Відображати підписи</string>
+    <string name="qs_menu_item_rows">Рядки</string>
+    <string name="qs_menu_item_rows_landscape">Рядки (ландшафтна орієнтація)</string>
+    <string name="qs_menu_item_qs_columns">Колонки Швидких налаштувань</string>
+    <string name="qs_menu_item_columns_auto">Автоматично</string>
     <string name="quick_settings_screenshot_label">Знімок екрану</string>
+    <string name="quick_settings_region_screenshot_label">Частковий скріншот</string>
+    <string name="quick_settings_smart_pixels">Smart Pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Автоматичне ввімкнення Smart Pixels</string>
+    <string name="screenrecord_notif_ticker">Екран записується</string>
+    <string name="screenrecord_notif_final_ticker">Екран успішно записано</string>
+    <string name="screenrecord_notif_title">Запис екрану</string>
+    <string name="screenrecord_notif_stop">Зупинити</string>
+    <string name="screenrecord_notif_completed">Екран успішно записано</string>
+    <string name="screenrecord_notif_duration">Всього:</string>
+    <string name="screenrecord_notif_pointer_on">Показувати вказівник</string>
+    <string name="screenrecord_notif_pointer_off">Приховувати вказівник</string>
+    <string name="screenrecord_notif_error">Неможливо записати екран</string>
+    <string name="notification_channel_screenrecord">Записи екрану</string>
     <string name="global_action_screenrecord">Запис з екрану</string>
+    <string name="screenrecord_hide_hint">Приховати підказку</string>
+    <string name="screenrecord_show_hint">Відображати підказки</string>
+    <string name="screenshot_abort_title">Скріншот не зроблено</string>
+    <string name="screenshot_abort_text">Операцію перервано</string>
     <string name="quick_settings_reboot_label">Перезавантаження</string>
     <string name="quick_settings_reboot_recovery_label">Режим відновлення</string>
 </resources>

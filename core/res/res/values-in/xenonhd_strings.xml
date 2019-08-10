@@ -15,5 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="permlab_fakePackageSignature">Spoof package signature</string>
+    <string name="permlab_fakePackageSignature">Tanda tangan paket palsu</string>
+    <string name="permdesc_fakePackageSignature">Mengizinkan aplikasi berpura-pura menjadi aplikasi yang berbeda. Aplikasi hasad mungkin dapat menggunakan ini untuk mengakses data aplikasi pribadi. Penggunaan yang sah termasuk emulator yang berpura-pura seperti apa yang ditiru. Berikan izin ini hanya dengan hati-hati!</string>
+    <string name="ambient_recognition_notification">Sedang dimainkan</string>
+    <string name="ambient_recognition_information">%1$s oleh %2$s</string>
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Ketuk area kosong untuk keluar dari mode Satu tangan</string>
 </resources>

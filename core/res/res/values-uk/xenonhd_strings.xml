@@ -16,4 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="permlab_fakePackageSignature">Giả mạo chữ ký gói</string>
+    <string name="permdesc_fakePackageSignature">Дозволити додатку видавати себе за інший додаток. Небезпечні додатки можуть отримати доступ до приватних даних. Законне використання включає в себе емулятор, який прикидається тим, що емулює. Будьте обережні під час надання цього дозволу!</string>
+    <string name="ambient_recognition_notification">Зараз грає</string>
+    <string name="ambient_recognition_information">%1$s від %2$s</string>
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Доторкніться до пустої області для виходу з режиму керування однією рукою</string>
 </resources>
